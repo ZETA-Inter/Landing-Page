@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    top: 0;
+    padding: 0;
+    font-family: sans-serif, monospace;
+}
+
+header {
+    width: 100%;
+    background-color: #043253;
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    gap: 100px;
+    justify-content: center;
+}
+
+header img {
+    margin-left: -230px;
+}
+
+header > #header {
+    color: white;
+    font-size: 25px;
+    margin-left: 200px;
+    margin-top: 40px;
+    white-space: nowrap;
+}
+
+.section1 {
+    
+}
