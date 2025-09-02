@@ -11,9 +11,9 @@ body {
 
 .container {
     display: flex;
-    gap: 500px;
+    gap: 650px;
     margin: 0 auto;
-    margin-top: 41px;
+    margin-top: 34px;
 }
 
 .logo {
@@ -31,13 +31,13 @@ body {
 }
 
 .logo>span {
-    margin-top: 30%;
-    ;
+    margin-top: 28%;
 }
 
 .nav>ul {
+    margin-top: 30px;
     color: #000;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500px;
     display: flex;
     gap: 50px;
@@ -53,11 +53,12 @@ body {
     color: #000;
 }
 
-.underline {
-    width: 65px;
+.selecionado>.underline {
+    width: 75px;
     padding: 0;
     stroke-width: 4px;
     background-color: #0CC0DF;
-    margin-top: -5px;
-    height: 5px;
+    margin-left: -10.32px;
+    margin-top: -2px;
+    height: 3px;
 }
