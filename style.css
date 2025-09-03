@@ -34,6 +34,10 @@ body {
     margin-top: 28%;
 }
 
+.nav{
+    justify-content: space-between;
+}
+
 .nav>ul {
     margin-top: 30px;
     color: #000;
@@ -54,11 +58,68 @@ body {
 }
 
 .selecionado>.underline {
-    width: 75px;
+    width: 70px;
     padding: 0;
     stroke-width: 4px;
     background-color: #0CC0DF;
-    margin-left: -10.32px;
+    margin-left: -8.6px;
     margin-top: -2px;
     height: 3px;
 }
+/*corpo do site */
+
+#Bvindo{
+    width: 523px;
+    position: relative;
+    font-size: 90px;
+    color: #000;
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    margin-left: 141.6px;
+}
+
+.zetaHighlight{
+    font-weight: 500;
+    color: #043253;
+}
+.hcontent>.subtitle{
+    width: 523px;
+    position: relative;
+    font-size: 90px;
+    color: #000;
+    text-align: left;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: -120px;
+    margin-bottom: 0;
+}
+
+.description{
+    width: 612px;
+    height: 90;
+    position: relative;
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 150x;
+}
+
+/*botão*/
+.btn1{
+    width: 100%px;
+    height: 90px;
+    background-color: #043253;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
