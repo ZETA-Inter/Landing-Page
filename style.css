@@ -108,14 +108,56 @@ body {
     margin-top: 150x;
 }
 
+
+.buttons{
+    position: absolute;
+    display: flex;
+
+    
+    
+}
 /*botão*/
-.btn1{
-    width: 100%px;
-    height: 90px;
+#btn1Cover{
     background-color: #043253;
+    margin-right: 62px;
+    margin-left: 141.6px;
     border-radius: 20px;
+    height: 70px;
+    width: 180px;
+}
+.btn1{
+    
+    text-align: center;
+    text-decoration: none;
+    color: #f6f7ff;
+    vertical-align: middle;   
+    position: absolute; 
+    margin-left: 26px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
 }
 
+#btn2Cover{
+    margin-left: 12px;
+    border-radius: 20px;
+    height: 70px;
+    border: 2px solid #18a4e1;
+    width: 180px;
+}
+.btn2{
+    
+    text-align: center;
+    text-decoration: none;
+    color: #18a4e1;
+    vertical-align: middle;  
+    margin: 0 auto; 
+    position: absolute; 
+    margin-left: 49px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
 
 
 
