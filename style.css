@@ -34,6 +34,10 @@ body {
     margin-top: 28%;
 }
 
+.nav {
+    justify-content: space-between;
+}
+
 .nav>ul {
     margin-top: 30px;
     color: #000;
@@ -54,11 +58,46 @@ body {
 }
 
 .selecionado>.underline {
-    width: 75px;
+    width: 70px;
     padding: 0;
     stroke-width: 4px;
     background-color: #0CC0DF;
-    margin-left: -10.32px;
+    margin-left: -8.6px;
     margin-top: -2px;
     height: 3px;
+}
+
+.hcontent>h1 {
+    width: 523px;
+    position: relative;
+    font-size: 90px;
+    color: #000;
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    margin-left: 141.6px;
+}
+
+.hcontent>.subtitle>.zetaHighlight {
+    color: #043253;
+    font-weight: 500;
+}
+
+.hcontent>.subtitle {
+    width: 523px;
+    position: relative;
+    font-size: 90px;
+    color: #000;
+    text-align: left;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: -120px;
+}
+
+.h {
+    display: flex;
+}
+
+.h>.himg2 {
+    margin-bottom: 3000000px;
 }
