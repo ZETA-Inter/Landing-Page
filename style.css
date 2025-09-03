@@ -7,6 +7,11 @@ body {
 
 .header {
     max-width: 100%;
+    margin-top: -22px;
+}
+
+main {
+    margin-top: -30px;
 }
 
 .container {
@@ -39,7 +44,7 @@ body {
 }
 
 .nav>ul {
-    margin-top: 30px;
+    margin-top: 22px;
     color: #000;
     font-size: 20px;
     font-weight: 500px;
@@ -108,15 +113,29 @@ body {
     margin-top: 150x;
 }
 
+.h {
+    display: flex;
+}
 
+.mainImg {
+    margin-top: 90px;
+    margin-left: 30%;
+    position: relative;
+}
+
+.himg2 {
+    position: absolute;
+    top: 135px;
+    left: 825px;
+}
+
+/* botao */
 .buttons{
     position: absolute;
     display: flex;
-
-    
-    
+    margin-top: 20px;
 }
-/*botão*/
+
 #btn1Cover{
     background-color: #043253;
     margin-right: 62px;
@@ -141,7 +160,7 @@ body {
 #btn2Cover{
     margin-left: 12px;
     border-radius: 20px;
-    height: 70px;
+    height: 68px;
     border: 2px solid #18a4e1;
     width: 180px;
 }
