@@ -120,6 +120,14 @@ body {
     display: flex;
 }
 
-.h>.himg2 {
-    margin-bottom: 3000000px;
+.mainImg {
+    margin-top: 120px;
+    margin-left: 30%;
+    position: relative;
+}
+
+.himg2 {
+    position: absolute;
+    top: 210px;
+    left: 825px;
 }
