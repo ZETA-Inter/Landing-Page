@@ -3,11 +3,17 @@ body {
     top: 0;
     padding: 0;
     font-family: 'Poppins', serif;
+    width: 100%;
 }
 
 .header {
-    max-width: 100%;
-    margin-top: -22px;
+    position: fixed;
+    width: 100%;
+    margin-top: -32px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
 }
 
 main {
@@ -32,6 +38,7 @@ main {
 }
 
 .logo>img {
+    margin-bottom: 10px;
     margin-left: 127px;
 }
 
@@ -71,9 +78,9 @@ main {
     margin-top: -2px;
     height: 3px;
 }
-/*corpo do site */
 
 #Bvindo{
+    margin-top: 180px;
     width: 523px;
     position: relative;
     font-size: 90px;
@@ -118,18 +125,18 @@ main {
 }
 
 .mainImg {
-    margin-top: 90px;
+    margin-top: 185px;
     margin-left: 30%;
     position: relative;
 }
 
 .himg2 {
     position: absolute;
-    top: 135px;
+    top: 125px;
     left: 825px;
 }
 
-/* botao */
+
 .buttons{
     position: absolute;
     display: flex;
@@ -138,14 +145,13 @@ main {
 
 #btn1Cover{
     background-color: #043253;
-    margin-right: 62px;
+    margin-right: 35px;
     margin-left: 141.6px;
     border-radius: 20px;
     height: 70px;
     width: 180px;
 }
-.btn1{
-    
+.btn1{  
     text-align: center;
     text-decoration: none;
     color: #f6f7ff;
@@ -165,7 +171,6 @@ main {
     width: 180px;
 }
 .btn2{
-    
     text-align: center;
     text-decoration: none;
     color: #18a4e1;
@@ -175,5 +180,138 @@ main {
     margin-left: 49px;
     margin-bottom: 20px;
     margin-top: 20px;
-
 }
+
+#entContat{
+    width: 800px;
+    font-size: 80px;
+    color: #043253;
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 100px;
+    margin-bottom: 2px;
+}
+
+.descriptioncontact{
+    padding-top: 2px;
+    width: 750px;
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 5px;
+}
+
+.contactUs{
+    height: 90;
+    position: relative;
+    font-size: 25px;
+    text-align: left;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 5px;
+}
+
+.contactUs > #nomeContato{
+    width: 650px;
+    border: #0077B6 solid 2px;
+    border-radius: 25px;
+    padding: 8px;
+    padding-left: 40px;
+    align-items: center;
+}
+
+.contactUs > #emailContato{
+    width: 650px;
+    margin-top: 30px;
+    border: #0077B6 solid 2px;
+    border-radius: 25px;
+    padding: 8px;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: #000;
+    align-items: center;
+}
+
+input {
+    align-items: center;
+    border: 0px;
+    padding: 10px;
+    font-size: 20px;
+    color: #333;
+    outline: none;
+    font-family: 'Poppins', serif;
+}
+
+
+.IconsContato{
+    width: 750px;
+    height: 90;
+    position: relative;
+    font-size: 28px;
+    text-align: left;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 40px;
+    position: absolute;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+#zap{
+    margin-right: 95px;
+    margin-bottom: 20px;
+}
+
+#linked{
+    margin-right: 95px;
+    margin-bottom: 20px;
+}
+
+#insta{
+    margin-bottom: 20px;
+}
+
+
+#Enviar{
+    background-color: #0077B6;
+    color: white;
+    width: 350px;
+    padding: 10px;
+    border-radius: 30px;
+    border: #0077B6 solid;
+    font-size: 30px;
+    font-weight: lighter;
+    font-style: initial;
+    font-family: 'Poppins', serif;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#Enviar:hover{
+    background-color: #043253;
+    border: #043253 solid;
+    color: rgb(173, 173, 173);
+}
+
+.boizao{
+    position: absolute;
+    left: 72%;
+    top: 130%;
+    height: 350px;
+}
+
+.patadoboi{
+    position: absolute;
+    left: 58%;
+    top: 108%;
+    height: 400px;
+    width: 500px;
+
+} 
