@@ -297,7 +297,7 @@ input {
 #Enviar:hover{
     background-color: #043253;
     border: #043253 solid;
-    color: rgb(173, 173, 173);
+    color: rgb(227, 226, 226);
 }
 
 .boizao{
@@ -313,5 +313,6 @@ input {
     top: 108%;
     height: 400px;
     width: 500px;
-
 } 
+
+
