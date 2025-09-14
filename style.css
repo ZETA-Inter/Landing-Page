@@ -4,6 +4,7 @@ body {
     padding: 0;
     font-family: 'Poppins', serif;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .header {
@@ -145,59 +146,317 @@ main {
 
 #btn1Cover{
     background-color: #043253;
-    margin-right: 35px;
+    margin-right: 28px;
     margin-left: 141.6px;
     border-radius: 20px;
     height: 70px;
     width: 180px;
+    transition: 0.5s;
+    cursor: pointer;
 }
+
+#btn1Cover:hover{
+    background-color: #0077B6;
+    border: #0077B6;
+}
+
+
 .btn1{  
     text-align: center;
     text-decoration: none;
     color: #f6f7ff;
-    vertical-align: middle;   
-    position: absolute; 
-    margin-left: 26px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-
 }
 
+
 #btn2Cover{
-    margin-left: 12px;
+    margin-left: 3px;
     border-radius: 20px;
     height: 68px;
     border: 2px solid #18a4e1;
     width: 180px;
+    background-color: white;
 }
+
 .btn2{
     text-align: center;
     text-decoration: none;
     color: #18a4e1;
-    vertical-align: middle;  
-    margin: 0 auto; 
-    position: absolute; 
-    margin-left: 49px;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
+
+
+
+
+#nssEquip{
+    width: 100%;
+    font-size: 60px;
+    color: #043253;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    margin-left: 38%;
+    margin-top: 0 auto;
+}
+
+.subtitulo{
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 80%;
+    color: #0CC0DF;
+    font-size: 20px;
+}
+
+#C{
+    width: 100%;
+}
+
+.equipeContent{
+    width: 100%;
+}
+
+.Integrantesprimeiroano{
+    position: absolute;
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 150x;
+
+}
+
+#Rapha{
+    position: absolute;
+    width: 350px;
+    top: -8px;
+    margin-left: 120px;
+}
+
+#Rapha > .nome{
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0077B6;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#Rapha > .nome:hover{
+    color: #0CC0DF;
+}
+
+#Rapha > .descInt{
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+#Matheus{
+    position: absolute;
+    width: 350px;
+    top: 100px;
+    margin-left: 120px;
+}
+
+#Matheus > .nome{
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0077B6;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#Matheus > .nome:hover{
+    color: #0CC0DF;
+}
+
+#Matheus > .descInt{
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+#Lucas{
+    position: absolute;
+    width: 350px;
+    top: 205px;
+    margin-left: 120px;
+}
+
+#Lucas > .nome{
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0077B6;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#Lucas > .nome:hover{
+    color: #0CC0DF;
+}
+
+#Lucas > .descInt{
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+#Caio{
+    position: absolute;
+    width: 350px;
+    top: 310px;
+    margin-left: 120px;
+}
+
+#Caio > .nome{
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0077B6;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#Caio > .nome:hover{
+    color: #0CC0DF;
+}
+
+#Caio > .descInt{
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+
+#João{
+    position: absolute;
+    width: 350px;
+    top: -8px;
+    margin-left: 900px;
+}
+
+#João > .nome{
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0077B6;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#João > .nome:hover{
+    color: #0CC0DF;
+}
+
+#João > .descInt{
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+#Nicolas{
+    position: absolute;
+    width: 350px;
+    top: 100px;
+    margin-left: 900px;
+}
+
+#Nicolas > .nome{
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0077B6;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#Nicolas > .nome:hover{
+    color: #0CC0DF;
+}
+
+#Nicolas > .descInt{
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+#Davi{
+    position: absolute;
+    width: 350px;
+    top: 208px;
+    margin-left: 900px;
+}
+
+#Davi > .nome{
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0077B6;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#Davi > .nome:hover{
+    color: #0CC0DF;
+}
+
+#Davi > .descInt{
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.patasboi1{
+    height: 280px;
+    margin-top: -30px;
+}
+
+.patasboi2{
+    height: 250px;
+    margin-left: 400px;
+}
+.patasboi3{
+    position: absolute;
+    top: 100%;
+    right: 0px;
+}
+.patasboi4{
+    position: absolute;
+    right: 0px;
+    top: 160%;
+}
+
+.col1{
+    height: 400px;
+}
+
+
+.col2{
+    position: absolute;
+    margin-left: 700px;
+    height: 300px;
+}
+
 
 #entContat{
     width: 800px;
-    font-size: 80px;
+    font-size: 75px;
     color: #043253;
     text-align: left;
     display: inline-block;
     font-weight: lighter;
     margin-left: 141.6px;
-    margin-top: 100px;
+    margin-top: 240px;
     margin-bottom: 2px;
 }
 
 .descriptioncontact{
     padding-top: 2px;
     width: 750px;
-    font-size: 20px;
+    font-size: 18px;
     color: #000;
     text-align: left;
     font-weight: lighter;
@@ -219,23 +478,28 @@ main {
     width: 650px;
     border: #0077B6 solid 2px;
     border-radius: 25px;
-    padding: 8px;
+    padding: 6px;
     padding-left: 40px;
     align-items: center;
 }
 
 .contactUs > #emailContato{
     width: 650px;
-    margin-top: 30px;
+    margin-top: 25px;
     border: #0077B6 solid 2px;
     border-radius: 25px;
-    padding: 8px;
+    padding: 6px;
     padding-left: 40px;
     margin-bottom: 30px;
     text-decoration: none;
     color: #000;
     align-items: center;
 }
+
+.main{
+    max-width:100%;
+}
+
 
 input {
     align-items: center;
@@ -282,7 +546,7 @@ input {
     background-color: #0077B6;
     color: white;
     width: 350px;
-    padding: 10px;
+    padding: 8px;
     border-radius: 30px;
     border: #0077B6 solid;
     font-size: 30px;
@@ -303,14 +567,14 @@ input {
 .boizao{
     position: absolute;
     left: 72%;
-    top: 130%;
+    top: 220%;
     height: 350px;
 }
 
 .patadoboi{
     position: absolute;
     left: 58%;
-    top: 108%;
+    top: 200%;
     height: 400px;
     width: 500px;
 } 
