@@ -129,14 +129,26 @@ main {
     margin-top: 185px;
     margin-left: 30%;
     position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.mainImg:hover{
+    transform: scale(1.05);
+
 }
 
 .himg2 {
     position: absolute;
     top: 125px;
     left: 825px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
+.himg2:hover{
+    transform: scale(1.15);
+}
 
 .buttons{
     position: absolute;
@@ -183,25 +195,64 @@ main {
     color: #18a4e1;
 }
 
+#Nssaplicat{
+    width: 800px;
+    font-size: 75px;
+    color: #043253;
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 200px;
+    margin-bottom: 2px;
+}
 
+#nssappdescription{
+    padding-top: 2px;
+    width: 750px;
+    font-size: 30px;
+    color: #000;
+    text-align: left;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 5px;
+}
+
+.celular{
+    margin-left: 900px;
+    height: 650px;
+    margin-top: -450px;
+
+}
+
+.funcionali{
+    transform: translateY(-45%);
+    margin-left: 840px;
+    height: 400px;
+    margin-bottom: 10px;
+    margin-top: -800px;
+}
+
+.patinhas{
+    margin-top: -680px;
+}
 
 
 #nssEquip{
+    transform: translateX(0%);
     width: 100%;
     font-size: 60px;
     color: #043253;
     text-align: center;
     font-weight: lighter;
-    margin-top: 100px;
-    margin-bottom: 0px;
-    margin-left: 38%;
-    margin-top: 0 auto;
+    margin-top: 35px;
 }
 
 .subtitulo{
-    margin-top: 10px;
+    transform: translateX(0%);
+    text-align: center;
+    margin-top: -30px;
     width: 100%;
-    margin-left: 80%;
     color: #0CC0DF;
     font-size: 20px;
 }
@@ -418,15 +469,16 @@ main {
     height: 250px;
     margin-left: 400px;
 }
+
 .patasboi3{
-    position: absolute;
-    top: 100%;
-    right: 0px;
+    margin-left: 1400px;
+    margin-top: -500px;
+    margin-bottom: 200px;
 }
+
 .patasboi4{
-    position: absolute;
-    right: 0px;
-    top: 160%;
+    margin-left: 1380px;
+    margin-top: -20px;
 }
 
 .col1{
@@ -435,7 +487,7 @@ main {
 
 
 .col2{
-    position: absolute;
+    margin-bottom: 100px;
     margin-left: 700px;
     height: 300px;
 }
@@ -449,7 +501,7 @@ main {
     display: inline-block;
     font-weight: lighter;
     margin-left: 141.6px;
-    margin-top: 280px;
+    margin-top: 70px;
     margin-bottom: 2px;
 }
 
@@ -565,16 +617,14 @@ input {
 }
 
 .boizao{
-    position: absolute;
-    left: 72%;
-    top: 220%;
-    height: 350px;
+    margin-left: 1010px;
+    margin-top: -355px;
 }
 
 .patadoboi{
-    position: absolute;
-    left: 58%;
-    top: 200%;
+    margin-left: 800px;
+    margin-top: -600px;
+    margin-bottom: 200px;
     height: 400px;
     width: 500px;
 } 
