@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    top: 0;
+    padding: 0;
+    font-family: 'Poppins', serif;
+    width: 100%;
+}
+
+.main{
+    width: 100%;
+
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    margin-top: -52px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
+}
+.container {
+    display: flex;
+    gap: 650px;
+    margin: 0 auto;
+    margin-top: 34px;
+}
+
+.logo {
+    width: 82.748px;
+    height: 80.198px;
+    color: #043253;
+    font-size: 25px;
+    font-weight: 500px;
+    display: flex;
+    gap: 16px;
+}
+
+.logo>img {
+    margin-bottom: 10px;
+    margin-left: 127px;
+}
+
+.logo>span {
+    margin-top: 28%;
+}
+.nav{
+    justify-content: space-between;
+}
+
+.nav>ul {
+    margin-top: 22px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500px;
+    display: flex;
+    gap: 50px;
+}
+
+.nav>ul>a {
+    text-decoration: none;
+    color: #000;
+}
+
+.selecionado>a {
+    text-decoration: none;
+    color: #000;
+}
+
+#Adm{
+    font-size: 80px;
+    margin-top: 120px;
+    color: #0CC0DF;
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.admContent{
+    height: 90;
+    position: relative;
+    font-size: 25px;
+    text-align: left;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 5px;
+}
+
+
+.loginAdmin > #senhaAdmin{
+    box-shadow: 1px 6px 15px 1px rgba(55, 55, 55, 0.875);
+    width: 350px;
+    border: white solid 2px;
+    border-radius: 25px;
+    padding: 8px;
+    padding-left: 40px;
+    align-items: center;
+}
+
+.loginAdmin > #emailLogin{
+    box-shadow: 1px 6px 15px 1px rgba(55, 55, 55, 0.875);
+    width: 350px;
+    margin-top: 30px;
+    border: white solid 2px;
+    border-radius: 25px;
+    padding: 8px;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: #000;
+    align-items: center;
+}
+
+label > img{
+    height: 20px;
+    width: 25px;
+    align-items: center;
+}
+
+
+input {
+    align-items: center;
+    border: 0px;
+    padding: 10px;
+    font-size: 20px;
+    color: #333;
+    outline: none;
+    font-family: 'Poppins', serif;
+}
+
+#Login{
+    box-shadow: 1px 6px 15px 1px rgb(162, 161, 161);
+    background-color: white;
+    color: rgb(162, 161, 161);
+    width: 180px;
+    padding: 10px;
+    border-radius: 30px;
+    border: white solid;
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: initial;
+    font-family: 'Poppins', serif;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+#Login:hover{
+    box-shadow: 1px 6px 15px 1px rgba(0, 0, 0, 0.875);
+    color: black;
+}
+
+
+
+#Cadastro{
+    box-shadow: 1px 6px 15px 1px rgb(162, 161, 161);
+    background-color: white;
+    color: rgb(162, 161, 161);
+    width: 180px;
+    padding: 10px;
+    border-radius: 30px;
+    border: white solid;
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: initial;
+    font-family: 'Poppins', serif;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#Cadastro:hover{
+    box-shadow: 1px 6px 15px 1px rgba(0, 0, 0, 0.875);
+    color: black;
+}
+
+.entraesq{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Entrar{
+    background-color: #0077B6;
+    color: white;
+    width: 140px;
+    padding: 10px;
+    border-radius: 30px;
+    border: #0077B6 solid;
+    font-size: 18px;
+    font-weight: lighter;
+    font-style: initial;
+    font-family: 'Poppins', serif;
+    margin-right: 980px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#esqsenha{
+    font-size: 18px;
+    text-indent: 5px;
+    padding-right: 55px;
+}
+
+#Entrar:hover{
+    background-color: #043253;
+    border: #043253 solid;
+    color: rgb(227, 226, 226);
+}
+
+.elipseAz{
+    position: absolute;
+    left: 61%;
+    top: -15%;
+    height: 680px;
+}
+
+.elipseAzul{
+    position: absolute;
+    left: 65%;
+    top: -15%;
+    height: 680px;
+}
+
+.elipseBranca{
+    position: absolute;
+    left: 69%;
+    top: -15%;
+    height: 680px;
+}
+
+.boiAdmin{
+    position: absolute;
+    left: 75%;
+    top: 12%;
+    height: 300px;
+}
+
