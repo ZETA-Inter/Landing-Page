@@ -70,15 +70,6 @@ main {
     color: #000;
 }
 
-.selecionado>.underline {
-    width: 70px;
-    padding: 0;
-    stroke-width: 4px;
-    background-color: #0CC0DF;
-    margin-left: -8.6px;
-    margin-top: -2px;
-    height: 3px;
-}
 
 #Bvindo{
     margin-top: 180px;
@@ -129,26 +120,15 @@ main {
     margin-top: 185px;
     margin-left: 30%;
     position: relative;
-    transition: 0.5s;
-    cursor: pointer;
 }
 
-.mainImg:hover{
-    transform: scale(1.05);
-
-}
 
 .himg2 {
     position: absolute;
     top: 125px;
     left: 825px;
-    transition: 0.5s;
-    cursor: pointer;
 }
 
-.himg2:hover{
-    transform: scale(1.15);
-}
 
 .buttons{
     position: absolute;
