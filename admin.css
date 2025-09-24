@@ -14,12 +14,17 @@ body {
 .header {
     position: fixed;
     width: 100%;
-    margin-top: -52px;
+    margin-top: -32px;
+    background-color: white;
+    opacity: 0.9;
     margin-bottom: 20px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000; 
 }
+
+main {
+    margin-top: -30px;
+}
+
 .container {
     display: flex;
     gap: 650px;
@@ -45,28 +50,77 @@ body {
 .logo>span {
     margin-top: 28%;
 }
-.nav{
-    justify-content: space-between;
+
+
+nav > .menu > input{
+    display: none;
 }
 
-.nav>ul {
-    margin-top: 22px;
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+nav > .menu > label {
+    cursor: pointer;
+    width: max-content;
+    position: relative;
+}
+
+.nav {
+    margin-top: 30px;
     color: #000;
     font-size: 20px;
-    font-weight: 500px;
     display: flex;
     gap: 50px;
 }
 
-.nav>ul>a {
-    text-decoration: none;
-    color: #000;
+nav > .menu {
+    display: inline-block;
 }
 
-.selecionado>a {
-    text-decoration: none;
-    color: #000;
+nav > .menu > label::after{
+    content: "";
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    height: 3px;
+    width: 120%;
+    background: darkgray;
+    transform:scaleX(0);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    
 }
+
+nav > .menu > label::before{
+    content: "";
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    height: 3px;
+    width: 120%;
+    background: #0CC0DF;
+    transform:scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+
+
+nav > .menu > label:hover::after {
+    opacity: 0.4;
+    transform: scaleX(0.86);
+}
+
+nav > .menu > input:checked + label::before{
+    transform: scaleX(0.86);
+}
+
+nav > .menu > input:checked + label::after{
+    background: transparent; 
+}
+
+
 
 #Adm{
     font-size: 80px;
@@ -191,21 +245,21 @@ input {
     position: absolute;
     left: 61%;
     top: -15%;
-    height: 660px;
+    height: 685px;
 }
 
 .elipseAzul{
     position: absolute;
     left: 65%;
     top: -15%;
-    height: 660px;
+    height: 685px;
 }
 
 .elipseBranca{
     position: absolute;
     left: 69%;
     top: -15%;
-    height: 660px;
+    height: 685px;
 }
 
 .boiAdmin{
