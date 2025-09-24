@@ -48,9 +48,13 @@ main {
 }
 
 
-
 nav > .menu > input{
     display: none;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
 }
 
 nav > .menu > label {
@@ -161,7 +165,7 @@ nav > .menu > input:checked + label::after{
     margin-top: 150x;
 }
 
-.h {
+#home{
     display: flex;
 }
 
@@ -222,12 +226,6 @@ nav > .menu > input:checked + label::after{
     text-align: center;
     text-decoration: none;
     color: #18a4e1;
-    vertical-align: middle;  
-    margin: 0 auto; 
-    position: absolute; 
-    margin-left: 49px;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -573,6 +571,205 @@ nav > .menu > input:checked + label::after{
 }
 
 
+#planos{
+    width: 100%;
+}
+
+.check{
+    margin-top: -5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.check > img{
+    width: 20px;
+    height: 20px;
+}
+
+#tbpreco{
+    margin-top: 100px;
+    transform: translateX(0%);
+    text-align: center;
+    color: #000;
+    font-weight: lighter;
+    font-size: 20px;
+
+}
+
+#escPlano{
+    transform: translateX(0%);
+    text-align: center;
+    color: #043253;
+    font-weight: lighter;
+    font-size: 50px;
+    margin-top: -30px;
+}
+
+#planosAll{
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.plano{
+    border: #0077B6 2px solid;
+    border-radius: 50px;
+    width: 300px;
+    height: 480px;
+}
+
+.plano > h4,h1{
+    text-align: center;
+}
+
+.plano > h4{
+    margin-top: 35px;
+    font-weight: lighter;
+    color: #043253;
+}
+
+.plano > h1{
+    font-weight: 400;
+    margin-top: -25px;
+    color: #0077B6;
+    font-size: 55px;
+}
+
+.checks{
+    margin-top: -30px;
+}
+
+.planoAzul{
+    width: 300px;
+    height: 480px;
+    border-radius: 50px;
+    background-color: #18a4e1;
+}
+
+.planoAzul > h4,h1{
+    text-align: center;
+}
+
+.plano > p{
+    margin-left: 20px;
+    font-size: 15px;
+    align-items: center;
+
+}
+
+.planoAzul{
+    border: #18a4e1 2px solid;
+    border-radius: 50px;
+    width: 300px;
+    height: 480px;
+}
+
+.planoAzul > h4,h1{
+    text-align: center;
+}
+
+.planoAzul > img{
+    vertical-align: middle;
+}
+
+.planoAzul > h4{
+    margin-top: 35px;
+    font-weight: lighter;
+    color: black;
+}
+
+.planoAzul > h1{
+    font-weight: 400;
+    margin-top: -25px;
+    color: white;
+    font-size: 55px;
+}
+
+.planoAzul > p{
+    color: white;
+    margin-left: 20px;
+    font-size: 15px;
+    align-content: center;
+    vertical-align: middle;
+}
+
+
+
+#especific{
+    font-size: 12px;
+    color: #0CC0DF;
+    text-align: center;
+    margin-top: -50px;
+    margin-left: -8px;
+}
+
+.btSelecAzul, .btSelecAzul1{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 200px;
+    background-color: #18a4e1;
+    border: #18a4e1 2px solid;
+    color: white;
+    border-radius: 25px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: 'Poppins', serif;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btSelecAzul1:hover{
+    background-color: #043253;
+    border-color: #043253;
+}
+.btSelecAzul:hover{
+    background-color: #043253;
+    border-color: #043253;
+}
+
+.btSelecAzul1{
+    margin-top: 65px;
+}
+
+#btBrancoSelec{
+    margin-top: 25px;
+    margin-left: 50px;
+    width: 200px;
+    background-color: white;
+    border: white 2px solid;
+    color: #0077B6;
+    border-radius: 25px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: 'Poppins', serif;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#btBrancoSelec:hover{
+    background-color: #e7e7e7;
+    border-color: #e7e7e7;
+}
+
+
+.img1{
+    margin-left: 1320px;
+    margin-top: -700px;
+}
+
+.img2{
+    margin-left: -15px;
+}
+
+
+
+
 #entContat{
     width: 800px;
     font-size: 75px;
@@ -581,7 +778,7 @@ nav > .menu > input:checked + label::after{
     display: inline-block;
     font-weight: lighter;
     margin-left: 141.6px;
-    margin-top: 70px;
+    margin-top: 150px;
     margin-bottom: 2px;
 }
 
