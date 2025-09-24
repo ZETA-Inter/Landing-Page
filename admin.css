@@ -96,10 +96,13 @@ body {
     border-radius: 25px;
     padding: 8px;
     padding-left: 40px;
+    display: flex;
     align-items: center;
 }
 
 .loginAdmin > #emailLogin{
+    display: flex;
+    align-items: center;
     box-shadow: 1px 6px 15px 1px rgba(55, 55, 55, 0.875);
     width: 350px;
     margin-top: 30px;
@@ -110,7 +113,6 @@ body {
     margin-bottom: 30px;
     text-decoration: none;
     color: #000;
-    align-items: center;
 }
 
 label > img{
@@ -131,9 +133,9 @@ input {
 }
 
 #Login{
-    box-shadow: 1px 6px 15px 1px rgb(162, 161, 161);
+    box-shadow: 1px 6px 15px 1px rgba(0, 0, 0, 0.875);
+    color: black;
     background-color: white;
-    color: rgb(162, 161, 161);
     width: 180px;
     padding: 10px;
     border-radius: 30px;
@@ -143,39 +145,10 @@ input {
     font-style: initial;
     font-family: 'Poppins', serif;
     letter-spacing: 2px;
-    transition: 0.5s;
-    cursor: pointer;
-    margin-right: 30px;
-}
 
-#Login:hover{
-    box-shadow: 1px 6px 15px 1px rgba(0, 0, 0, 0.875);
-    color: black;
 }
 
 
-
-#Cadastro{
-    box-shadow: 1px 6px 15px 1px rgb(162, 161, 161);
-    background-color: white;
-    color: rgb(162, 161, 161);
-    width: 180px;
-    padding: 10px;
-    border-radius: 30px;
-    border: white solid;
-    font-size: 20px;
-    font-weight: lighter;
-    font-style: initial;
-    font-family: 'Poppins', serif;
-    letter-spacing: 2px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-#Cadastro:hover{
-    box-shadow: 1px 6px 15px 1px rgba(0, 0, 0, 0.875);
-    color: black;
-}
 
 .entraesq{
     margin-top: 20px;
@@ -202,9 +175,10 @@ input {
 }
 
 #esqsenha{
+    width: 250px;
     font-size: 18px;
     text-indent: 5px;
-    padding-right: 55px;
+    padding-right: 5px;
 }
 
 #Entrar:hover{
@@ -217,21 +191,21 @@ input {
     position: absolute;
     left: 61%;
     top: -15%;
-    height: 680px;
+    height: 660px;
 }
 
 .elipseAzul{
     position: absolute;
     left: 65%;
     top: -15%;
-    height: 680px;
+    height: 660px;
 }
 
 .elipseBranca{
     position: absolute;
     left: 69%;
     top: -15%;
-    height: 680px;
+    height: 660px;
 }
 
 .boiAdmin{

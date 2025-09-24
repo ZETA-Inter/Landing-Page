@@ -23,16 +23,30 @@
                 <span class="logo-text">ZETA</span>
             </div>
             <nav class="nav">
-                <ul>
-                    <div class="selecionado">
-                        <a href="" class="menu">Início</a>
-                        <div class="underline"></div>
-                    </div>
-                    <a href="">Funcionalidades</a>
-                    <a href="planos.html">Planos</a>
-                    <a href="#C" target="_self">Contato</a>
-                    <a href="admin.html">Admin</a>
-                </ul>
+                <div class="menu">
+                            <input type="radio" name="link" id="Home">
+                            <label for="Home"><a href="#home">Início</a></label>
+                        </div>
+
+                        <div class="menu">
+                            <input type="radio" name="link" id="Func">
+                            <label for="Func">Funcionalidades</label>
+                        </div>
+
+                        <div class="menu">
+                            <input type="radio" name="link" id="Planos">
+                            <label for="Planos"><a href="#planos">Planos</a></label>
+                        </div>
+
+                        <div class="menu">
+                            <input type="radio" name="link" id="Contato">
+                            <label for="Contato"><a href="#C">Contato</a></label>
+                        </div>
+
+                        <div class="menu">
+                            <input type="radio" name="link" id="Admin">
+                            <label for="Admin"><a href="admin.html">Admin</a></label>
+                        </div>
             </nav>
         </div>
     </header>
@@ -40,7 +54,7 @@
 
     <main class="main">
         <div class="container">
-            <section class="h">
+            <section id="home">
                 <div class="hcontent">
                     <h1 id="Bvindo">Bem-vindo</h1>
                     <div class="subtitle">
@@ -73,7 +87,7 @@
 
     <main class="main">
         <div class="container">
-            <section class="nssapp">
+            <section id="nssapp">
                 <div class="nossoappcontent">
                     <h1 id="Nssaplicat">Nosso aplicativo</h1>
                     <p id="nssappdescription">
@@ -153,6 +167,101 @@
                     <img class="patasboi3" src="./assets/pata3.png" alt="pata">
 
                     <img class="patasboi4" src="./assets/pata4.png" alt="pata">
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <main class="main">
+        <div class="container">
+            <section id="planos">
+                <div class="ttplanoscontent">
+                    <h3 id="tbpreco">Tabela de preços</h3>
+                    <h1 id="escPlano">Escolha o seu melhor plano</h1>
+                </div>
+
+
+                <div id="planosAll">
+                    <div class="plano">
+                        <h4 id="zeta+">ZETA+</h4>
+                        <h1>R$180</h1>
+                            <div class="checks">
+                                <div class="check">
+                                    <img src="./assets/checkAzul.png" alt="ícone">
+                                    <p>Acesso completo de 2 cursos</p>
+                                </div>
+                                <div class="check">
+                                    <img src="./assets/checkAzul.png" alt="ícone">
+                                    <p>Funcionalidades ilimitadas</p>
+                                </div>
+                                <div class="check">
+                                    <img src="./assets/checkAzul.png" alt="ícone">
+                                    <p>Chatbot (Limitado)</p>
+                                </div>
+                            </div>
+                        <button class="btSelecAzul1">Selecionar</button>
+                    </div>
+                    <div class="planoAzul">
+                        <h4 id="zeta">ZETA Premium</h4>
+                        <h1>R$250</h1>
+                        <div class="checks">
+                            <div class="check">
+                                <img src="./assets/checkBranco.png" alt="ícone">
+                                <p>Acesso à todos os cursos</p>
+                            </div>
+                            <div class="check">
+                                <img src="./assets/checkBranco.png" alt="ícone">
+                                <p>Funcionalidade ilimitadas</p>
+                            </div>
+                            <div class="check">
+                                <img src="./assets/checkBranco.png" alt="ícone">
+                                <p>Chatbot Ilimitado</p>
+                            </div>
+                            <div class="check">
+                                <img src="./assets/checkBranco.png" alt="ícone">
+                                <p>Metas personalizadas</p>
+                            </div>
+                        </div>
+
+                        <button id="btBrancoSelec">Selecionar</button>
+                    </div>
+                    <div class="plano">
+                        <h4 id="zetaf">ZETA Fornecedor</h4>
+                        <h1>R$300</h1>
+                        <p id="especific">+R$50,00 por produtor</p>
+                        
+                        <div class="checksF">
+                            <div class="check">
+                                <img src="./assets/checkAzul.png" alt="ícone">
+                                <p>Acesso à todos os segmentos</p>
+                            </div>
+                            <div class="check">
+                                <img src="./assets/checkAzul.png" alt="ícone">
+                                <p>Funcionalidades ilimitadas</p>
+                            </div>
+                            <div class="check">
+                                <img src="./assets/checkAzul.png" alt="ícone">
+                                <p>Chatbot Ilimitado</p>
+                            </div>
+                            
+                            <div class="check">
+                                <img src="./assets/checkAzul.png" alt="ícone">
+                                <p>5 afiliados grátis</p>
+                            </div>
+                        </div>
+
+                        <button class="btSelecAzul">Selecionar</button>
+                    </div>
+                </div>
+
+
+                <div class="img1">
+                    <img src="./assets/pataPlano.png" alt="Elemento">
+
+                </div>
+                <div class="img2">
+                    <img src="./assets/pataPlano2.png" alt="Elemento">
 
                 </div>
             </section>
