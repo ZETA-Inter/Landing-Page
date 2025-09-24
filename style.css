@@ -11,9 +11,9 @@ body {
     position: fixed;
     width: 100%;
     margin-top: -32px;
+    background-color: white;
+    opacity: 0.9;
     margin-bottom: 20px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000; 
 }
 
@@ -287,7 +287,7 @@ nav > .menu > input:checked + label::after{
 
 #nssappdescription{
     padding-top: 2px;
-    width: 750px;
+    width: 680px;
     font-size: 30px;
     color: #000;
     text-align: left;
@@ -303,6 +303,7 @@ nav > .menu > input:checked + label::after{
 
 }
 
+
 .funcionali{
     transform: translateY(-45%);
     margin-left: 840px;
@@ -315,6 +316,65 @@ nav > .menu > input:checked + label::after{
     margin-top: -680px;
 }
 
+#funcionalidades{
+    width: 100%;
+}
+
+.novoservico{
+    margin-top: 100px;
+}
+
+.funcionalis{
+    border: #18a4e1 4px solid;
+    border-radius: 30px;
+    width: 280px;
+    height: 150px;
+    padding: 10px;
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+
+.fserv{
+    margin-top: 10px;
+    color: #18a4e1;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.fdescrip{
+    font-weight: lighter;
+    margin-top: -15px;
+}
+
+#Nssserv{
+    transform: translateX(0%);
+    width: 100%;
+    font-size: 60px;
+    color: #043253;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 135px;
+}
+
+.funcontent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 160px;
+    margin-top: 60px;
+}
+.imagem1{
+    margin-left: -10px;
+    margin-top: -720px;
+}
+
+.imagem2{
+    margin-left: 1370px;
+    margin-top: -100px;
+}
+
+.iconesF{
+    margin-top: -50px;
+}
 
 #nssEquip{
     transform: translateX(0%);
@@ -323,7 +383,7 @@ nav > .menu > input:checked + label::after{
     color: #043253;
     text-align: center;
     font-weight: lighter;
-    margin-top: 35px;
+    margin-top: 285px;
 }
 
 .subtitulo{
@@ -339,6 +399,8 @@ nav > .menu > input:checked + label::after{
     width: 100%;
 }
 
+
+
 .equipeContent{
     width: 100%;
 }
@@ -352,6 +414,7 @@ nav > .menu > input:checked + label::after{
     font-weight: lighter;
     margin-left: 141.6px;
     margin-top: 150x;
+    margin-bottom: 100px;
 
 }
 
@@ -613,14 +676,26 @@ nav > .menu > input:checked + label::after{
     justify-content: space-between;
     padding-left: 200px;
     padding-right: 200px;
+    margin-bottom: 100px;
 }
+
+
 
 .plano{
     border: #0077B6 2px solid;
     border-radius: 50px;
     width: 300px;
     height: 480px;
+    transition: 0.8s;
+    cursor: pointer;
 }
+
+.plano:hover{
+    transform: scale(1.05);
+    border: #0CC0DF 2px solid;
+}
+
+
 
 .plano > h4,h1{
     text-align: center;
@@ -648,6 +723,11 @@ nav > .menu > input:checked + label::after{
     height: 480px;
     border-radius: 50px;
     background-color: #18a4e1;
+    transition: 0.8s;
+    cursor: pointer;
+}
+.planoAzul:hover{
+    transform: scale(1.05);
 }
 
 .planoAzul > h4,h1{
@@ -778,13 +858,13 @@ nav > .menu > input:checked + label::after{
     display: inline-block;
     font-weight: lighter;
     margin-left: 141.6px;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 2px;
 }
 
 .descriptioncontact{
     padding-top: 2px;
-    width: 750px;
+    width: 700px;
     font-size: 18px;
     color: #000;
     text-align: left;
@@ -804,7 +884,9 @@ nav > .menu > input:checked + label::after{
 }
 
 .contactUs > #nomeContato{
-    width: 650px;
+    display: flex;
+    gap: 10px;
+    width: 620px;
     border: #0077B6 solid 2px;
     border-radius: 25px;
     padding: 6px;
@@ -813,7 +895,9 @@ nav > .menu > input:checked + label::after{
 }
 
 .contactUs > #emailContato{
-    width: 650px;
+    display: flex;
+    gap: 10px;
+    width: 620px;
     margin-top: 25px;
     border: #0077B6 solid 2px;
     border-radius: 25px;
@@ -825,13 +909,16 @@ nav > .menu > input:checked + label::after{
     align-items: center;
 }
 
+.contactUs > label{
+    padding-top: 5px;
+}
+
 .main{
     max-width:100%;
 }
 
 
 input {
-    align-items: center;
     border: 0px;
     padding: 10px;
     font-size: 20px;
@@ -857,12 +944,12 @@ input {
 
 
 #zap{
-    margin-right: 95px;
+    margin-right: 75px;
     margin-bottom: 20px;
 }
 
 #linked{
-    margin-right: 95px;
+    margin-right: 75px;
     margin-bottom: 20px;
 }
 
@@ -874,7 +961,7 @@ input {
 #Enviar{
     background-color: #0077B6;
     color: white;
-    width: 350px;
+    width: 310px;
     padding: 8px;
     border-radius: 30px;
     border: #0077B6 solid;
