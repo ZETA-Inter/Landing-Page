@@ -753,8 +753,8 @@ nav > .menu > input:checked + label::after{
 }
 
 #btBrancoSelec:hover{
-    background-color: #e7e7e7;
-    border-color: #e7e7e7;
+    background-color: #bababa;
+    border-color: #bababa;
 }
 
 
