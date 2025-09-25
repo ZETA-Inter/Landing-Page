@@ -63,6 +63,24 @@ nav > .menu > label {
     position: relative;
 }
 
+:root {
+    --header-offset: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+[id] {
+    scroll-margin-top: var(--header-offset);
+}
+
+@media (max-width: 800px) {
+    :root {
+        --header-offset: 110px;
+    }
+}
+
 .nav {
     margin-top: 30px;
     color: #000;
