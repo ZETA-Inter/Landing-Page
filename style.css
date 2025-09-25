@@ -361,6 +361,7 @@ nav > .menu > input:checked + label::after{
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 160px;
     margin-top: 60px;
+    margin-bottom: 200px;
 }
 .imagem1{
     margin-left: -10px;
@@ -376,18 +377,18 @@ nav > .menu > input:checked + label::after{
     margin-top: -50px;
 }
 
-#nssEquip{
-    transform: translateX(0%);
+.nssEquip{
+    transform: translateX(-2%);
     width: 100%;
     font-size: 60px;
     color: #043253;
     text-align: center;
     font-weight: lighter;
-    margin-top: 285px;
+    margin-top: 500px;
 }
 
 .subtitulo{
-    transform: translateX(0%);
+    transform: translateX(-2%);
     text-align: center;
     margin-top: -30px;
     width: 100%;
@@ -405,7 +406,10 @@ nav > .menu > input:checked + label::after{
     width: 100%;
 }
 
-.Integrantesprimeiroano{
+.e{
+    margin-top: -200px
+}
+.Integrantesprimeiroano, .Integrantessegundoano{
     position: absolute;
     font-size: 20px;
     color: #000;
@@ -413,8 +417,6 @@ nav > .menu > input:checked + label::after{
     display: inline-block;
     font-weight: lighter;
     margin-left: 141.6px;
-    margin-top: 150x;
-
 }
 
 #Rapha{
@@ -633,8 +635,89 @@ nav > .menu > input:checked + label::after{
 }
 
 
+
+#mission{
+    margin-bottom: 500px;
+}
+
+.missionContent > h1{
+    width: 800px;
+    font-size: 90px;
+    color: #043253;
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 200px;
+    margin-bottom: 2px;
+}
+
+.missionContent > p{
+    width: 760px;
+    font-size: 25px;
+    color: #043253;
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+.missionImg{
+    margin-left: 1000px;
+    margin-top: -500px;
+}
+
+.pataMission{
+    margin-left: 1200px;
+    margin-top: -120px;
+    height: 80px;
+}
+
+.pataMissao{
+    margin-left: 40px;
+    margin-top: -360px;
+}
+
+.clientesContent > h1{
+    width: 800px;
+    font-size: 90px;
+    color: #043253;
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 200px;
+    margin-bottom: 2px;
+}
+
+.clientesContent > p{
+    width: 800px;
+    font-size: 25px;
+    color: #043253;
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 10px;
+}
+
+.pataCliente{
+    margin-left: 40px;
+    margin-top: -470px;
+}
+
+.logoCliente{
+    margin-left: 1000px;
+    margin-top: -100px;
+}
+
+
+
 #planos{
     width: 100%;
+    margin-top: 200px;
 }
 
 .check{
