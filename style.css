@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
 body {
     margin: 0;
     top: 0;
@@ -5,6 +10,7 @@ body {
     font-family: 'Poppins', serif;
     width: 100%;
     overflow-x: hidden;
+    
 }
 
 .header {
@@ -52,7 +58,7 @@ nav > .menu > input{
     display: none;
 }
 
-a{
+nav > .menu > label > a{
     color: #000;
     text-decoration: none;
 }
@@ -281,7 +287,7 @@ nav > .menu > input:checked + label::after{
     display: inline-block;
     font-weight: lighter;
     margin-left: 141.6px;
-    margin-top: 200px;
+    margin-top: 250px;
     margin-bottom: 2px;
 }
 
@@ -320,7 +326,7 @@ nav > .menu > input:checked + label::after{
     width: 100%;
 }
 
-.novoservico{
+.nossoservico{
     margin-top: 100px;
 }
 
@@ -364,12 +370,12 @@ nav > .menu > input:checked + label::after{
     margin-bottom: 200px;
 }
 .imagem1{
-    margin-left: -10px;
+    margin-left: -20px;
     margin-top: -720px;
 }
 
 .imagem2{
-    margin-left: 1370px;
+    margin-left: 1380px;
     margin-top: -100px;
 }
 
@@ -384,7 +390,7 @@ nav > .menu > input:checked + label::after{
     color: #043253;
     text-align: center;
     font-weight: lighter;
-    margin-top: 500px;
+    margin-top: 400px;
 }
 
 .subtitulo{
@@ -400,14 +406,47 @@ nav > .menu > input:checked + label::after{
     width: 100%;
 }
 
+#aboutUs{
+    width: 100%;
+}
 
+
+#Sobrenos{
+    transform: translateX(0%);
+    width: 100%;
+    font-size: 80px;
+    color: #043253;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 150px;
+}
+
+.descriptionUs{
+    width: 650px;
+    font-size: 25px;
+    color: #043253;
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.foto > img{
+    width: 500px;
+    height: 400px;
+    margin-left: 850px;
+    margin-top: -400px;
+    border-radius: 50px;
+}
 
 .equipeContent{
     width: 100%;
 }
 
 .e{
-    margin-top: -200px
+    margin-top: -150px
 }
 .Integrantesprimeiroano, .Integrantessegundoano{
     position: absolute;
@@ -602,6 +641,190 @@ nav > .menu > input:checked + label::after{
     font-size: 12px;
 }
 
+#Alisson{
+    position: absolute;
+    width: 350px;
+    top: -8px;
+    margin-left: 120px;
+}
+
+#Alisson > .nome{
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0077B6;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#Alisson > .nome:hover{
+    color: #0CC0DF;
+}
+
+#Alisson > .descInt{
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+#Bianca{
+    position: absolute;
+    width: 350px;
+    top: 100px;
+    margin-left: 120px;
+}
+
+#Bianca > .nome{
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0077B6;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#Bianca > .nome:hover{
+    color: #0CC0DF;
+}
+
+#Bianca > .descInt{
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+#Julia{
+    position: absolute;
+    width: 350px;
+    top: 205px;
+    margin-left: 120px;
+}
+
+#Julia > .nome{
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0077B6;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#Julia > .nome:hover{
+    color: #0CC0DF;
+}
+
+#Julia > .descInt{
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+#Laura{
+    position: absolute;
+    width: 350px;
+    top: 310px;
+    margin-left: 120px;
+}
+
+#Laura > .nome{
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0077B6;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#Laura > .nome:hover{
+    color: #0CC0DF;
+}
+
+#Laura > .descInt{
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+
+#Raquel{
+    position: absolute;
+    width: 350px;
+    top: -8px;
+    margin-left: 900px;
+}
+
+#Raquel > .nome{
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0077B6;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#Raquel > .nome:hover{
+    color: #0CC0DF;
+}
+
+#Raquel > .descInt{
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+#Sofia{
+    position: absolute;
+    width: 350px;
+    top: 100px;
+    margin-left: 900px;
+}
+
+#Sofia > .nome{
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0077B6;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#Sofia > .nome:hover{
+    color: #0CC0DF;
+}
+
+#Sofia > .descInt{
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+#Sophia{
+    position: absolute;
+    width: 350px;
+    top: 208px;
+    margin-left: 900px;
+}
+
+#Sophia > .nome{
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0077B6;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#Sophia > .nome:hover{
+    color: #0CC0DF;
+}
+
+#Sophia > .descInt{
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+
 .patasboi1{
     height: 280px;
     margin-top: -30px;
@@ -637,7 +860,7 @@ nav > .menu > input:checked + label::after{
 
 
 #mission{
-    margin-bottom: 500px;
+    margin-bottom:400px;
 }
 
 .missionContent > h1{
@@ -671,13 +894,13 @@ nav > .menu > input:checked + label::after{
 
 .pataMission{
     margin-left: 1200px;
-    margin-top: -120px;
+    margin-top: -180px;
     height: 80px;
 }
 
 .pataMissao{
     margin-left: 40px;
-    margin-top: -360px;
+    margin-top: -300px;
 }
 
 .clientesContent > h1{
@@ -1030,12 +1253,14 @@ input {
     margin-bottom: 20px;
 }
 
-#linked{
+#email{
+    margin-top: 3px;
     margin-right: 75px;
     margin-bottom: 20px;
 }
 
 #insta{
+    margin-top: 3px;
     margin-bottom: 20px;
 }
 
@@ -1074,5 +1299,98 @@ input {
     height: 400px;
     width: 500px;
 } 
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.415);
+    border-radius: 50px;
+    text-decoration: none;
+    margin-right: 80px;
+}
+
+.btn > img{
+    width: 30px;
+}
+
+.btn:hover{
+    background-color: rgb(239, 239, 239);
+}
+
+
+footer{
+    background-color: #043253;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
+}
+
+#logoF{
+    margin-top: 30px;
+    margin-left: 5px;
+    height: 180px;
+    width: 180px;
+}
+
+.iconesFooter> img{
+    width: 44px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+#Rapidolink, #contatoFooter{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 70px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.linksRapidos > ul > li > a{
+    color: #D3DDE6;
+    
+}
+
+.linksRapidos > ul > li{
+    margin-bottom: 8px;
+}
+
+.linksRapidos > ul{
+    margin-left: -40px;
+}
+
+.linksRapidos{
+    margin-left: -10px;
+}
+
+.email{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+}
+
+.localizacao{
+    padding-left: 2px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: white;
+}
+
+
+
 
 
