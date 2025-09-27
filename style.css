@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     top: 0;
@@ -14,7 +18,7 @@ body {
     background-color: white;
     opacity: 0.9;
     margin-bottom: 20px;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 main {
@@ -47,38 +51,23 @@ main {
     margin-top: 28%;
 }
 
+nav>.menu {
+    display: inline-block;
+}
 
-nav > .menu > input{
+nav>.menu>input {
     display: none;
 }
 
-a{
+a {
     color: #000;
     text-decoration: none;
 }
 
-nav > .menu > label {
+nav>.menu>label {
     cursor: pointer;
     width: max-content;
     position: relative;
-}
-
-:root {
-    --header-offset: 0px;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-[id] {
-    scroll-margin-top: var(--header-offset);
-}
-
-@media (max-width: 800px) {
-    :root {
-        --header-offset: 110px;
-    }
 }
 
 .nav {
@@ -89,11 +78,7 @@ html {
     gap: 50px;
 }
 
-nav > .menu {
-    display: inline-block;
-}
-
-nav > .menu > label::after{
+nav>.menu>label::after {
     content: "";
     position: absolute;
     left: -10%;
@@ -101,13 +86,12 @@ nav > .menu > label::after{
     height: 3px;
     width: 120%;
     background: darkgray;
-    transform:scaleX(0);
+    transform: scaleX(0);
     opacity: 0;
     transition: opacity 0.5s ease;
-    
 }
 
-nav > .menu > label::before{
+nav>.menu>label::before {
     content: "";
     position: absolute;
     left: -10%;
@@ -115,34 +99,32 @@ nav > .menu > label::before{
     height: 3px;
     width: 120%;
     background: #0CC0DF;
-    transform:scaleX(0);
+    transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.5s ease;
 }
 
-
-nav > .menu > label:hover::after {
+nav>.menu>label:hover::after {
     opacity: 0.4;
     transform: scaleX(0.86);
 }
 
-nav > .menu > input:checked + label::before{
+nav>.menu>input:checked+label::before {
     transform: scaleX(0.86);
 }
 
-nav > .menu > input:checked + label::after{
-    background: transparent; 
+nav>.menu>input:checked+label::after {
+    transform: scaleX(0);
+    background: transparent;
 }
 
-
-/*corpo do site */
 .selecionado>a {
     text-decoration: none;
     color: #000;
 }
 
 
-#Bvindo{
+#Bvindo {
     margin-top: 180px;
     width: 523px;
     position: relative;
@@ -154,11 +136,12 @@ nav > .menu > input:checked + label::after{
     margin-left: 141.6px;
 }
 
-.zetaHighlight{
+.zetaHighlight {
     font-weight: 500;
     color: #043253;
 }
-.hcontent>.subtitle{
+
+.hcontent>.subtitle {
     width: 523px;
     position: relative;
     font-size: 90px;
@@ -170,7 +153,7 @@ nav > .menu > input:checked + label::after{
     margin-bottom: 0;
 }
 
-.description{
+.description {
     width: 612px;
     height: 90;
     position: relative;
@@ -183,7 +166,7 @@ nav > .menu > input:checked + label::after{
     margin-top: 150x;
 }
 
-#home{
+#home {
     display: flex;
 }
 
@@ -201,13 +184,13 @@ nav > .menu > input:checked + label::after{
 }
 
 
-.buttons{
+.buttons {
     position: absolute;
     display: flex;
     margin-top: 20px;
 }
 
-#btn1Cover{
+#btn1Cover {
     background-color: #043253;
     margin-right: 28px;
     margin-left: 141.6px;
@@ -218,20 +201,20 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
 }
 
-#btn1Cover:hover{
+#btn1Cover:hover {
     background-color: #0077B6;
     border: #0077B6;
 }
 
 
-.btn1{  
+.btn1 {
     text-align: center;
     text-decoration: none;
     color: #f6f7ff;
 }
 
 
-#btn2Cover{
+#btn2Cover {
     margin-left: 3px;
     border-radius: 20px;
     height: 68px;
@@ -240,7 +223,7 @@ nav > .menu > input:checked + label::after{
     background-color: white;
 }
 
-.btn2{
+.btn2 {
     text-align: center;
     text-decoration: none;
     color: #18a4e1;
@@ -256,14 +239,16 @@ nav > .menu > input:checked + label::after{
         margin-left: 0;
     }
 
-    .nav{
+    .nav {
         flex-direction: column;
         gap: 20px;
         margin-top: 20px;
         margin-right: 90%;
     }
 
-    #Bvindo, .hcontent > .subtitle, .description {
+    #Bvindo,
+    .hcontent>.subtitle,
+    .description {
         text-align: center;
         margin-left: 0;
     }
@@ -281,17 +266,19 @@ nav > .menu > input:checked + label::after{
         margin-top: 20px;
     }
 
-    #btn1Cover, #btn2Cover {
+    #btn1Cover,
+    #btn2Cover {
         margin-left: 0;
     }
 
-    .btn1, .btn2 {
+    .btn1,
+    .btn2 {
         position: static;
         margin: 0 auto;
     }
 }
 
-#Nssaplicat{
+#Nssaplicat {
     width: 800px;
     font-size: 75px;
     color: #043253;
@@ -303,7 +290,7 @@ nav > .menu > input:checked + label::after{
     margin-bottom: 2px;
 }
 
-#nssappdescription{
+#nssappdescription {
     padding-top: 2px;
     width: 680px;
     font-size: 30px;
@@ -314,7 +301,7 @@ nav > .menu > input:checked + label::after{
     margin-top: 5px;
 }
 
-.celular{
+.celular {
     margin-left: 900px;
     height: 650px;
     margin-top: -450px;
@@ -322,7 +309,7 @@ nav > .menu > input:checked + label::after{
 }
 
 
-.funcionali{
+.funcionali {
     transform: translateY(-45%);
     margin-left: 840px;
     height: 400px;
@@ -330,19 +317,19 @@ nav > .menu > input:checked + label::after{
     margin-top: -800px;
 }
 
-.patinhas{
+.patinhas {
     margin-top: -680px;
 }
 
-#funcionalidades{
+#funcionalidades {
     width: 100%;
 }
 
-.novoservico{
+.novoservico {
     margin-top: 100px;
 }
 
-.funcionalis{
+.funcionalis {
     border: #18a4e1 4px solid;
     border-radius: 30px;
     width: 280px;
@@ -352,19 +339,19 @@ nav > .menu > input:checked + label::after{
     margin-bottom: 50px;
 }
 
-.fserv{
+.fserv {
     margin-top: 10px;
     color: #18a4e1;
     font-weight: 300;
     font-size: 20px;
 }
 
-.fdescrip{
+.fdescrip {
     font-weight: lighter;
     margin-top: -15px;
 }
 
-#Nssserv{
+#Nssserv {
     transform: translateX(0%);
     width: 100%;
     font-size: 60px;
@@ -374,27 +361,28 @@ nav > .menu > input:checked + label::after{
     margin-top: 135px;
 }
 
-.funcontent{
+.funcontent {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 160px;
     margin-top: 60px;
 }
-.imagem1{
+
+.imagem1 {
     margin-left: -10px;
     margin-top: -720px;
 }
 
-.imagem2{
+.imagem2 {
     margin-left: 1370px;
     margin-top: -100px;
 }
 
-.iconesF{
+.iconesF {
     margin-top: -50px;
 }
 
-#nssEquip{
+#nssEquip {
     transform: translateX(0%);
     width: 100%;
     font-size: 60px;
@@ -404,7 +392,7 @@ nav > .menu > input:checked + label::after{
     margin-top: 285px;
 }
 
-.subtitulo{
+.subtitulo {
     transform: translateX(0%);
     text-align: center;
     margin-top: -30px;
@@ -413,17 +401,17 @@ nav > .menu > input:checked + label::after{
     font-size: 20px;
 }
 
-#C{
+#C {
     width: 100%;
 }
 
 
 
-.equipeContent{
+.equipeContent {
     width: 100%;
 }
 
-.Integrantesprimeiroano{
+.Integrantesprimeiroano {
     position: absolute;
     font-size: 20px;
     color: #000;
@@ -435,14 +423,14 @@ nav > .menu > input:checked + label::after{
 
 }
 
-#Rapha{
+#Rapha {
     position: absolute;
     width: 350px;
     top: -8px;
     margin-left: 120px;
 }
 
-#Rapha > .nome{
+#Rapha>.nome {
     font-weight: 200;
     font-size: 18px;
     margin-bottom: 10px;
@@ -451,24 +439,24 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
 }
 
-#Rapha > .nome:hover{
+#Rapha>.nome:hover {
     color: #0CC0DF;
 }
 
-#Rapha > .descInt{
+#Rapha>.descInt {
     margin-top: 10px;
     font-weight: lighter;
     font-size: 12px;
 }
 
-#Matheus{
+#Matheus {
     position: absolute;
     width: 350px;
     top: 100px;
     margin-left: 120px;
 }
 
-#Matheus > .nome{
+#Matheus>.nome {
     font-weight: 200;
     font-size: 18px;
     margin-bottom: 10px;
@@ -477,24 +465,24 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
 }
 
-#Matheus > .nome:hover{
+#Matheus>.nome:hover {
     color: #0CC0DF;
 }
 
-#Matheus > .descInt{
+#Matheus>.descInt {
     margin-top: 10px;
     font-weight: lighter;
     font-size: 12px;
 }
 
-#Lucas{
+#Lucas {
     position: absolute;
     width: 350px;
     top: 205px;
     margin-left: 120px;
 }
 
-#Lucas > .nome{
+#Lucas>.nome {
     font-weight: 200;
     font-size: 18px;
     margin-bottom: 10px;
@@ -503,24 +491,24 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
 }
 
-#Lucas > .nome:hover{
+#Lucas>.nome:hover {
     color: #0CC0DF;
 }
 
-#Lucas > .descInt{
+#Lucas>.descInt {
     margin-top: 10px;
     font-weight: lighter;
     font-size: 12px;
 }
 
-#Caio{
+#Caio {
     position: absolute;
     width: 350px;
     top: 310px;
     margin-left: 120px;
 }
 
-#Caio > .nome{
+#Caio>.nome {
     font-weight: 200;
     font-size: 18px;
     margin-bottom: 10px;
@@ -529,25 +517,25 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
 }
 
-#Caio > .nome:hover{
+#Caio>.nome:hover {
     color: #0CC0DF;
 }
 
-#Caio > .descInt{
+#Caio>.descInt {
     margin-top: 10px;
     font-weight: lighter;
     font-size: 12px;
 }
 
 
-#João{
+#João {
     position: absolute;
     width: 350px;
     top: -8px;
     margin-left: 900px;
 }
 
-#João > .nome{
+#João>.nome {
     font-weight: 200;
     font-size: 18px;
     margin-bottom: 10px;
@@ -556,24 +544,24 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
 }
 
-#João > .nome:hover{
+#João>.nome:hover {
     color: #0CC0DF;
 }
 
-#João > .descInt{
+#João>.descInt {
     margin-top: 10px;
     font-weight: lighter;
     font-size: 12px;
 }
 
-#Nicolas{
+#Nicolas {
     position: absolute;
     width: 350px;
     top: 100px;
     margin-left: 900px;
 }
 
-#Nicolas > .nome{
+#Nicolas>.nome {
     font-weight: 200;
     font-size: 18px;
     margin-bottom: 10px;
@@ -582,24 +570,24 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
 }
 
-#Nicolas > .nome:hover{
+#Nicolas>.nome:hover {
     color: #0CC0DF;
 }
 
-#Nicolas > .descInt{
+#Nicolas>.descInt {
     margin-top: 10px;
     font-weight: lighter;
     font-size: 12px;
 }
 
-#Davi{
+#Davi {
     position: absolute;
     width: 350px;
     top: 208px;
     margin-left: 900px;
 }
 
-#Davi > .nome{
+#Davi>.nome {
     font-weight: 200;
     font-size: 18px;
     margin-bottom: 10px;
@@ -608,54 +596,54 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
 }
 
-#Davi > .nome:hover{
+#Davi>.nome:hover {
     color: #0CC0DF;
 }
 
-#Davi > .descInt{
+#Davi>.descInt {
     margin-top: 10px;
     font-weight: lighter;
     font-size: 12px;
 }
 
-.patasboi1{
+.patasboi1 {
     height: 280px;
     margin-top: -30px;
 }
 
-.patasboi2{
+.patasboi2 {
     height: 250px;
     margin-left: 400px;
 }
 
-.patasboi3{
+.patasboi3 {
     margin-left: 1400px;
     margin-top: -500px;
     margin-bottom: 200px;
 }
 
-.patasboi4{
+.patasboi4 {
     margin-left: 1380px;
     margin-top: -20px;
 }
 
-.col1{
+.col1 {
     height: 400px;
 }
 
 
-.col2{
+.col2 {
     margin-bottom: 100px;
     margin-left: 700px;
     height: 300px;
 }
 
 
-#planos{
+#planos {
     width: 100%;
 }
 
-.check{
+.check {
     margin-top: -5px;
     display: flex;
     align-items: center;
@@ -663,12 +651,12 @@ nav > .menu > input:checked + label::after{
     margin-left: 10px;
 }
 
-.check > img{
+.check>img {
     width: 20px;
     height: 20px;
 }
 
-#tbpreco{
+#tbpreco {
     margin-top: 100px;
     transform: translateX(0%);
     text-align: center;
@@ -678,7 +666,7 @@ nav > .menu > input:checked + label::after{
 
 }
 
-#escPlano{
+#escPlano {
     transform: translateX(0%);
     text-align: center;
     color: #043253;
@@ -687,7 +675,7 @@ nav > .menu > input:checked + label::after{
     margin-top: -30px;
 }
 
-#planosAll{
+#planosAll {
     margin-top: -20px;
     display: flex;
     justify-content: space-between;
@@ -698,7 +686,7 @@ nav > .menu > input:checked + label::after{
 
 
 
-.plano{
+.plano {
     border: #0077B6 2px solid;
     border-radius: 50px;
     width: 300px;
@@ -707,35 +695,36 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
 }
 
-.plano:hover{
+.plano:hover {
     transform: scale(1.05);
     border: #0CC0DF 2px solid;
 }
 
 
 
-.plano > h4,h1{
+.plano>h4,
+h1 {
     text-align: center;
 }
 
-.plano > h4{
+.plano>h4 {
     margin-top: 35px;
     font-weight: lighter;
     color: #043253;
 }
 
-.plano > h1{
+.plano>h1 {
     font-weight: 400;
     margin-top: -25px;
     color: #0077B6;
     font-size: 55px;
 }
 
-.checks{
+.checks {
     margin-top: -30px;
 }
 
-.planoAzul{
+.planoAzul {
     width: 300px;
     height: 480px;
     border-radius: 50px;
@@ -743,50 +732,53 @@ nav > .menu > input:checked + label::after{
     transition: 0.8s;
     cursor: pointer;
 }
-.planoAzul:hover{
+
+.planoAzul:hover {
     transform: scale(1.05);
 }
 
-.planoAzul > h4,h1{
+.planoAzul>h4,
+h1 {
     text-align: center;
 }
 
-.plano > p{
+.plano>p {
     margin-left: 20px;
     font-size: 15px;
     align-items: center;
 
 }
 
-.planoAzul{
+.planoAzul {
     border: #18a4e1 2px solid;
     border-radius: 50px;
     width: 300px;
     height: 480px;
 }
 
-.planoAzul > h4,h1{
+.planoAzul>h4,
+h1 {
     text-align: center;
 }
 
-.planoAzul > img{
+.planoAzul>img {
     vertical-align: middle;
 }
 
-.planoAzul > h4{
+.planoAzul>h4 {
     margin-top: 35px;
     font-weight: lighter;
     color: black;
 }
 
-.planoAzul > h1{
+.planoAzul>h1 {
     font-weight: 400;
     margin-top: -25px;
     color: white;
     font-size: 55px;
 }
 
-.planoAzul > p{
+.planoAzul>p {
     color: white;
     margin-left: 20px;
     font-size: 15px;
@@ -796,7 +788,7 @@ nav > .menu > input:checked + label::after{
 
 
 
-#especific{
+#especific {
     font-size: 12px;
     color: #0CC0DF;
     text-align: center;
@@ -804,7 +796,8 @@ nav > .menu > input:checked + label::after{
     margin-left: -8px;
 }
 
-.btSelecAzul, .btSelecAzul1{
+.btSelecAzul,
+.btSelecAzul1 {
     margin-top: 20px;
     margin-left: 50px;
     width: 200px;
@@ -820,20 +813,21 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
 }
 
-.btSelecAzul1:hover{
-    background-color: #043253;
-    border-color: #043253;
-}
-.btSelecAzul:hover{
+.btSelecAzul1:hover {
     background-color: #043253;
     border-color: #043253;
 }
 
-.btSelecAzul1{
+.btSelecAzul:hover {
+    background-color: #043253;
+    border-color: #043253;
+}
+
+.btSelecAzul1 {
     margin-top: 65px;
 }
 
-#btBrancoSelec{
+#btBrancoSelec {
     margin-top: 25px;
     margin-left: 50px;
     width: 200px;
@@ -849,25 +843,25 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
 }
 
-#btBrancoSelec:hover{
+#btBrancoSelec:hover {
     background-color: #bababa;
     border-color: #bababa;
 }
 
 
-.img1{
+.img1 {
     margin-left: 1320px;
     margin-top: -700px;
 }
 
-.img2{
+.img2 {
     margin-left: -15px;
 }
 
 
 
 
-#entContat{
+#entContat {
     width: 800px;
     font-size: 75px;
     color: #043253;
@@ -879,7 +873,7 @@ nav > .menu > input:checked + label::after{
     margin-bottom: 2px;
 }
 
-.descriptioncontact{
+.descriptioncontact {
     padding-top: 2px;
     width: 700px;
     font-size: 18px;
@@ -890,7 +884,7 @@ nav > .menu > input:checked + label::after{
     margin-top: 5px;
 }
 
-.contactUs{
+.contactUs {
     height: 90;
     position: relative;
     font-size: 25px;
@@ -900,7 +894,7 @@ nav > .menu > input:checked + label::after{
     margin-top: 5px;
 }
 
-.contactUs > #nomeContato{
+.contactUs>#nomeContato {
     display: flex;
     gap: 10px;
     width: 620px;
@@ -911,7 +905,7 @@ nav > .menu > input:checked + label::after{
     align-items: center;
 }
 
-.contactUs > #emailContato{
+.contactUs>#emailContato {
     display: flex;
     gap: 10px;
     width: 620px;
@@ -926,12 +920,12 @@ nav > .menu > input:checked + label::after{
     align-items: center;
 }
 
-.contactUs > label{
+.contactUs>label {
     padding-top: 5px;
 }
 
-.main{
-    max-width:100%;
+.main {
+    max-width: 100%;
 }
 
 
@@ -945,7 +939,7 @@ input {
 }
 
 
-.IconsContato{
+.IconsContato {
     width: 750px;
     height: 90;
     position: relative;
@@ -960,22 +954,22 @@ input {
 }
 
 
-#zap{
+#zap {
     margin-right: 75px;
     margin-bottom: 20px;
 }
 
-#linked{
+#linked {
     margin-right: 75px;
     margin-bottom: 20px;
 }
 
-#insta{
+#insta {
     margin-bottom: 20px;
 }
 
 
-#Enviar{
+#Enviar {
     background-color: #0077B6;
     color: white;
     width: 310px;
@@ -991,23 +985,21 @@ input {
     cursor: pointer;
 }
 
-#Enviar:hover{
+#Enviar:hover {
     background-color: #043253;
     border: #043253 solid;
     color: rgb(227, 226, 226);
 }
 
-.boizao{
+.boizao {
     margin-left: 1010px;
     margin-top: -355px;
 }
 
-.patadoboi{
+.patadoboi {
     margin-left: 800px;
     margin-top: -600px;
     margin-bottom: 200px;
     height: 400px;
     width: 500px;
-} 
-
-
+}
