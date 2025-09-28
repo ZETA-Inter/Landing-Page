@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="menuAdm.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="criarAdm.css">
     <link rel="shortcut icon" href="./assets/LOGO ZETA - 5.png" type="image/x-icon">
     <title>Menu ADM</title>
 </head>
@@ -24,9 +24,9 @@
         </div>
     </header>
     <main>
-        <div class="tabelaADM">
-            <h1>Tabela ADM</h1>
-            <h2>Selecione a operação que deseja realizar</h2>
+        <div class="inserirADM">
+            <h1>Criar ADM</h1>
+            <h2>Insira os seguintes campos</h2>
         </div>
         <div class="sidebar">
             <div class="icon active">
@@ -48,33 +48,13 @@
                 <img src="./assets/icon6BarADM.svg" alt="Ícone 6">
             </div>
         </div>
-        <div class="opcoes">
-            <div class="crud">
-                <div class="operacao">
-                    <p>Criar</p>
-                    <img src="./assets/lapisCRUD.svg" >
-                </div>
-            </div>
-            <div class="crud">
-                <div class="operacao">
-                    <p>Consultar</p>
-                    <img src="./assets/livroConsulta.svg">
-                </div>
-            </div>
-            <div class="crud">
-                <div class="operacao">
-                    <p>Atualizar</p>
-                    <img src="./assets/atualizar.svg">
-                </div>
-            </div>
-            <div class="crud">
-                <div class="operacao">
-                    <p>Remover</p>
-                    <img src="./assets/remover.svg">
-                </div>
-            </div>
+        <div class="campos">
+            <form>
+                <input type="email" placeholder="Email" name="email" id="email"/>
+                <input type="password" placeholder="Senha" name="senha" id="senha">
+                <button type="submit">Inserir</button>
+            </form>
         </div>
-        
     </main>
 </body>
 </html>

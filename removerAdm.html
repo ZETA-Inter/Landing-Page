@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="menuAdm.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="removerAdm.css">
     <link rel="shortcut icon" href="./assets/LOGO ZETA - 5.png" type="image/x-icon">
     <title>Menu ADM</title>
 </head>
@@ -24,9 +24,9 @@
         </div>
     </header>
     <main>
-        <div class="tabelaADM">
-            <h1>Tabela ADM</h1>
-            <h2>Selecione a operação que deseja realizar</h2>
+        <div class="removerADM">
+            <h1>Remover ADM</h1>
+            <h2>Insira o ID do Adm que deseja remover</h2>
         </div>
         <div class="sidebar">
             <div class="icon active">
@@ -48,33 +48,12 @@
                 <img src="./assets/icon6BarADM.svg" alt="Ícone 6">
             </div>
         </div>
-        <div class="opcoes">
-            <div class="crud">
-                <div class="operacao">
-                    <p>Criar</p>
-                    <img src="./assets/lapisCRUD.svg" >
-                </div>
-            </div>
-            <div class="crud">
-                <div class="operacao">
-                    <p>Consultar</p>
-                    <img src="./assets/livroConsulta.svg">
-                </div>
-            </div>
-            <div class="crud">
-                <div class="operacao">
-                    <p>Atualizar</p>
-                    <img src="./assets/atualizar.svg">
-                </div>
-            </div>
-            <div class="crud">
-                <div class="operacao">
-                    <p>Remover</p>
-                    <img src="./assets/remover.svg">
-                </div>
-            </div>
+        <div class="campos">
+            <form>
+                <input type="number" placeholder="ID Administrador" name="email" id="email"/>
+                <button type="submit">Remover</button>
+            </form>
         </div>
-        
     </main>
 </body>
 </html>

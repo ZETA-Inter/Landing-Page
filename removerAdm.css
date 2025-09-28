@@ -86,7 +86,6 @@ nav > .menu > input:checked + label::before{
 nav > .menu > input:checked + label::after{
     background: transparent; 
 }
-
 .sidebar {
     position: fixed;
     top: 25%;
@@ -119,58 +118,61 @@ nav > .menu > input:checked + label::after{
     border-radius: 20px;
     transform: scale(1.3);
 }
-.tabelaADM > h1{
+
+.removerADM > h1{
     width: 100%;
     font-size: 80px;
     color: #043253;
     text-align: center;
     font-weight: lighter;
-    margin-top: 80px;
+    margin-top: 70px;
 }
-.tabelaADM > h2{
+.removerADM > h2{
     color: #18a4e1;
     width: 100%;
     text-align: center;
     font-weight: lighter;
     margin-top: -60px;
 }
-.opcoes{
-    display: flex;
-    flex-direction: row;
-    gap: 55px;
-    justify-content: center;
-}
-.crud{
+.campos{
     text-align: center;
-    border: #18a4e1 solid 3px;
-    border-radius: 14px;
-    width: 10%;
-    height: 18%;
     margin-top: 50px;
-    padding-bottom: 30px;
-    transition: 1.8 ease;
-    cursor: pointer;
 }
-.crud:hover{
-    transform: scale(1.1);
-    border: #18a4e1 solid 4px;
+.campos > form{
+    display: grid;
+    width: 37%;
+    height: 20%;
+    margin: 0 auto;
+    gap: 30px;
 }
-a,
-a:visited,
-a:hover,
-a:active {
-    text-decoration: none;
-    color: inherit;
+.campos > form > input{
+    border: 2px solid #18a4e1;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px;
+    padding: 16px;
+    font-family: 'Poppins', serif;
+    font-size: 16px;
+    font-weight: lighter;
+    outline: none;
+}
+.campos > form > input:active{
+    border: 3px solid #18a4e1;
 }
 
-.operacao > p{
-    text-align: center;
-    font-weight: lighter;
-    font-size: 23px;
-    width: 100%;
-}
-.operacao > img{
-    margin: -10px;
-    width: 50px;
+.campos > form > button{
+    border-radius: 20px;
+    width: 200px;
     height: 50px;
+    border: solid;
+    font-family: 'Poppins', serif;
+    font-size: 20px;
+    color: aliceblue;
+    background-color: #18a4e1;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
+.campos > form > button:hover{
+    background-color: #0076B6;
+    transform: scale(1.1);
+}   
