@@ -14,41 +14,41 @@ body {
 .header {
     position: fixed;
     width: 100%;
-    margin-top: -32px;
+    margin-top: -4vh;
     background-color: white;
     opacity: 0.9;
-    margin-bottom: 20px;
     z-index: 1000;
 }
 
 main {
-    margin-top: -30px;
+    margin-top: -4vh;
 }
 
 .container {
     display: flex;
-    gap: 650px;
+    gap: 35vw;
     margin: 0 auto;
-    margin-top: 34px;
+    margin-top: 4.5vh;
 }
 
 .logo {
-    width: 82.748px;
-    height: 80.198px;
+    width: 4.9em;
+    height: 4.7rem;
     color: #043253;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: 500px;
     display: flex;
+    margin-left: 8vw;
     gap: 16px;
 }
 
-.logo>img {
-    margin-bottom: 10px;
-    margin-left: 127px;
+.logo>span {
+    margin-top: 3.2vh;
 }
 
-.logo>span {
-    margin-top: 28%;
+a {
+    color: #000;
+    text-decoration: none;
 }
 
 nav>.menu {
@@ -59,11 +59,6 @@ nav>.menu>input {
     display: none;
 }
 
-a {
-    color: #000;
-    text-decoration: none;
-}
-
 nav>.menu>label {
     cursor: pointer;
     width: max-content;
@@ -71,19 +66,19 @@ nav>.menu>label {
 }
 
 .nav {
-    margin-top: 30px;
+    margin-top: 1.9vw;
     color: #000;
-    font-size: 20px;
+    font-size: 1.25rem;
     display: flex;
-    gap: 50px;
+    gap: 3.5vw;
 }
 
-nav>.menu>label::after {
+nav>.menu>label:hover::after {
     content: "";
     position: absolute;
     left: -10%;
     bottom: 0;
-    height: 3px;
+    height: 0.15em;
     width: 120%;
     background: darkgray;
     transform: scaleX(0);
@@ -96,12 +91,23 @@ nav>.menu>label::before {
     position: absolute;
     left: -10%;
     bottom: 0;
-    height: 3px;
+    height: 0.15em;
     width: 120%;
     background: #0CC0DF;
     transform: scaleX(0);
     transform-origin: center;
-    transition: transform 0.5s ease;
+    transition-duration: 0.75s;
+}
+
+nav>.menu>input:checked + label::before {
+    transform: scaleX(0.86);
+    transition-duration: 0.75s;
+}
+
+nav>.menu>input:checked + label::after {
+    transform: scaleX(0);
+    opacity: 0;
+    background: transparent;
 }
 
 nav>.menu>label:hover::after {
