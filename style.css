@@ -66,9 +66,9 @@ nav>.menu>label {
 
 .nav {
     margin-top: 2vw;
-    margin-left: 15vw;
+    margin-left: 14.9vw;
     color: #000;
-    font-size: 1.25vw;
+    font-size: 1.26vw;
     display: flex;
     gap: 3.5vw;
 }
@@ -283,6 +283,11 @@ nav>.menu>input:checked+label::after {
         position: absolute;
     }
 
+    #nssapp {
+        position: relative;
+        top: 62vw;
+    }
+
     #btn1Cover {
         margin-left: 15vw;
         width: 25vw;
@@ -297,51 +302,51 @@ nav>.menu>input:checked+label::after {
     }
 
     .buttons>button>a {
-    font-size: 1.3vw;
+        font-size: 1.3vw;
     }
 }
 
 #Nssaplicat {
-    width: 800px;
-    font-size: 75px;
+    width: 40vw;
+    font-size: 4.9vw;
     color: #043253;
     text-align: left;
     display: inline-block;
     font-weight: lighter;
-    margin-left: 141.6px;
-    margin-top: 200px;
-    margin-bottom: 2px;
+    margin-left: 9.2vw;
+    margin-top: 13vw;
+    margin-bottom: 0.2vw;
 }
 
 #nssappdescription {
-    padding-top: 2px;
-    width: 680px;
-    font-size: 30px;
+    padding-top: 0.2vw;
+    width: 44.2vw;
+    font-size: 1.947vw;
     color: #000;
     text-align: left;
     font-weight: lighter;
-    margin-left: 141.6px;
-    margin-top: 5px;
+    margin-left: 9.2vw;
+    margin-top: 0.3vw;
 }
 
 .celular {
-    margin-left: 900px;
-    height: 650px;
-    margin-top: -450px;
-
+    margin-left: 59vw;
+    height: 42vw;
+    margin-top: -30vw;
 }
 
 
 .funcionali {
     transform: translateY(-45%);
-    margin-left: 840px;
-    height: 400px;
-    margin-bottom: 10px;
-    margin-top: -800px;
+    margin-left: 55vw;
+    height: 26vw;
+    margin-bottom: 1vw;
+    margin-top: -80vw;
 }
 
 .patinhas {
-    margin-top: -680px;
+    margin-top: -40vw;
+    width: 20vw;
 }
 
 #funcionalidades {
