@@ -26,16 +26,16 @@ main {
 
 .container {
     display: flex;
-    gap: 35vw;
+    gap: 32vw;
     margin: 0 auto;
     margin-top: 4.5vh;
 }
 
 .logo {
-    width: 4.9em;
-    height: 4.7rem;
+    width: 4.5em;
+    height: 4.3rem;
     color: #043253;
-    font-size: 1.5rem;
+    font-size: 1.55rem;
     font-weight: 500px;
     display: flex;
     margin-left: 8vw;
@@ -53,6 +53,7 @@ a {
 
 nav>.menu {
     display: inline-block;
+    gap: 2vw;
 }
 
 nav>.menu>input {
@@ -78,7 +79,7 @@ nav>.menu>label:hover::after {
     position: absolute;
     left: -10%;
     bottom: 0;
-    height: 0.15em;
+    height: 0.16em;
     width: 120%;
     background: darkgray;
     transform: scaleX(0);
@@ -91,7 +92,7 @@ nav>.menu>label::before {
     position: absolute;
     left: -10%;
     bottom: 0;
-    height: 0.15em;
+    height: 0.16em;
     width: 120%;
     background: #0CC0DF;
     transform: scaleX(0);
@@ -99,12 +100,12 @@ nav>.menu>label::before {
     transition-duration: 0.75s;
 }
 
-nav>.menu>input:checked + label::before {
+nav>.menu>input:checked+label::before {
     transform: scaleX(0.86);
     transition-duration: 0.75s;
 }
 
-nav>.menu>input:checked + label::after {
+nav>.menu>input:checked+label::after {
     transform: scaleX(0);
     opacity: 0;
     background: transparent;
@@ -122,6 +123,69 @@ nav>.menu>input:checked+label::before {
 nav>.menu>input:checked+label::after {
     transform: scaleX(0);
     background: transparent;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        display: flex;
+        gap: 20vw;
+    }
+}
+
+.menu-btn {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    /* Esconde no desktop */
+    user-select: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 1500px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* mantém espaço entre logo e menu */
+    flex-wrap: nowrap; /* evita que quebre a linha */
+    width: 100%;
+    max-width: 100%; /* garante que não ultrapasse o tamanho da tela */
+    }
+    .nav {
+        display: flex;
+        gap: 20px; /* espaçamento entre os itens do menu */
+        flex-shrink: 0; /* impede que o menu encolha demais */
+    }
+
+    .menu-btn {
+        display: block;
+        /* Mostra o hambúrguer */
+    }
+
+    .nav {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #fff;
+        border: 1px solid #ddd;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        display: none;
+        /* Esconde o menu por padrão */
+    }
+
+    #menu-toggle:checked~.nav {
+        display: flex;
+    }
 }
 
 .selecionado>a {
