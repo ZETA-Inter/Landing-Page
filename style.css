@@ -353,10 +353,6 @@ nav>.menu>input:checked+label::after {
     width: 100%;
 }
 
-.novoservico {
-    margin-top: 100px;
-}
-
 .funcionalis {
     border: #18a4e1 4px solid;
     border-radius: 30px;
@@ -382,28 +378,30 @@ nav>.menu>input:checked+label::after {
 #Nssserv {
     transform: translateX(0%);
     width: 100%;
-    font-size: 60px;
+    font-size: 3.9vw;
     color: #043253;
     text-align: center;
     font-weight: lighter;
-    margin-top: 135px;
+    margin-top: 10vw;
 }
 
 .funcontent {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     margin-left: 160px;
     margin-top: 60px;
 }
 
 .imagem1 {
-    margin-left: -10px;
-    margin-top: -720px;
+    margin-left: -0.8vw;
+    margin-top: -47.1vw;
+    width: 3vw;
 }
 
 .imagem2 {
-    margin-left: 1370px;
-    margin-top: -100px;
+    margin-left: 90vw;
+    margin-top: -6.6vw;
+    width: 3vw;
 }
 
 .iconesF {
