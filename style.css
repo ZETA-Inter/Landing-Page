@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 .header {
     position: fixed;
     width: 100%;
-    margin-top: -4vh;
+    margin-top: 5vw;
     background-color: white;
     opacity: 0.9;
     z-index: 1000;
@@ -29,18 +30,18 @@ main {
 }
 
 .logo {
-    width: 4.5em;
-    height: 4.3rem;
+    width: 4.5vw;
+    height: 4.6vw;
     color: #043253;
-    font-size: 1.55rem;
+    font-size: 1.6vw;
     font-weight: 500px;
     display: flex;
     margin-left: 8vw;
-    gap: 16px;
+    gap: 1vw;
 }
 
 .logo>span {
-    margin-top: 3.2vh;
+    margin-top: 1.6vw;
 }
 
 a {
@@ -64,10 +65,10 @@ nav>.menu>label {
 }
 
 .nav {
-    margin-top: 4.5vh;
-    margin-left: 12vw;
+    margin-top: 2vw;
+    margin-left: 15vw;
     color: #000;
-    font-size: 1.25rem;
+    font-size: 1.25vw;
     display: flex;
     gap: 3.5vw;
 }
@@ -134,13 +135,7 @@ nav>.menu>input:checked+label::after {
     display: none;
 }
 
-@media (max-width: 1220px) {
-    .nav {
-        margin-left: 1vw;
-    }
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 668px) {
     .header {
     display: flex;
     align-items: center;
@@ -152,15 +147,14 @@ nav>.menu>input:checked+label::after {
 
     .nav {
         display: flex;
-        gap: 20px;
-        flex-shrink: 0;
     }
 
     .menu-btn {
         display: block;
-        position: absolute;
+        position: relative;
         right: 15px;
-        top: 2.5vh;
+        top: 0.2vh;
+        font-size: 2.5vw;
     }
 
     .nav {
@@ -286,7 +280,7 @@ nav>.menu>input:checked+label::after {
 
 @media (max-width: 768px) {
     #home {
-        position: fixed;
+        position: absolute;
     }
 
     #btn1Cover {
