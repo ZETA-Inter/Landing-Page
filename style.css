@@ -27,13 +27,14 @@ body {
     position: fixed;
     width: 100%;
     height: 5vw;
+    margin-top: 5vw;
     background-color: white;
     opacity: 0.9;
     z-index: 1000;
     display: flex;
     gap: 20vw;
     margin: 0 auto;
-    margin-top: 4vh;
+    margin-top: 4.5vh;
 }
 
 main {
@@ -41,19 +42,18 @@ main {
 }
 
 .logo {
-    width: 4.5rem;
-    height: 4.3rem;
+    width: 4.5vw;
+    height: 4.6vw;
     color: #043253;
-    font-size: 1.54rem;
+    font-size: 1.6vw;
     font-weight: 500px;
     display: flex;
-    margin-left: 8.3vw;
-    margin-top: 0.4vw;
+    margin-left: 8vw;
     gap: 1vw;
 }
 
 .logo>span {
-    margin-top: 3vh;
+    margin-top: 1.6vw;
 }
 
 a {
@@ -77,10 +77,10 @@ nav>.menu>label {
 }
 
 .nav {
-    margin-top: 5vh;
+    margin-top: 2vw;
     margin-left: 14.9vw;
     color: #000;
-    font-size: 1.2rem;
+    font-size: 1.26vw;
     display: flex;
     gap: 3.5vw;
 }
@@ -90,7 +90,7 @@ nav > .menu > label::before{
     position: absolute;
     left: -10%;
     bottom: 0;
-    height: 0.16rem;
+    height: 0.2vw;
     width: 120%;
     background: #0CC0DF;
     transform: scaleX(0);
@@ -105,7 +105,7 @@ nav > .menu > label:hover::after {
     position: absolute;
     left: -10%;
     bottom: 0;
-    height: 0.16rem;
+    height: 0.2vw;
     width: 120%;
     background: darkgray;
 }
@@ -221,18 +221,11 @@ nav > .menu > input:checked + label::after{
     display: flex;
 }
 
-.mainImg {
-    margin-top: 14.5vw;
-    margin-left: -28%;
+.himage {
     position: relative;
-    width: 30vw;
-}
-
-.himg2 {
-    position: relative;
-    top: -33.9vw;
-    right: 13.2vw;
-    width: 16.5vw;
+    width: 50vw;
+    margin-right: 10vw;
+    margin-top: 9vw;
 }
 
 .buttons {
@@ -327,7 +320,7 @@ nav > .menu > input:checked + label::after{
     display: inline-block;
     font-weight: lighter;
     margin-left: 9.2vw;
-    margin-top: 13vw;
+    margin-top: 20vw;
     margin-bottom: 0.2vw;
 }
 
@@ -431,20 +424,20 @@ nav > .menu > input:checked + label::after{
 #nssEquip {
     transform: translateX(0%);
     width: 100%;
-    font-size: 60px;
+    font-size: 3.8vw;
     color: #043253;
     text-align: center;
     font-weight: lighter;
-    margin-top: 285px;
+    margin-top: -30vw;
 }
 
 .subtitulo {
     transform: translateX(0%);
     text-align: center;
-    margin-top: -30px;
+    margin-top: -2vw;
     width: 100%;
     color: #0CC0DF;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 #C {
@@ -456,28 +449,28 @@ nav > .menu > input:checked + label::after{
 }
 
 .Integrantesprimeiroano {
-    position: absolute;
-    font-size: 20px;
+    position: relative;
+    font-size: 2vw;
     color: #000;
     text-align: left;
     display: inline-block;
     font-weight: lighter;
-    margin-left: 141.6px;
-    margin-top: 150x;
+    margin-left: 10vw;
+    margin-top: 2vw;
 
 }
 
 #Rapha {
     position: absolute;
-    width: 350px;
-    top: -8px;
-    margin-left: 120px;
+    width: 21vw;
+    top: -0.5vw;
+    margin-left: 8vw;
 }
 
 #Rapha>.nome {
     font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 1.2vw;
+    margin-bottom: 0.7vw;
     color: #0077B6;
     transition: 0.4s;
     cursor: pointer;
@@ -488,22 +481,21 @@ nav > .menu > input:checked + label::after{
 }
 
 #Rapha>.descInt {
-    margin-top: 10px;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 0.79vw;
 }
 
 #Matheus {
     position: absolute;
-    width: 350px;
-    top: 100px;
-    margin-left: 120px;
+    width: 21vw;
+    top: 6.5vw;
+    margin-left: 8vw;
 }
 
 #Matheus>.nome {
     font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 1.2vw;
+    margin-bottom: 0.5vw;
     color: #0077B6;
     transition: 0.4s;
     cursor: pointer;
@@ -514,22 +506,22 @@ nav > .menu > input:checked + label::after{
 }
 
 #Matheus>.descInt {
-    margin-top: 10px;
+    margin-top: 0.6vw;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 0.79vw;
 }
 
 #Lucas {
     position: absolute;
-    width: 350px;
-    top: 205px;
-    margin-left: 120px;
+    width: 21vw;
+    top: 13.45vw;
+    margin-left: 8vw;
 }
 
 #Lucas>.nome {
     font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
     color: #0077B6;
     transition: 0.4s;
     cursor: pointer;
@@ -540,22 +532,22 @@ nav > .menu > input:checked + label::after{
 }
 
 #Lucas>.descInt {
-    margin-top: 10px;
+    margin-top: -0.2vw;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 0.79vw;
 }
 
 #Caio {
     position: absolute;
-    width: 350px;
-    top: 310px;
-    margin-left: 120px;
+    width: 21vw;
+    top: 20.6vw;
+    margin-left: 8vw;
 }
 
 #Caio>.nome {
     font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
     color: #0077B6;
     transition: 0.4s;
     cursor: pointer;
@@ -566,23 +558,23 @@ nav > .menu > input:checked + label::after{
 }
 
 #Caio>.descInt {
-    margin-top: 10px;
+    margin-top: -0.2vw;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 0.79vw;
 }
 
 
 #João {
     position: absolute;
-    width: 350px;
-    top: -8px;
-    margin-left: 900px;
+    width: 21vw;
+    top: -0.5vw;
+    margin-left: 59vw;
 }
 
 #João>.nome {
     font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
     color: #0077B6;
     transition: 0.4s;
     cursor: pointer;
@@ -593,22 +585,22 @@ nav > .menu > input:checked + label::after{
 }
 
 #João>.descInt {
-    margin-top: 10px;
+    margin-top: -0.3vw;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 0.79vw;
 }
 
 #Nicolas {
     position: absolute;
-    width: 350px;
-    top: 100px;
-    margin-left: 900px;
+    width: 21vw;
+    top: 6.7vw;
+    margin-left: 59vw;
 }
 
 #Nicolas>.nome {
     font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
     color: #0077B6;
     transition: 0.4s;
     cursor: pointer;
@@ -619,22 +611,22 @@ nav > .menu > input:checked + label::after{
 }
 
 #Nicolas>.descInt {
-    margin-top: 10px;
+    margin-top: -0.3vw;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 0.79vw;
 }
 
 #Davi {
     position: absolute;
-    width: 350px;
-    top: 208px;
-    margin-left: 900px;
+    width: 21vw;
+    top: 13.9vw;
+    margin-left: 59vw;
 }
 
 #Davi>.nome {
     font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
     color: #0077B6;
     transition: 0.4s;
     cursor: pointer;
@@ -645,9 +637,9 @@ nav > .menu > input:checked + label::after{
 }
 
 #Davi>.descInt {
-    margin-top: 10px;
+    margin-top: -0.3vw;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 0.79vw;
 }
 
 .patasboi1 {
