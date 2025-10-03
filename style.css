@@ -90,7 +90,7 @@ nav>.menu>label::before {
     position: absolute;
     left: -10%;
     bottom: 0;
-    height: 0.2rem;
+    height: 0.18rem;
     width: 120%;
     background: #0CC0DF;
     transform: scaleX(0);
@@ -105,7 +105,7 @@ nav>.menu>label:hover::after {
     position: absolute;
     left: -10%;
     bottom: 0;
-    height: 0.2rem;
+    height: 0.18rem;
     width: 120%;
     background: darkgray;
 }
@@ -264,22 +264,30 @@ nav>.menu>input:checked+label::after {
 }
 
 @media (max-width: 1100px) {
-    #home {
-        flex-direction: column;
-        row-gap: 25vh;
-    }
-
     #Bvindo {
-        width: 80vw;
+        width: 50vw;
+        margin-left: 4.1vw;
     }
 
     .description {
-        width: 70vw;
+        opacity: 0;
     }
 
     .himage {
         width: 35rem;
-        margin: 0 auto;
+        margin-left: -20vw;
+    }
+
+    #btn1Cover {
+        position: relative;
+        margin-top: -15vh;
+        left: -5vw;
+    }
+
+    #btn2Cover {
+        position: relative;
+        margin-top: -15vh;
+        left: -5vh;
     }
 }
 
@@ -360,21 +368,27 @@ nav>.menu>input:checked+label::after {
         height: 67vw;
     }
 
+    .buttons {
+        flex-direction: column;
+    }
+
     #btn1Cover {
         border-radius: 1.5em;
-        height: 10.3vh;
-        width: 25vw;
+        height: 11vh;
+        width: 75vw;
+        margin-left: 16vw;
     }
 
     #btn2Cover {
         border-radius: 1.5em;
-        height: 10.3vh;
-        width: 25vw;
+        height: 11vh;
+        width: 75vw;
+        margin-top: 2vh;
+        margin-left: 21vw;
     }
 
     .buttons>button>a {
-        font-size: 2.17vh;
-        font-size: 1.9vw;
+        font-size: 0.9rem;
     }
 
     #nssapp {
@@ -385,6 +399,11 @@ nav>.menu>input:checked+label::after {
     #funcionalidades {
         position: relative;
         top: 10000vw;
+    }
+
+    .e {
+        position: relative;
+        top: 1000vw;
     }
 }
 
