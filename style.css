@@ -26,15 +26,14 @@ body {
 .header {
     position: fixed;
     width: 100%;
-    height: 5vw;
-    margin-top: 5vw;
+    height: 12vh;
     background-color: white;
     opacity: 0.9;
     z-index: 1000;
     display: flex;
     gap: 20vw;
     margin: 0 auto;
-    margin-top: 4.5vh;
+    margin-top: 4vh;
 }
 
 main {
@@ -42,18 +41,19 @@ main {
 }
 
 .logo {
-    width: 4.5vw;
-    height: 4.6vw;
+    width: 4.5rem;
+    height: 4.3rem;
     color: #043253;
-    font-size: 1.6vw;
+    font-size: 1.54rem;
     font-weight: 500px;
     display: flex;
-    margin-left: 8vw;
+    margin-left: 8.3vw;
+    margin-top: 1vh;
     gap: 1vw;
 }
 
 .logo>span {
-    margin-top: 1.6vw;
+    margin-top: 3vh;
 }
 
 a {
@@ -77,10 +77,10 @@ nav>.menu>label {
 }
 
 .nav {
-    margin-top: 2vw;
+    margin-top: 5vh;
     margin-left: 14.9vw;
     color: #000;
-    font-size: 1.26vw;
+    font-size: 1.2rem;
     display: flex;
     gap: 3.5vw;
 }
@@ -90,7 +90,7 @@ nav > .menu > label::before{
     position: absolute;
     left: -10%;
     bottom: 0;
-    height: 0.2vw;
+    height: 0.2rem;
     width: 120%;
     background: #0CC0DF;
     transform: scaleX(0);
@@ -105,7 +105,7 @@ nav > .menu > label:hover::after {
     position: absolute;
     left: -10%;
     bottom: 0;
-    height: 0.2vw;
+    height: 0.2rem;
     width: 120%;
     background: darkgray;
 }
@@ -144,6 +144,11 @@ nav > .menu > input:checked + label::after{
 }
 
 @media (max-width: 668px) {
+    .logo {
+        position: relative;
+        top: -0.8vh;
+    }
+    
     .header {
     display: flex;
     align-items: center;
@@ -160,15 +165,15 @@ nav > .menu > input:checked + label::after{
     .menu-btn {
         display: block;
         position: relative;
-        right: 15px;
+        right: 5vw;
         top: 0.2vh;
-        font-size: 2.5vw;
+        font-size: 1.5rem;
     }
 
     .nav {
         position: absolute;
-        top: 40px;
-        right: 20px;
+        top: 6vh;
+        right: 3vw;
         background: #fff;
         border: 1px solid #ddd;
         flex-direction: column;
@@ -188,11 +193,11 @@ nav > .menu > input:checked + label::after{
 }
 
 #Bvindo {
-    margin-top: 16vw;
-    width: 40vw;
-    line-height: 5vw;
+    margin-top: 33vh;
+    width: 628px;
+    line-height: 10.5vh;
     position: relative;
-    font-size: 5.9vw;
+    font-size: 5.6rem;
     color: #000;
     text-align: left;
     display: inline-block;
@@ -206,36 +211,47 @@ nav > .menu > input:checked + label::after{
 }
 
 .description {
-    width: 40vw;
+    width: 600px;
     position: relative;
-    font-size: 1.3vw;
+    font-size: 1.2rem;
     color: #000;
     text-align: left;
     display: inline-block;
     font-weight: lighter;
     margin-left: 9.2vw;
-    margin-top: -10px;
-}
-
-#home {
-    display: flex;
+    margin-top: -1vh;
 }
 
 .himage {
     position: relative;
-    width: 50vw;
-    margin-right: 10vw;
-    margin-top: 9vw;
+    top: -53vh;
+    margin-left: 57vw;
+    height: 32rem;
+}
+
+@media (max-width: 1100px) {
+    #Bvindo {
+        width: 80vw;
+    }
+
+    .description {
+        width: 70vw;
+    }
+    
+    .himage {
+        margin-top: 600px;
+        margin-left: 23.5vw;
+    }
 }
 
 .buttons {
     position: absolute;
     display: flex;
-    margin-top: 1vw;
+    margin-top: 0.9vh;
 }
 
 .buttons>button>a {
-    font-size: 0.9vw;
+    font-size: 0.9rem;
     align-items: center;
     vertical-align: middle;
 }
@@ -244,9 +260,9 @@ nav > .menu > input:checked + label::after{
     background-color: #043253;
     margin-right: 1.9vw;
     margin-left: 9.2vw;
-    border-radius: 1.3vw;
-    height: 4.43vw;
-    width: 12vw;
+    border-radius: 1.5em;
+    height: 4.3rem;
+    width: 12rem;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -266,10 +282,10 @@ nav > .menu > input:checked + label::after{
 
 #btn2Cover {
     margin-left: 0.15vw;
-    border-radius: 1.3vw;
-    height: 4.43vw;
+    border-radius: 1.5em;
+    height: 4.3rem;
     border: 2px solid #18a4e1;
-    width: 12vw;
+    width: 12rem;
     background-color: white;
 }
 
@@ -284,31 +300,22 @@ nav > .menu > input:checked + label::after{
         position: absolute;
     }
 
+    #btn1Cover {
+    border-radius: 1.5em;
+    height: 4.3rem;
+    width: 12rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
     #nssapp {
         position: relative;
-        top: 62vw;
-    }
-
-    #btn1Cover {
-        margin-left: 15vw;
-        width: 25vw;
-        height: 5.3vw;
-    }
-
-    #btn2Cover {
-        margin-top: 7vw;
-        margin-left: -26.8vw;
-        width: 25vw;
-        height: 5.3vw;
-    }
-
-    .buttons>button>a {
-        font-size: 1.3vw;
+        top: 100000vw;
     }
 
     #funcionalidades {
         position: relative;
-        top: 63vw;
+        top: 10000vw;
     }
 }
 
@@ -320,7 +327,7 @@ nav > .menu > input:checked + label::after{
     display: inline-block;
     font-weight: lighter;
     margin-left: 9.2vw;
-    margin-top: 20vw;
+    margin-top: 13vw;
     margin-bottom: 0.2vw;
 }
 
@@ -424,20 +431,20 @@ nav > .menu > input:checked + label::after{
 #nssEquip {
     transform: translateX(0%);
     width: 100%;
-    font-size: 3.8vw;
+    font-size: 60px;
     color: #043253;
     text-align: center;
     font-weight: lighter;
-    margin-top: -30vw;
+    margin-top: 285px;
 }
 
 .subtitulo {
     transform: translateX(0%);
     text-align: center;
-    margin-top: -2vw;
+    margin-top: -30px;
     width: 100%;
     color: #0CC0DF;
-    font-size: 1.5vw;
+    font-size: 20px;
 }
 
 #C {
@@ -449,28 +456,28 @@ nav > .menu > input:checked + label::after{
 }
 
 .Integrantesprimeiroano {
-    position: relative;
-    font-size: 2vw;
+    position: absolute;
+    font-size: 20px;
     color: #000;
     text-align: left;
     display: inline-block;
     font-weight: lighter;
-    margin-left: 10vw;
-    margin-top: 2vw;
+    margin-left: 141.6px;
+    margin-top: 150x;
 
 }
 
 #Rapha {
     position: absolute;
-    width: 21vw;
-    top: -0.5vw;
-    margin-left: 8vw;
+    width: 350px;
+    top: -8px;
+    margin-left: 120px;
 }
 
 #Rapha>.nome {
     font-weight: 200;
-    font-size: 1.2vw;
-    margin-bottom: 0.7vw;
+    font-size: 18px;
+    margin-bottom: 10px;
     color: #0077B6;
     transition: 0.4s;
     cursor: pointer;
@@ -481,21 +488,22 @@ nav > .menu > input:checked + label::after{
 }
 
 #Rapha>.descInt {
+    margin-top: 10px;
     font-weight: lighter;
-    font-size: 0.79vw;
+    font-size: 12px;
 }
 
 #Matheus {
     position: absolute;
-    width: 21vw;
-    top: 6.5vw;
-    margin-left: 8vw;
+    width: 350px;
+    top: 100px;
+    margin-left: 120px;
 }
 
 #Matheus>.nome {
     font-weight: 200;
-    font-size: 1.2vw;
-    margin-bottom: 0.5vw;
+    font-size: 18px;
+    margin-bottom: 10px;
     color: #0077B6;
     transition: 0.4s;
     cursor: pointer;
@@ -506,22 +514,22 @@ nav > .menu > input:checked + label::after{
 }
 
 #Matheus>.descInt {
-    margin-top: 0.6vw;
+    margin-top: 10px;
     font-weight: lighter;
-    font-size: 0.79vw;
+    font-size: 12px;
 }
 
 #Lucas {
     position: absolute;
-    width: 21vw;
-    top: 13.45vw;
-    margin-left: 8vw;
+    width: 350px;
+    top: 205px;
+    margin-left: 120px;
 }
 
 #Lucas>.nome {
     font-weight: 200;
-    font-size: 1.2vw;
-    margin-bottom: 1vw;
+    font-size: 18px;
+    margin-bottom: 10px;
     color: #0077B6;
     transition: 0.4s;
     cursor: pointer;
@@ -532,22 +540,22 @@ nav > .menu > input:checked + label::after{
 }
 
 #Lucas>.descInt {
-    margin-top: -0.2vw;
+    margin-top: 10px;
     font-weight: lighter;
-    font-size: 0.79vw;
+    font-size: 12px;
 }
 
 #Caio {
     position: absolute;
-    width: 21vw;
-    top: 20.6vw;
-    margin-left: 8vw;
+    width: 350px;
+    top: 310px;
+    margin-left: 120px;
 }
 
 #Caio>.nome {
     font-weight: 200;
-    font-size: 1.2vw;
-    margin-bottom: 1vw;
+    font-size: 18px;
+    margin-bottom: 10px;
     color: #0077B6;
     transition: 0.4s;
     cursor: pointer;
@@ -558,23 +566,23 @@ nav > .menu > input:checked + label::after{
 }
 
 #Caio>.descInt {
-    margin-top: -0.2vw;
+    margin-top: 10px;
     font-weight: lighter;
-    font-size: 0.79vw;
+    font-size: 12px;
 }
 
 
 #João {
     position: absolute;
-    width: 21vw;
-    top: -0.5vw;
-    margin-left: 59vw;
+    width: 350px;
+    top: -8px;
+    margin-left: 900px;
 }
 
 #João>.nome {
     font-weight: 200;
-    font-size: 1.2vw;
-    margin-bottom: 1vw;
+    font-size: 18px;
+    margin-bottom: 10px;
     color: #0077B6;
     transition: 0.4s;
     cursor: pointer;
@@ -585,22 +593,22 @@ nav > .menu > input:checked + label::after{
 }
 
 #João>.descInt {
-    margin-top: -0.3vw;
+    margin-top: 10px;
     font-weight: lighter;
-    font-size: 0.79vw;
+    font-size: 12px;
 }
 
 #Nicolas {
     position: absolute;
-    width: 21vw;
-    top: 6.7vw;
-    margin-left: 59vw;
+    width: 350px;
+    top: 100px;
+    margin-left: 900px;
 }
 
 #Nicolas>.nome {
     font-weight: 200;
-    font-size: 1.2vw;
-    margin-bottom: 1vw;
+    font-size: 18px;
+    margin-bottom: 10px;
     color: #0077B6;
     transition: 0.4s;
     cursor: pointer;
@@ -611,22 +619,22 @@ nav > .menu > input:checked + label::after{
 }
 
 #Nicolas>.descInt {
-    margin-top: -0.3vw;
+    margin-top: 10px;
     font-weight: lighter;
-    font-size: 0.79vw;
+    font-size: 12px;
 }
 
 #Davi {
     position: absolute;
-    width: 21vw;
-    top: 13.9vw;
-    margin-left: 59vw;
+    width: 350px;
+    top: 208px;
+    margin-left: 900px;
 }
 
 #Davi>.nome {
     font-weight: 200;
-    font-size: 1.2vw;
-    margin-bottom: 1vw;
+    font-size: 18px;
+    margin-bottom: 10px;
     color: #0077B6;
     transition: 0.4s;
     cursor: pointer;
@@ -637,9 +645,9 @@ nav > .menu > input:checked + label::after{
 }
 
 #Davi>.descInt {
-    margin-top: -0.3vw;
+    margin-top: 10px;
     font-weight: lighter;
-    font-size: 0.79vw;
+    font-size: 12px;
 }
 
 .patasboi1 {
