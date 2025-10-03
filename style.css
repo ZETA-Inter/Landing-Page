@@ -25,15 +25,17 @@ body {
 
 .header {
     position: fixed;
+    top: 0;
     width: 100%;
     height: 12vh;
     background-color: white;
     opacity: 0.9;
     z-index: 1000;
     display: flex;
-    gap: 20vw;
-    margin: 0 auto;
-    margin-top: 4vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10vw;
+    box-sizing: border-box;
 }
 
 main {
@@ -41,14 +43,14 @@ main {
 }
 
 .logo {
-    width: 4.5rem;
-    height: 4.3rem;
+    width: 4rem;
+    height: 4rem;
     color: #043253;
-    font-size: 1.54rem;
+    font-size: 1.46rem;
     font-weight: 500px;
     display: flex;
-    margin-left: 8.3vw;
-    margin-top: 1vh;
+    margin-left: -2vw;
+    margin-top: -0.5vh;
     gap: 1vw;
 }
 
@@ -63,7 +65,6 @@ a {
 
 nav>.menu {
     display: inline-block;
-    gap: 2vw;
 }
 
 nav>.menu>input {
@@ -77,15 +78,14 @@ nav>.menu>label {
 }
 
 .nav {
-    margin-top: 5vh;
-    margin-left: 14.9vw;
-    color: #000;
-    font-size: 1.2rem;
     display: flex;
     gap: 3.5vw;
+    font-size: 1.1rem;
+    color: #000;
+    margin-top: 1vh;
 }
 
-nav > .menu > label::before{
+nav>.menu>label::before {
     content: "";
     position: absolute;
     left: -10%;
@@ -98,7 +98,7 @@ nav > .menu > label::before{
     transition: transform 0.5s ease;
 }
 
-nav > .menu > label:hover::after {
+nav>.menu>label:hover::after {
     opacity: 0.4;
     transform: scaleX(0.86);
     content: "";
@@ -110,25 +110,51 @@ nav > .menu > label:hover::after {
     background: darkgray;
 }
 
-body:has(#home:target) nav label[for="Home"]::before { transform: scaleX(0.86); }
-body:has(#home:target) nav label[for="Home"]::after  { opacity: 0; }
-
-body:has(#funcionalidades:target) nav label[for="Func"]::before { transform: scaleX(0.86); }
-body:has(#funcionalidades:target) nav label[for="Func"]::after  { opacity: 0; }
-
-body:has(#planos:target) nav label[for="Planos"]::before { transform: scaleX(0.86); }
-body:has(#planos:target) nav label[for="Planos"]::after  { opacity: 0; }
-
-body:has(#C:target) nav label[for="Contato"]::before { transform: scaleX(0.86); }
-body:has(#C:target) nav label[for="Contato"]::after  { opacity: 0; }
-
-body:not(:has(:target)) nav label[for="Home"]::before { transform: scaleX(0.86); }
-body:not(:has(:target)) nav label[for="Home"]::after  { opacity: 0; }
-
-nav > .menu > input:checked + label::before{
+body:has(#home:target) nav label[for="Home"]::before {
     transform: scaleX(0.86);
 }
-nav > .menu > input:checked + label::after{
+
+body:has(#home:target) nav label[for="Home"]::after {
+    opacity: 0;
+}
+
+body:has(#funcionalidades:target) nav label[for="Func"]::before {
+    transform: scaleX(0.86);
+}
+
+body:has(#funcionalidades:target) nav label[for="Func"]::after {
+    opacity: 0;
+}
+
+body:has(#planos:target) nav label[for="Planos"]::before {
+    transform: scaleX(0.86);
+}
+
+body:has(#planos:target) nav label[for="Planos"]::after {
+    opacity: 0;
+}
+
+body:has(#C:target) nav label[for="Contato"]::before {
+    transform: scaleX(0.86);
+}
+
+body:has(#C:target) nav label[for="Contato"]::after {
+    opacity: 0;
+}
+
+body:not(:has(:target)) nav label[for="Home"]::before {
+    transform: scaleX(0.86);
+}
+
+body:not(:has(:target)) nav label[for="Home"]::after {
+    opacity: 0;
+}
+
+nav>.menu>input:checked+label::before {
+    transform: scaleX(0.86);
+}
+
+nav>.menu>input:checked+label::after {
     opacity: 0;
 }
 
@@ -143,19 +169,24 @@ nav > .menu > input:checked + label::after{
     display: none;
 }
 
-@media (max-width: 668px) {
+@media (max-width: 800px) {
     .logo {
         position: relative;
-        top: -0.8vh;
+        top: 0.1vh;
     }
-    
+
+    .logo>span {
+        position: relative;
+        top: -0.1vh;
+    }
+
     .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    width: 100%;
-    max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 100%;
+        max-width: 100%;
     }
 
     .nav {
@@ -165,7 +196,7 @@ nav > .menu > input:checked + label::after{
     .menu-btn {
         display: block;
         position: relative;
-        right: 5vw;
+        right: -6vw;
         top: 0.2vh;
         font-size: 1.5rem;
     }
@@ -190,6 +221,10 @@ nav > .menu > input:checked + label::after{
 .selecionado>a {
     text-decoration: none;
     color: #000;
+}
+
+#home {
+    display: flex;
 }
 
 #Bvindo {
@@ -223,13 +258,17 @@ nav > .menu > input:checked + label::after{
 }
 
 .himage {
-    position: relative;
-    top: -53vh;
-    margin-left: 57vw;
+    margin-top: 22vh;
+    margin-right: 8vw;
     height: 32rem;
 }
 
 @media (max-width: 1100px) {
+    #home {
+        flex-direction: column;
+        row-gap: 25vh;
+    }
+
     #Bvindo {
         width: 80vw;
     }
@@ -237,10 +276,10 @@ nav > .menu > input:checked + label::after{
     .description {
         width: 70vw;
     }
-    
+
     .himage {
-        margin-top: 600px;
-        margin-left: 23.5vw;
+        width: 35rem;
+        margin: 0 auto;
     }
 }
 
@@ -298,15 +337,45 @@ nav > .menu > input:checked + label::after{
 @media (max-width: 768px) {
     #home {
         position: absolute;
+        row-gap: 25vh;
+        row-gap: 21vw;
+    }
+
+    #Bvindo {
+        font-size: 13vw;
+        font-size: 13.5vh;
+        margin-top: 33vh;
+        margin-top: 28.5vw;
+    }
+
+    .description {
+        font-size: 2.8vw;
+        font-size: 2.9vh;
+        margin-top: -1vh;
+        margin-top: -0.6vw;
+    }
+
+    .himage {
+        width: 73vw;
+        height: 67vw;
     }
 
     #btn1Cover {
-    border-radius: 1.5em;
-    height: 4.3rem;
-    width: 12rem;
-    transition: 0.5s;
-    cursor: pointer;
-}
+        border-radius: 1.5em;
+        height: 10.3vh;
+        width: 25vw;
+    }
+
+    #btn2Cover {
+        border-radius: 1.5em;
+        height: 10.3vh;
+        width: 25vw;
+    }
+
+    .buttons>button>a {
+        font-size: 2.17vh;
+        font-size: 1.9vw;
+    }
 
     #nssapp {
         position: relative;
