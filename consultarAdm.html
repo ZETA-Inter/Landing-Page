@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="criarAdm.css">
+    <link rel="stylesheet" href="consultarAdm.css">
     <link rel="shortcut icon" href="./assets/LOGO ZETA - 5.png" type="image/x-icon">
-    <title>Criar ADM</title>
+    <title>Consultar ADM</title>
 </head>
 <body>
     <header class="header">
@@ -24,9 +24,9 @@
         </div>
     </header>
     <main>
-        <div class="inserirADM">
-            <h1>Criar ADM</h1>
-            <h2>Insira os seguintes campos</h2>
+        <div class="consultarADM">
+            <h1>Consultar ADM</h1>
+            <h2>Procure pelos seguintes campos</h2>
         </div>
         <div class="sidebar">
             <div class="icon active">
@@ -52,10 +52,35 @@
         </div>
         <div class="campos">
             <form>
+                <label>ID</label>
+                <input type="number" placeholder="ID" name="id" id="id">
+                <label>Email</label>
                 <input type="email" placeholder="Email" name="email" id="email"/>
-                <input type="password" placeholder="Senha" name="senha" id="senha">
-                <button type="submit">Inserir</button>
+                <button type="submit">Buscar</button>
             </form>
+        </div>
+        <div class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>Email</td>
+                        <td>Senha</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>sla@gmail.com</td>
+                        <td>sla123#</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>dasfa@hotmail.com</td>
+                        <td>dasfa123%%</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </main>
 </body>
