@@ -2,39 +2,73 @@ html{
     scroll-behavior: smooth;
 }
 
-
 body {
     margin: 0;
     top: 0;
     padding: 0;
     font-family: 'Poppins', serif;
+    font-weight: 100;
     width: 100%;
-    overflow-x: hidden;
-    
+    overflow-x: hidden;   
 }
 
-.header {
+
+.site-header {
     position: fixed;
     width: 100%;
-    margin-top: -32px;
+    margin-top: 20px;
     background-color: white;
     opacity: 0.9;
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
     z-index: 1000; 
 }
 
-main {
-    margin-top: -30px;
+.is-active{
+    font-size: 20px;
 }
 
-.container {
+.brand {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: #1d3750; 
+    white-space: nowrap;
+}
+
+.nav {
+    margin-left: 650px;
+    margin-top: 30px;
+    color: #000;
+    font-size: 20px;
     display: flex;
-    gap: 650px;
-    margin: 0 auto;
-    margin-top: 34px;
+    gap: 40px; 
 }
 
-.logo {
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-list a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: lighter;
+    color: #111;
+    transition: color .2s ease;
+}
+
+.logo{
+    margin-top: 30px;
     width: 82.748px;
     height: 80.198px;
     color: #043253;
@@ -46,86 +80,48 @@ main {
 
 .logo>img {
     margin-bottom: 10px;
-    margin-left: 127px;
+    margin-left: 140px;
 }
 
-.logo>span {
+.logo> .brand {  
     margin-top: 28%;
 }
 
-
-nav > .menu > input{
-    display: none;
+main {
+    margin-top: -30px;
 }
 
-nav > .menu > label > a{
-    color: #000;
-    text-decoration: none;
-}
-
-nav > .menu > label {
+.nav-list  li {
     cursor: pointer;
     width: max-content;
     position: relative;
 }
 
-.nav {
-    margin-top: 30px;
-    color: #000;
-    font-size: 20px;
-    display: flex;
-    gap: 50px;
-}
 
-nav > .menu {
-    display: inline-block;
-}
-
-nav > .menu > label::after{
+.nav-list li::after{
     content: "";
     position: absolute;
     left: -10%;
     bottom: 0;
     height: 3px;
     width: 120%;
-    background: darkgray;
+    background-color: darkgray;
     transform:scaleX(0);
     opacity: 0;
     transition: opacity 0.5s ease;
 }
 
-nav > .menu > label::before{
+.nav-list li::before{
     content: "";
     position: absolute;
     left: -10%;
     bottom: 0;
     height: 3px;
     width: 120%;
-    background: #0CC0DF;
+    background:#0CC0DF;
     transform:scaleX(0);
     transform-origin: center;
     transition: transform 0.5s ease;
-}
-
-
-nav > .menu > label:hover::after {
-    opacity: 0.4;
-    transform: scaleX(0.86);
-}
-
-nav > .menu > input:checked + label::before{
-    transform: scaleX(0.86);
-}
-
-nav > .menu > input:checked + label::after{
-    background: transparent; 
-}
-
-
-/*corpo do site */
-.selecionado>a {
-    text-decoration: none;
-    color: #000;
 }
 
 
@@ -183,7 +179,7 @@ nav > .menu > input:checked + label::after{
 
 .himg2 {
     position: absolute;
-    top: 125px;
+    top: 110px;
     left: 825px;
 }
 
@@ -195,6 +191,8 @@ nav > .menu > input:checked + label::after{
 }
 
 #btn1Cover{
+
+    text-align: center;
     background-color: #043253;
     margin-right: 28px;
     margin-left: 141.6px;
@@ -211,7 +209,8 @@ nav > .menu > input:checked + label::after{
 }
 
 
-.btn1{  
+.btn1{ 
+    transform: translateX(10%);
     text-align: center;
     text-decoration: none;
     color: #f6f7ff;
@@ -219,6 +218,7 @@ nav > .menu > input:checked + label::after{
 
 
 #btn2Cover{
+    text-align: center;
     margin-left: 3px;
     border-radius: 20px;
     height: 68px;
@@ -228,6 +228,7 @@ nav > .menu > input:checked + label::after{
 }
 
 .btn2{
+    margin-top: 40%;
     text-align: center;
     text-decoration: none;
     color: #18a4e1;
@@ -457,14 +458,14 @@ nav > .menu > input:checked + label::after{
     margin-left: 141.6px;
 }
 
-#Rapha{
+.Integ1{
     position: absolute;
     width: 350px;
     top: -8px;
     margin-left: 120px;
 }
 
-#Rapha > .nome{
+.Integ1 > .nome{
     font-weight: 200;
     font-size: 18px;
     margin-bottom: 10px;
@@ -473,24 +474,24 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
 }
 
-#Rapha > .nome:hover{
+.Integ1 > .nome:hover{
     color: #0CC0DF;
 }
 
-#Rapha > .descInt{
+.Integ1 > .descInt{
     margin-top: 10px;
     font-weight: lighter;
     font-size: 12px;
 }
 
-#Matheus{
+.Integ2{
     position: absolute;
     width: 350px;
     top: 100px;
     margin-left: 120px;
 }
 
-#Matheus > .nome{
+.Integ2 > .nome{
     font-weight: 200;
     font-size: 18px;
     margin-bottom: 10px;
@@ -499,24 +500,24 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
 }
 
-#Matheus > .nome:hover{
+.Integ2 > .nome:hover{
     color: #0CC0DF;
 }
 
-#Matheus > .descInt{
+.Integ2 > .descInt{
     margin-top: 10px;
     font-weight: lighter;
     font-size: 12px;
 }
 
-#Lucas{
+.Integ3{
     position: absolute;
     width: 350px;
     top: 205px;
     margin-left: 120px;
 }
 
-#Lucas > .nome{
+.Integ3 > .nome{
     font-weight: 200;
     font-size: 18px;
     margin-bottom: 10px;
@@ -525,24 +526,24 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
 }
 
-#Lucas > .nome:hover{
+.Integ3 > .nome:hover{
     color: #0CC0DF;
 }
 
-#Lucas > .descInt{
+.Integ3 > .descInt{
     margin-top: 10px;
     font-weight: lighter;
     font-size: 12px;
 }
 
-#Caio{
+.Integ4{
     position: absolute;
     width: 350px;
     top: 310px;
     margin-left: 120px;
 }
 
-#Caio > .nome{
+.Integ4 > .nome{
     font-weight: 200;
     font-size: 18px;
     margin-bottom: 10px;
@@ -551,25 +552,25 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
 }
 
-#Caio > .nome:hover{
+.Integ4 > .nome:hover{
     color: #0CC0DF;
 }
 
-#Caio > .descInt{
+.Integ4 > .descInt{
     margin-top: 10px;
     font-weight: lighter;
     font-size: 12px;
 }
 
 
-#João{
+.Integ5{
     position: absolute;
     width: 350px;
     top: -8px;
     margin-left: 900px;
 }
 
-#João > .nome{
+.Integ5 > .nome{
     font-weight: 200;
     font-size: 18px;
     margin-bottom: 10px;
@@ -578,24 +579,24 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
 }
 
-#João > .nome:hover{
+.Integ5 > .nome:hover{
     color: #0CC0DF;
 }
 
-#João > .descInt{
+.Integ5 > .descInt{
     margin-top: 10px;
     font-weight: lighter;
     font-size: 12px;
 }
 
-#Nicolas{
+.Integ6{
     position: absolute;
     width: 350px;
     top: 100px;
     margin-left: 900px;
 }
 
-#Nicolas > .nome{
+.Integ6 > .nome{
     font-weight: 200;
     font-size: 18px;
     margin-bottom: 10px;
@@ -604,24 +605,24 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
 }
 
-#Nicolas > .nome:hover{
+.Integ6 > .nome:hover{
     color: #0CC0DF;
 }
 
-#Nicolas > .descInt{
+.Integ6 > .descInt{
     margin-top: 10px;
     font-weight: lighter;
     font-size: 12px;
 }
 
-#Davi{
+.Integ7{
     position: absolute;
     width: 350px;
     top: 208px;
     margin-left: 900px;
 }
 
-#Davi > .nome{
+.Integ7 > .nome{
     font-weight: 200;
     font-size: 18px;
     margin-bottom: 10px;
@@ -630,194 +631,11 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
 }
 
-#Davi > .nome:hover{
+.Integ7 > .nome:hover{
     color: #0CC0DF;
 }
 
-#Davi > .descInt{
-    margin-top: 10px;
-    font-weight: lighter;
-    font-size: 12px;
-}
-
-#Alisson{
-    position: absolute;
-    width: 350px;
-    top: -8px;
-    margin-left: 120px;
-}
-
-#Alisson > .nome{
-    font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #0077B6;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-#Alisson > .nome:hover{
-    color: #0CC0DF;
-}
-
-#Alisson > .descInt{
-    margin-top: 10px;
-    font-weight: lighter;
-    font-size: 12px;
-}
-
-#Bianca{
-    position: absolute;
-    width: 350px;
-    top: 100px;
-    margin-left: 120px;
-}
-
-#Bianca > .nome{
-    font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #0077B6;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-#Bianca > .nome:hover{
-    color: #0CC0DF;
-}
-
-#Bianca > .descInt{
-    margin-top: 10px;
-    font-weight: lighter;
-    font-size: 12px;
-}
-
-#Julia{
-    position: absolute;
-    width: 350px;
-    top: 205px;
-    margin-left: 120px;
-}
-
-#Julia > .nome{
-    font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #0077B6;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-#Julia > .nome:hover{
-    color: #0CC0DF;
-}
-
-#Julia > .descInt{
-    margin-top: 10px;
-    font-weight: lighter;
-    font-size: 12px;
-}
-
-#Laura{
-    position: absolute;
-    width: 350px;
-    top: 310px;
-    margin-left: 120px;
-}
-
-#Laura > .nome{
-    font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #0077B6;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-#Laura > .nome:hover{
-    color: #0CC0DF;
-}
-
-#Laura > .descInt{
-    margin-top: 10px;
-    font-weight: lighter;
-    font-size: 12px;
-}
-
-
-#Raquel{
-    position: absolute;
-    width: 350px;
-    top: -8px;
-    margin-left: 900px;
-}
-
-#Raquel > .nome{
-    font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #0077B6;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-#Raquel > .nome:hover{
-    color: #0CC0DF;
-}
-
-#Raquel > .descInt{
-    margin-top: 10px;
-    font-weight: lighter;
-    font-size: 12px;
-}
-
-#Sofia{
-    position: absolute;
-    width: 350px;
-    top: 100px;
-    margin-left: 900px;
-}
-
-#Sofia > .nome{
-    font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #0077B6;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-#Sofia > .nome:hover{
-    color: #0CC0DF;
-}
-
-#Sofia > .descInt{
-    margin-top: 10px;
-    font-weight: lighter;
-    font-size: 12px;
-}
-
-#Sophia{
-    position: absolute;
-    width: 350px;
-    top: 208px;
-    margin-left: 900px;
-}
-
-#Sophia > .nome{
-    font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #0077B6;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-#Sophia > .nome:hover{
-    color: #0CC0DF;
-}
-
-#Sophia > .descInt{
+.Integ7 > .descInt{
     margin-top: 10px;
     font-weight: lighter;
     font-size: 12px;

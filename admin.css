@@ -11,29 +11,61 @@ body {
     width: 100%;
 
 }
-
-.header {
+.site-header {
+    margin-top: -70px;
     position: fixed;
     width: 100%;
-    margin-top: -32px;
     background-color: white;
-    opacity: 0.9;
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
     z-index: 1000; 
 }
 
-main {
-    margin-top: -30px;
+.is-active{
+    font-size: 20px;
 }
 
-.container {
+.brand {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: #1d3750; 
+    white-space: nowrap;
+}
+
+.nav {
+    margin-left: 650px;
+    margin-top: 30px;
+    color: #000;
+    font-size: 20px;
     display: flex;
-    gap: 650px;
-    margin: 0 auto;
-    margin-top: 34px;
+    gap: 40px; 
 }
 
-.logo {
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-list a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: lighter;
+    color: #111;
+    transition: color .2s ease;
+}
+
+.logo{
+    margin-top: 30px;
     width: 82.748px;
     height: 80.198px;
     color: #043253;
@@ -45,90 +77,27 @@ main {
 
 .logo>img {
     margin-bottom: 10px;
-    margin-left: 127px;
+    margin-left: 140px;
 }
 
-.logo>span {
+.logo> .brand {  
     margin-top: 28%;
 }
 
-
-nav > .menu > input{
-    display: none;
-}
-
-a{
-    color: #000;
-    text-decoration: none;
-}
-
-nav > .menu > label {
-    cursor: pointer;
-    width: max-content;
-    position: relative;
-}
-
-.nav {
-    margin-top: 30px;
-    color: #000;
-    font-size: 20px;
-    display: flex;
-    gap: 50px;
-}
-
-nav > .menu {
-    display: inline-block;
-}
-
-nav > .menu > label::after{
-    content: "";
-    position: absolute;
-    left: -10%;
-    bottom: 0;
-    height: 3px;
-    width: 120%;
-    background: darkgray;
-    transform:scaleX(0);
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    
-}
-
-nav > .menu > label::before{
-    content: "";
-    position: absolute;
-    left: -10%;
-    bottom: 0;
-    height: 3px;
-    width: 120%;
-    background: #0CC0DF;
-    transform:scaleX(0);
-    transform-origin: center;
-    transition: transform 0.5s ease;
+main {
+    margin-top: -30px;
 }
 
 
-nav > .menu > label:hover::after {
-    opacity: 0.4;
-    transform: scaleX(0.86);
-}
-
-nav > .menu > input:checked + label::before{
-    transform: scaleX(0.86);
-}
-
-nav > .menu > input:checked + label::after{
-    background: transparent; 
-}
 
 #Adm{
     font-size: 80px;
-    margin-top: 120px;
     color: #0CC0DF;
     font-family: 'Poppins', serif;
     font-style: normal;
     font-weight: lighter;
     margin-bottom: 20px;
+    transform: translateY(60%);
 }
 
 .admContent{
@@ -137,7 +106,15 @@ nav > .menu > input:checked + label::after{
     text-align: left;
     font-weight: lighter;
     margin-left: 141.6px;
-    margin-top: 5px;
+    margin-top: 85px;
+}
+
+.loginAdmin{
+    margin-top: 50px;
+}
+
+#Login{
+    margin-top: 100px;
 }
 
 
@@ -200,8 +177,6 @@ input {
 
 }
 
-
-
 .entraesq{
     margin-top: 20px;
     display: flex;
@@ -241,29 +216,29 @@ input {
 
 .elipseAz{
     position: absolute;
-    left: 61%;
-    top: -8%;
+    left: 72%;
+    top: 6%;
     height: 660px;
 }
 
 .elipseAzul{
     position: absolute;
-    left: 65%;
-    top: -8%;
+    left: 75%;
+    top: 7%;
     height: 660px;
 }
 
 .elipseBranca{
     position: absolute;
-    left: 69%;
-    top: -8%;
+    left: 78%;
+    top: 8%;
     height: 660px;
 }
 
 .boiAdmin{
     position: absolute;
-    left: 75%;
-    top: 15%;
-    height: 300px;
+    left: 80%;
+    top: 28%;
+    height: 260px;
 }
 
