@@ -124,6 +124,18 @@ main {
     transition: transform 0.5s ease;
 }
 
+#funcionalidades, #aboutUs{
+    scroll-margin-top: 85px;
+}
+
+#planos{
+    scroll-margin-top: 95px;
+}
+
+#contato{
+    scroll-margin-top: 10px;
+}
+
 
 #Bvindo{
     margin-top: 180px;
