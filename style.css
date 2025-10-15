@@ -55,7 +55,7 @@ main {
 }
 
 .logo>span {
-    margin-top: 3vh;
+    margin-top: 1.2rem;
 }
 
 a {
@@ -90,7 +90,7 @@ nav>.menu>label::before {
     position: absolute;
     left: -10%;
     bottom: 0;
-    height: 0.18rem;
+    height: 0.2rem;
     width: 120%;
     background: #0CC0DF;
     transform: scaleX(0);
@@ -105,7 +105,7 @@ nav>.menu>label:hover::after {
     position: absolute;
     left: -10%;
     bottom: 0;
-    height: 0.18rem;
+    height: 0.2rem;
     width: 120%;
     background: darkgray;
 }
@@ -235,7 +235,6 @@ nav>.menu>input:checked+label::after {
     font-size: 5.6rem;
     color: #000;
     text-align: left;
-    display: inline-block;
     font-weight: lighter;
     margin-left: 9.2vw;
 }
@@ -259,42 +258,14 @@ nav>.menu>input:checked+label::after {
 
 .himage {
     margin-top: 22vh;
-    margin-right: 8vw;
+    margin-left: 5.3vw;
     height: 32rem;
 }
 
-@media (max-width: 1100px) {
-    #Bvindo {
-        width: 50vw;
-        margin-left: 4.1vw;
-    }
-
-    .description {
-        opacity: 0;
-    }
-
-    .himage {
-        width: 35rem;
-        margin-left: -20vw;
-    }
-
-    #btn1Cover {
-        position: relative;
-        margin-top: -15vh;
-        left: -5vw;
-    }
-
-    #btn2Cover {
-        position: relative;
-        margin-top: -15vh;
-        left: -5vh;
-    }
-}
-
 .buttons {
-    position: absolute;
     display: flex;
     margin-top: 0.9vh;
+    gap: 1.9vw;
 }
 
 .buttons>button>a {
@@ -305,7 +276,6 @@ nav>.menu>input:checked+label::after {
 
 #btn1Cover {
     background-color: #043253;
-    margin-right: 1.9vw;
     margin-left: 9.2vw;
     border-radius: 1.5em;
     height: 4.3rem;
@@ -342,196 +312,124 @@ nav>.menu>input:checked+label::after {
     color: #18a4e1;
 }
 
-@media (max-width: 768px) {
-    #home {
-        position: absolute;
-        row-gap: 25vh;
-        row-gap: 21vw;
-    }
-
-    #Bvindo {
-        font-size: 11.6vw;
-        margin-top: 33vh;
-        margin-top: 28.5vw;
-    }
-
-    .description {
-        font-size: 2.8vw;
-        font-size: 2.9vh;
-        margin-top: -1vh;
-        margin-top: -0.6vw;
-    }
-
-    .himage {
-        width: 73vw;
-        height: 67vw;
-    }
-
-    .buttons {
-        flex-direction: column;
-    }
-
-    #btn1Cover {
-        border-radius: 1.5em;
-        height: 11vh;
-        width: 75vw;
-        margin-left: 16vw;
-    }
-
-    #btn2Cover {
-        border-radius: 1.5em;
-        height: 11vh;
-        width: 75vw;
-        margin-top: 2vh;
-        margin-left: 21vw;
-    }
-
-    .buttons>button>a {
-        font-size: 0.9rem;
-    }
-
-    #nssapp {
-        position: relative;
-        top: 100000vw;
-    }
-
-    #funcionalidades {
-        position: relative;
-        top: 10000vw;
-    }
-
-    .e {
-        position: relative;
-        top: 1000vw;
-    }
+#nssapp {
+    display: flex;
+    ;
 }
 
 #Nssaplicat {
-    width: 40vw;
-    font-size: 4.9vw;
+    width: 620px;
+    font-size: 4.7rem;
     color: #043253;
     text-align: left;
-    display: inline-block;
     font-weight: lighter;
     margin-left: 9.2vw;
-    margin-top: 13vw;
-    margin-bottom: 0.2vw;
+    margin-top: 50vh;
 }
 
 #nssappdescription {
-    padding-top: 0.2vw;
-    width: 44.2vw;
-    font-size: 1.947vw;
+    width: 640px;
+    font-size: 1.8rem;
     color: #000;
-    text-align: left;
     font-weight: lighter;
     margin-left: 9.2vw;
-    margin-top: 0.3vw;
+    margin-top: -5vh;
 }
 
 .celular {
-    margin-left: 59vw;
-    height: 42vw;
-    margin-top: -30vw;
-}
-
-
-.funcionali {
-    transform: translateY(-45%);
-    margin-left: 55vw;
-    height: 26vw;
-    margin-bottom: 1vw;
-    margin-top: -80vw;
+    margin-left: 7.8vw;
+    height: 40rem;
+    margin-top: 33vh;
 }
 
 .patinhas {
-    margin-top: -40vw;
-    width: 20vw;
+    margin-top: -21vh;
+    width: 19rem;
 }
 
 #funcionalidades {
     width: 100%;
 }
 
-.funcionalis {
-    border: #18a4e1 0.3vw solid;
-    border-radius: 2vw;
-    width: 18.5vw;
-    height: 9.9vw;
-    padding: 0.7vw;
-    padding-left: 1.8vw;
-    margin-bottom: 3.2vw;
-}
-
-.fserv {
-    position: relative;
-    top: -3.6vw;
-    color: #18a4e1;
-    font-weight: 300;
-    font-size: 1.3vw;
-}
-
-.fdescrip {
-    position: relative;
-    font-weight: lighter;
-    top: -4.5vw;
-    font-size: 1.05vw;
-}
-
 #Nssserv {
     transform: translateX(0%);
     width: 100%;
-    font-size: 3.9vw;
+    font-size: 3.7rem;
     color: #043253;
     text-align: center;
     font-weight: lighter;
     margin-top: 10vw;
 }
 
+.funcionalis {
+    border: #18a4e1 0.25rem solid;
+    border-radius: 1.5rem;
+    width: 17.5rem;
+    height: 9.3rem;
+    padding: 0.7vw;
+    padding-left: 1.8vw;
+    margin-bottom: 6.5vh;
+}
+
+.iconesF {
+    position: relative;
+    top: -5.5vh;
+    width: 3.7rem;
+}
+
 .funcontent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 10%;
-    margin-top: 3.7vw;
+    margin-top: 8vh;
+}
+
+.fserv {
+    position: relative;
+    top: -7vh;
+    color: #18a4e1;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.fdescrip {
+    position: relative;
+    font-weight: lighter;
+    top: -9vh;
+    font-size: 1rem;
 }
 
 .imagem1 {
     position: relative;
     margin-left: -0.6vw;
-    top: -47.1vw;
-    width: 12vw;
+    top: -97vh;
+    width: 11.5rem;
 }
 
 .imagem2 {
     position: relative;
     margin-left: 89.7vw;
-    top: -53.1vw;
-    width: 11.7vw;
-}
-
-.iconesF {
-    position: relative;
-    top: -2.8vw;
-    width: 4vw;
+    top: -111vh;
+    width: 11.5rem;
 }
 
 #nssEquip {
     transform: translateX(0%);
     width: 100%;
-    font-size: 60px;
+    font-size: 3.8rem;
     color: #043253;
     text-align: center;
     font-weight: lighter;
-    margin-top: 285px;
+    margin-top: -50vh;
 }
 
 .subtitulo {
     transform: translateX(0%);
     text-align: center;
-    margin-top: -30px;
+    margin-top: -4vh;
     width: 100%;
     color: #0CC0DF;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 #C {
@@ -542,296 +440,219 @@ nav>.menu>input:checked+label::after {
     width: 100%;
 }
 
-.Integrantesprimeiroano {
-    position: absolute;
-    font-size: 20px;
-    color: #000;
-    text-align: left;
-    display: inline-block;
-    font-weight: lighter;
-    margin-left: 141.6px;
-    margin-top: 150x;
-
-}
-
-#Rapha {
-    position: absolute;
-    width: 350px;
-    top: -8px;
-    margin-left: 120px;
-}
-
-#Rapha>.nome {
-    font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #0077B6;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-#Rapha>.nome:hover {
-    color: #0CC0DF;
-}
-
-#Rapha>.descInt {
-    margin-top: 10px;
-    font-weight: lighter;
-    font-size: 12px;
-}
-
-#Matheus {
-    position: absolute;
-    width: 350px;
-    top: 100px;
-    margin-left: 120px;
-}
-
-#Matheus>.nome {
-    font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #0077B6;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-#Matheus>.nome:hover {
-    color: #0CC0DF;
-}
-
-#Matheus>.descInt {
-    margin-top: 10px;
-    font-weight: lighter;
-    font-size: 12px;
-}
-
-#Lucas {
-    position: absolute;
-    width: 350px;
-    top: 205px;
-    margin-left: 120px;
-}
-
-#Lucas>.nome {
-    font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #0077B6;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-#Lucas>.nome:hover {
-    color: #0CC0DF;
-}
-
-#Lucas>.descInt {
-    margin-top: 10px;
-    font-weight: lighter;
-    font-size: 12px;
-}
-
-#Caio {
-    position: absolute;
-    width: 350px;
-    top: 310px;
-    margin-left: 120px;
-}
-
-#Caio>.nome {
-    font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #0077B6;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-#Caio>.nome:hover {
-    color: #0CC0DF;
-}
-
-#Caio>.descInt {
-    margin-top: 10px;
-    font-weight: lighter;
-    font-size: 12px;
-}
-
-
-#João {
-    position: absolute;
-    width: 350px;
-    top: -8px;
-    margin-left: 900px;
-}
-
-#João>.nome {
-    font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #0077B6;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-#João>.nome:hover {
-    color: #0CC0DF;
-}
-
-#João>.descInt {
-    margin-top: 10px;
-    font-weight: lighter;
-    font-size: 12px;
-}
-
-#Nicolas {
-    position: absolute;
-    width: 350px;
-    top: 100px;
-    margin-left: 900px;
-}
-
-#Nicolas>.nome {
-    font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #0077B6;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-#Nicolas>.nome:hover {
-    color: #0CC0DF;
-}
-
-#Nicolas>.descInt {
-    margin-top: 10px;
-    font-weight: lighter;
-    font-size: 12px;
-}
-
-#Davi {
-    position: absolute;
-    width: 350px;
-    top: 208px;
-    margin-left: 900px;
-}
-
-#Davi>.nome {
-    font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #0077B6;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-#Davi>.nome:hover {
-    color: #0CC0DF;
-}
-
-#Davi>.descInt {
-    margin-top: 10px;
-    font-weight: lighter;
-    font-size: 12px;
-}
-
 .patasboi1 {
-    height: 280px;
-    margin-top: -30px;
+    height: 17.5rem;
+    margin-top: -3vh;
 }
 
 .patasboi2 {
-    height: 250px;
-    margin-left: 400px;
+    height: 15.5rem;
+    margin-left: 26vw;
 }
 
 .patasboi3 {
-    margin-left: 1400px;
-    margin-top: -500px;
-    margin-bottom: 200px;
+    margin-left: 91.5vw;
+    margin-top: -60vh;
+    margin-bottom: 30vh;
 }
 
 .patasboi4 {
-    margin-left: 1380px;
-    margin-top: -20px;
+    margin-left: 90.5vw;
+    margin-top: -5vh;
 }
 
 .col1 {
-    height: 400px;
+    vertical-align: middle;
+    height: 24.9rem;
 }
-
 
 .col2 {
-    margin-bottom: 100px;
-    margin-left: 700px;
-    height: 300px;
+    margin-left: 25vw;
+    margin-bottom: 13.5vh;
+    height: 18.3rem;
 }
 
+.Integrantesprimeiroano {
+    position: absolute;
+    font-size: 1.3rem;
+    color: #000;
+    text-align: left;
+    display: flex;
+    font-weight: lighter;
+    margin-left: 13%;
+    margin-top: -1vh;
+
+}
+
+.text1,
+.text2 {
+    position: relative;
+    top: -49vh;
+    margin-left: 7vw;
+}
+
+.text2 {
+    top: -51vh;
+    margin-left: 32.5vw;
+}
+
+#Rapha {
+    margin-top: -6vh;
+}
+
+#Matheus {
+    margin-top: 7vh;
+}
+
+#Lucas {
+    margin-top: 7.5vh;
+}
+
+#Caio {
+    margin-top: 7.5vh;
+}
+
+#João {
+    margin-top: -3vh;
+}
+
+#Nicolas {
+    margin-top: 7vh;
+}
+
+#Davi {
+    margin-top: 7.5vh;
+}
+
+.nome {
+    margin-left: 2vw;
+    font-weight: 200;
+    font-size: 1.1rem;
+    color: #0077B6;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.nome:hover {
+    color: #0CC0DF;
+}
+
+.descInt {
+    margin-left: 2vw;
+    font-weight: lighter;
+    font-size: 0.7rem;
+}
+
+#Rapha>.nome {
+    margin-top: 2vh;
+}
+
+#Rapha>.descInt {
+    margin-top: -1vh;
+}
+
+#Matheus>.nome {
+    margin-top: 3vh;
+}
+
+#Matheus>.descInt {
+    margin-top: -1vh;
+}
+
+#Lucas>.nome {
+    margin-top: 3.5vh;
+}
+
+#Lucas>.descInt {
+    margin-top: -1vh;
+}
+
+#Caio>.nome {
+    margin-top: 3.5vh;
+}
+
+#Caio>.descInt {
+    margin-top: -1vh;
+}
+
+#João>.nome {
+    margin-top: 1vh;
+}
+
+#João>.descInt {
+    margin-top: -1vh;
+}
+
+#Nicolas>.nome {
+    margin-top: 3.5vh;
+}
+
+#Nicolas>.descInt {
+    margin-top: -1vh;
+}
+
+#Davi>.nome {
+    margin-top: 4vh;
+}
+
+#Davi>.descInt {
+    margin-top: -1vh;
+}
 
 #planos {
     width: 100%;
 }
 
 .check {
-    margin-top: -5px;
+    margin-top: -0.6vh;
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-left: 10px;
+    gap: 0.6vw;
+    margin-left: 0.7vw;
 }
 
 .check>img {
-    width: 20px;
-    height: 20px;
+    width: 1.3rem;
+    height: 1.3rem;
 }
 
 #tbpreco {
-    margin-top: 100px;
-    transform: translateX(0%);
+    margin-top: 35vh;
     text-align: center;
-    color: #000;
     font-weight: lighter;
-    font-size: 20px;
-
+    font-size: 1.25rem;
 }
 
 #escPlano {
-    transform: translateX(0%);
     text-align: center;
     color: #043253;
     font-weight: lighter;
-    font-size: 50px;
-    margin-top: -30px;
+    font-size: 3.1rem;
+    margin-top: -4vh;
 }
 
 #planosAll {
-    margin-top: -20px;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 200px;
-    padding-right: 200px;
-    margin-bottom: 100px;
+    margin-top: -2.5vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 13vw;
+    padding-right: 6vw;
+    margin-bottom: 35vh;
 }
 
-
-
 .plano {
-    border: #0077B6 2px solid;
+    border: #0077B6 0.1rem solid;
     border-radius: 50px;
-    width: 300px;
-    height: 480px;
+    width: 19rem;
+    height: 30rem;
     transition: 0.8s;
     cursor: pointer;
 }
 
 .plano:hover {
     transform: scale(1.05);
-    border: #0CC0DF 2px solid;
+    border: #0CC0DF 0.1rem solid;
 }
-
-
 
 .plano>h4,
 h1 {
@@ -839,25 +660,25 @@ h1 {
 }
 
 .plano>h4 {
-    margin-top: 35px;
+    margin-top: 5vh;
     font-weight: lighter;
     color: #043253;
 }
 
 .plano>h1 {
     font-weight: 400;
-    margin-top: -25px;
+    margin-top: -3.5vh;
     color: #0077B6;
-    font-size: 55px;
+    font-size: 3.4rem;
 }
 
 .checks {
-    margin-top: -30px;
+    margin-top: -3.7vh;
 }
 
 .planoAzul {
-    width: 300px;
-    height: 480px;
+    width: 19rem;
+    height: 30rem;
     border-radius: 50px;
     background-color: #18a4e1;
     transition: 0.8s;
@@ -874,17 +695,10 @@ h1 {
 }
 
 .plano>p {
-    margin-left: 20px;
-    font-size: 15px;
+    margin-left: 1.4vw;
+    font-size: 0.9rem;
     align-items: center;
 
-}
-
-.planoAzul {
-    border: #18a4e1 2px solid;
-    border-radius: 50px;
-    width: 300px;
-    height: 480px;
 }
 
 .planoAzul>h4,
@@ -897,77 +711,69 @@ h1 {
 }
 
 .planoAzul>h4 {
-    margin-top: 35px;
+    margin-top: 5vh;
     font-weight: lighter;
     color: black;
 }
 
 .planoAzul>h1 {
     font-weight: 400;
-    margin-top: -25px;
+    margin-top: -3.5vh;
     color: white;
-    font-size: 55px;
+    font-size: 3.4rem;
 }
 
 .planoAzul>p {
     color: white;
-    margin-left: 20px;
-    font-size: 15px;
-    align-content: center;
-    vertical-align: middle;
+    margin-left: 1.4vw;
+    font-size: 0.9rem;
+    align-items: center;
 }
 
-
-
 #especific {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #0CC0DF;
     text-align: center;
-    margin-top: -50px;
-    margin-left: -8px;
+    margin-top: -7vh;
+    margin-left: -0.3vw;
 }
 
 .btSelecAzul,
 .btSelecAzul1 {
-    margin-top: 20px;
-    margin-left: 50px;
-    width: 200px;
+    margin-top: 2.5vh;
+    margin-left: 3.3vw;
+    width: 12.5rem;
     background-color: #18a4e1;
-    border: #18a4e1 2px solid;
+    border: #18a4e1 0.1rem solid;
     color: white;
     border-radius: 25px;
-    height: 45px;
-    font-size: 18px;
+    height: 3rem;
+    font-size: 1.1rem;
     font-weight: lighter;
     font-family: 'Poppins', serif;
     transition: 0.5s;
     cursor: pointer;
 }
 
-.btSelecAzul1:hover {
-    background-color: #043253;
-    border-color: #043253;
-}
-
-.btSelecAzul:hover {
+.btSelecAzul1:hover, .btSelecAzul:hover {
     background-color: #043253;
     border-color: #043253;
 }
 
 .btSelecAzul1 {
-    margin-top: 65px;
+    margin-top: 10vh;
 }
 
 #btBrancoSelec {
-    margin-top: 25px;
-    margin-left: 50px;
-    width: 200px;
+    margin-top: 3vh;
+    margin-left: 3.3vw;
+    width: 12.5rem;
     background-color: white;
-    border: white 2px solid;
+    border: white 0.1rem solid;
     color: #0077B6;
     border-radius: 25px;
-    height: 45px;
-    font-size: 18px;
+    height: 3rem;
+    font-size: 1.1rem;
     font-weight: lighter;
     font-family: 'Poppins', serif;
     transition: 0.5s;
@@ -979,64 +785,410 @@ h1 {
     border-color: #bababa;
 }
 
-
 .img1 {
-    margin-left: 1320px;
-    margin-top: -700px;
+    position: relative;
+    margin-left: 86vw;
+    top: -110vh;
 }
 
 .img2 {
-    margin-left: -15px;
+    position: relative;
+    margin-left: -1vw;
+    top: -127vh;
 }
 
+@media (max-width: 1100px) {
+    #Bvindo {
+        margin-left: 9.2vw;
+    }
 
+    .himage {
+        width: 35rem;
+        margin-left: -20vw;
+    }
 
+    .buttons {
+        position: relative;
+        bottom: 5vw;
+    }
+
+    #nssapp {
+        flex-direction: column;
+    }
+
+    .celular {
+        width: 35rem;
+        margin: 0 auto;
+    }
+
+    .funcontent {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 13%;
+        row-gap: 1vh;
+        column-gap: 1vw;
+    }
+
+    .imagem1 {
+        margin-left: -3vw;
+        margin-top: -0.5vh;
+    }
+
+    .imagem2 {
+        margin-left: 83vw;
+        margin-top: 1vh;
+    }
+
+    .e {
+        position: relative;
+        top: -20vh;
+    }
+
+    .Integrantesprimeiroano {
+        margin-left: 5vw;
+    }
+
+    #planos {
+        position: relative;
+        top: -25vh;
+    }
+
+    #planosAll {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 18vw;
+        padding-right: 15vw;
+        row-gap: 5vh;
+        column-gap: 5vw;
+    }
+
+    .btSelecAzul, .btSelecAzul1, #btBrancoSelec {
+        margin-left: 4.4vw;
+    }
+
+    .plano:nth-child(3) {
+        margin-left: 58.5%;
+    }
+
+    .img1 {
+        margin-top: -165vh;
+    }
+
+    #C {
+        position: relative;
+        top: 30vh;
+    }
+}
+
+@media (max-width: 768px) {
+    #home {
+        margin-top: 10vw;
+        position: absolute;
+        row-gap: 25vh;
+        row-gap: 21vw;
+    }
+
+    #Bvindo {
+        width: 100vw;
+        font-size: 15vw;
+        margin-top: 12vw;
+        margin-left: 9.2vw;
+        line-height: 13vw;
+    }
+
+    .description {
+        font-size: 2.8vw;
+        font-size: 2.9vh;
+        margin-top: 0;
+        margin-top: 0;
+        width: 90vw;
+    }
+
+    .himage {
+        width: 73vw;
+        height: 67vw;
+        position: relative;
+        opacity: 0;
+    }
+
+    .buttons {
+        flex-direction: column;
+        margin-top: 20vw;
+        margin-left: -12vw;
+    }
+
+    .buttons>#btn1Cover,
+    #btn2Cover {
+        margin: 0 auto;
+    }
+
+    .buttons>button>a {
+        font-size: 0.9rem;
+    }
+
+    #nssapp {
+        position: absolute;
+        top: 80vw;
+    }
+
+    #Nssaplicat {
+        width: 100vw;
+        font-size: 15vw;
+        line-height: 13vw;
+    }
+
+    #nssappdescription {
+        width: 85vw;
+        font-size: 2.4vw;
+        font-size: 2.5vh;
+        margin-top: -5vw;
+    }
+
+    .patinhas {
+        width: 50vw;
+        margin-top: -30vw;
+    }
+
+    .celular {
+        margin-right: 13vw;
+        width: 90vw;
+        height: 110vw;
+    }
+
+    #funcionalidades {
+        position: relative;
+        top: 425vw;
+    }
+
+    #Nssserv {
+        width: 100vw;
+        font-size: 15vw;
+        line-height: 13vw;
+    }
+
+    .funcionalis {
+        border: #18a4e1 0.25rem solid;
+        border-radius: 1.5rem;
+        width: 37vw;
+        height: 20vw;
+        margin-bottom: 8vw;
+    }
+
+    .iconesF {
+        position: relative;
+        top: -8.5vw;
+        width: 3.7rem;
+    }
+
+    .funcontent {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 6%;
+        margin-top: 32vw;
+    }
+
+    .fserv {
+        position: relative;
+        color: #18a4e1;
+        font-weight: 300;
+        font-size: 1.2rem;
+        padding-left: 2vw;
+    }
+
+    .fdescrip {
+        opacity: 0;
+    }
+
+    .imagem1 {
+        position: relative;
+        margin-left: -17vw;
+        top: -105vw;
+        width: 30vw;
+    }
+
+    .imagem2 {
+        position: relative;
+        margin-left: 85vw;
+        top: -125vw;
+        width: 30vw;
+    }
+
+    .e {
+        position: relative;
+        top: 210vh;
+    }
+
+    #nssEquip {
+        width: 100vw;
+        font-size: 15vw;
+        line-height: 13vw;
+    }
+
+    .subtitulo {
+        font-size: 7vw;
+        margin-top: -2vw;
+    }
+
+    .Integrantesprimeiroano {
+        width: 90vw;
+        margin-left: 15%;
+        flex-direction: column;
+    }
+
+    .col1 {
+        margin-top: 3vw;
+    }
+
+    .col2 {
+        margin-top: -97vw;
+        margin-left: 1%;
+    }
+
+    .text1 {
+        position: relative;
+        margin-left: 33vw;
+    }
+
+    #Rapha {
+        margin-top: -3vw;
+    }
+
+    #Matheus {
+        margin-top: 9vw;
+    }
+
+    #Lucas {
+        margin-top: 14vw;
+    }
+
+    #Caio {
+        margin-top: 16vw;
+    }
+
+    .text2 {
+        position: relative;
+        margin-top: 10vw;
+    }
+
+    .descInt {
+        opacity: 0;
+    }
+
+    .patasboi1 {
+        height: 40vw;
+        margin-top: -7vw;
+    }
+
+    .patasboi2 {
+        opacity: 0;
+    }
+
+    .patasboi3 {
+        opacity: 0;
+    }
+
+    .patasboi4 {
+        position: relative;
+        height: 35vw;
+        bottom: -80vw;
+        left: -20vw;
+    }
+
+    #planos {
+        position: relative;
+        top: 225vh;
+    }
+
+    #tbpreco {
+        font-size: 6vw;
+    }
+
+    #escPlano {
+        font-size: 12vw;
+        line-height: 13vw;
+        margin-top: 1vw;
+    }
+
+    #planosAll {
+        grid-template-columns: 1fr;
+        padding-left: 7vw;
+        row-gap: 15vw;
+        margin-bottom: 50vw;
+        margin-top: 10vw;
+    }
+
+    .plano:nth-child(3) {
+        margin-left: 0;
+    }
+
+    .checks, .checksF {
+        padding-left: 5%;
+    }
+
+    .btSelecAzul, .btSelecAzul1, #btBrancoSelec {
+        margin-left: 16.5%;
+    }
+
+    .img1 {
+        opacity: 0;
+    }
+
+    .img2 {
+        opacity: 0;
+    }
+
+    #C {
+        position: relative;
+        top: 13000vw;
+    }
+}
+
+#C {
+    margin-top: -100vh;
+}
 
 #entContat {
     width: 800px;
-    font-size: 75px;
+    font-size: 4.65rem;
     color: #043253;
     text-align: left;
     display: inline-block;
     font-weight: lighter;
-    margin-left: 141.6px;
-    margin-top: 100px;
-    margin-bottom: 2px;
+    margin-left: 9.2vw;
+    margin-top: 20vh;
+    margin-bottom: 0.1vh;
 }
 
 .descriptioncontact {
     padding-top: 2px;
     width: 700px;
-    font-size: 18px;
+    font-size: 1.12rem;
     color: #000;
     text-align: left;
     font-weight: lighter;
-    margin-left: 141.6px;
-    margin-top: 5px;
+    margin-left: 9.2vw;
+    margin-top: 0.3vh;
 }
 
 .contactUs {
     height: 90;
     position: relative;
-    font-size: 25px;
+    font-size: 1.5rem;
     text-align: left;
     font-weight: lighter;
-    margin-left: 141.6px;
-    margin-top: 5px;
+    margin-left: 9.2vw;
+    margin-top: 0.5vh;
 }
 
-.contactUs>#nomeContato {
+.contactUs>.nomeContato {
     display: flex;
     gap: 10px;
     width: 620px;
     border: #0077B6 solid 2px;
     border-radius: 25px;
     padding: 6px;
-    padding-left: 40px;
+    padding-left: 2.7vw;
     align-items: center;
 }
 
-.contactUs>#emailContato {
+.contactUs>.emailContato {
     display: flex;
     gap: 10px;
     width: 620px;
@@ -1044,15 +1196,14 @@ h1 {
     border: #0077B6 solid 2px;
     border-radius: 25px;
     padding: 6px;
-    padding-left: 40px;
-    margin-bottom: 30px;
-    text-decoration: none;
+    padding-left: 2.7vw;
+    margin-bottom: 5.5vh;
     color: #000;
     align-items: center;
 }
 
-.contactUs>label {
-    padding-top: 5px;
+.contactUs>div>label {
+    padding-top: 0.85%;
 }
 
 .main {
@@ -1061,9 +1212,10 @@ h1 {
 
 
 input {
-    border: 0px;
+    width: 100%;
+    border: 0;
     padding: 10px;
-    font-size: 20px;
+    font-size: 1.15rem;
     color: #333;
     outline: none;
     font-family: 'Poppins', serif;
@@ -1074,31 +1226,16 @@ input {
     width: 750px;
     height: 90;
     position: relative;
-    font-size: 28px;
+    font-size: 1.2rem;
     text-align: left;
     font-weight: lighter;
-    margin-left: 141.6px;
-    margin-top: 40px;
+    margin-left: 9.2vw;
+    margin-top: 5.5vh;
     position: absolute;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
+    gap: 5vw;
 }
-
-
-#zap {
-    margin-right: 75px;
-    margin-bottom: 20px;
-}
-
-#linked {
-    margin-right: 75px;
-    margin-bottom: 20px;
-}
-
-#insta {
-    margin-bottom: 20px;
-}
-
 
 #Enviar {
     background-color: #0077B6;
@@ -1107,7 +1244,7 @@ input {
     padding: 8px;
     border-radius: 30px;
     border: #0077B6 solid;
-    font-size: 30px;
+    font-size: 1.9rem;
     font-weight: lighter;
     font-style: initial;
     font-family: 'Poppins', serif;
@@ -1122,15 +1259,7 @@ input {
     color: rgb(227, 226, 226);
 }
 
-.boizao {
-    margin-left: 1010px;
-    margin-top: -355px;
-}
-
-.patadoboi {
-    margin-left: 800px;
-    margin-top: -600px;
-    margin-bottom: 200px;
-    height: 400px;
-    width: 500px;
+.imgBoi {
+    margin-left: 60vw;
+    margin-top: -60vh;
 }
