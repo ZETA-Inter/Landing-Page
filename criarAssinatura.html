@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="menuAdm.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="criarAssinatura.css">
     <link rel="shortcut icon" href="./assets/LOGO ZETA - 5.png" type="image/x-icon">
-    <title>Menu ADM</title>
+    <title>Criar Assinatura</title>
 </head>
 <body>
     <header class="header">
@@ -24,19 +24,21 @@
         </div>
     </header>
     <main>
-        <div class="tabelaADM">
-            <h1>Tabela ADM</h1>
-            <h2>Selecione a operação que deseja realizar</h2>
+        <div class="inserirAssinatura">
+            <h1>Criar Assinatura</h1>
+            <h2>Insira os seguintes campos</h2>
         </div>
         <div class="sidebar">
             <div class="icon active">
-                <a href=""><img src="./assets/icon1BarADM.svg" alt="Ícone 1"></a>
+                <a href="menuAdm.html">
+                    <img src="./assets/icon1BarADM.svg" alt="Ícone 1">
+                </a>
             </div>
             <div class="icon">
                 <a href="assinatura.html">
                     <img src="./assets/icon2BarADM.svg" alt="Ícone 2">
                 </a>
-                    
+                
             </div>
             <div class="icon">
                 <img src="./assets/icon3BarADM.svg" alt="Ícone 3">
@@ -51,43 +53,20 @@
                 <img src="./assets/icon6BarADM.svg" alt="Ícone 6">
             </div>
         </div>
-        <div class="opcoes">
-            <div class="crud">
-                <a href="criarAdm.html">
-                    <div class="operacao">
-                        <p>Criar</p>
-                        <img src="./assets/lapisCRUD.svg" >
-                    </div>
-                </a>
-                
-            </div>
-            <div class="crud">
-                <a href="consultarAdm.html">
-                    <div class="operacao">
-                        <p>Consultar</p><img src="./assets/livroConsulta.svg">
-                    </div>
-                </a>
-            </div>
-            <div class="crud">
-                <a href="atualizarAdm.html">
-                    <div class="operacao">
-                        <p>Atualizar</p>
-                        <img src="./assets/atualizar.svg">
-                    </div>
-                </a>
-                
-            </div>
-            <div class="crud">
-                <a href="removerAdm.html">
-                    <div class="operacao">
-                        <p>Remover</p>
-                        <img src="./assets/remover.svg">
-                    </div>
-                </a>
-                
-            </div>
+        <div class="campos1">
+            <form>
+                <input type="text" placeholder="Plano" name="plano" id="plano"/>
+                <input type="text" placeholder="Beneficiarios" name="beneficiarios" id="beneficiarios">
+                <input type="text" placeholder="Beneficiarios Descrição" name="beneficiariosDesc" id="beneficiariosDesc">
+            </form>
         </div>
-        
+        <div class="campos2">
+            <form>
+                <input type="text" placeholder="Preço Fixo" name="precoFixo" id="precoFixo">
+                <input type="text" placeholder="Preço Produtor" name="precoProdutor" id="precoProdutor">
+                <button type="submit">Inserir</button>
+            </form>
+        </div>
     </main>
 </body>
 </html>

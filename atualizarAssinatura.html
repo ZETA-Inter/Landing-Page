@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="removerAdm.css">
+    <link rel="stylesheet" href="atualizarAssinatura.css">
     <link rel="shortcut icon" href="./assets/LOGO ZETA - 5.png" type="image/x-icon">
-    <title>Remover ADM</title>
+    <title>Atualizar Assinatura</title>
 </head>
 <body>
     <header class="header">
@@ -24,9 +24,9 @@
         </div>
     </header>
     <main>
-        <div class="removerADM">
-            <h1>Remover ADM</h1>
-            <h2>Insira o ID do Adm que deseja remover</h2>
+        <div class="atualizarAssinatura">
+            <h1>Atualizar Assinatura</h1>
+            <h2>Procure pelos seguintes campos</h2>
         </div>
         <div class="sidebar">
             <div class="icon active">
@@ -52,8 +52,21 @@
         </div>
         <div class="campos">
             <form>
-                <input type="number" placeholder="ID Administrador" name="id" id="id"/>
-                <button type="submit">Remover</button>
+                <div>
+                    <label for="">Produtores</label>
+                    <input type="number" name="prod" id="prod" placeholder="N° produtores">
+                    <button type="submit">Atualizar</button>
+                </div>
+                <div>
+                    <label for="">Tipo do plano</label>
+                    <input type="text" placeholder="Tipo do plano" name="tpPlano" id="tpPlano">
+                    <button type="submit">Atualizar</button>
+                </div>
+                <div>
+                    <label for="">Cursos</label>
+                    <input type="number" placeholder="Qtd Cursos" name="qtdCursos" id="qtdCursos">
+                    <button type="submit">Atualizar</button>
+                </div>
             </form>
         </div>
     </main>
