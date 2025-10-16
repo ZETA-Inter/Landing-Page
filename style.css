@@ -203,7 +203,7 @@ nav>.menu>input:checked+label::after {
 
     .nav {
         position: absolute;
-        top: 6vh;
+        top: 8vh;
         right: 3vw;
         background: #fff;
         border: 1px solid #ddd;
@@ -632,18 +632,24 @@ nav>.menu>input:checked+label::after {
 }
 
 #planosAll {
-    margin-top: -2.5vh;
+    margin: -2.5vh auto 35vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-left: 13vw;
-    padding-right: 6vw;
-    margin-bottom: 35vh;
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    justify-content: center;
+    justify-items: center;
+    align-items: start;
 }
 
 .plano {
     border: #0077B6 0.1rem solid;
     border-radius: 50px;
-    width: 19rem;
+    width: 100%;
+    max-width: 19rem;
     height: 30rem;
     transition: 0.8s;
     cursor: pointer;
@@ -797,6 +803,129 @@ h1 {
     top: -127vh;
 }
 
+#C {
+    margin-top: -100vh;
+}
+
+#entContat {
+    width: 800px;
+    font-size: 4.65rem;
+    color: #043253;
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    margin-left: 9.2vw;
+    margin-top: 20vh;
+    margin-bottom: 0.1vh;
+}
+
+.descriptioncontact {
+    padding-top: 2px;
+    width: 700px;
+    font-size: 1.12rem;
+    color: #000;
+    text-align: left;
+    font-weight: lighter;
+    margin-left: 9.2vw;
+    margin-top: 0.3vh;
+}
+
+.contactUs {
+    height: 90;
+    position: relative;
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: lighter;
+    margin-left: 9.2vw;
+    margin-top: 0.5vh;
+}
+
+.contactUs>.nomeContato {
+    display: flex;
+    gap: 10px;
+    width: 620px;
+    border: #0077B6 solid 2px;
+    border-radius: 25px;
+    padding: 6px;
+    padding-left: 2.7vw;
+    align-items: center;
+}
+
+.contactUs>.emailContato {
+    display: flex;
+    gap: 10px;
+    width: 620px;
+    margin-top: 25px;
+    border: #0077B6 solid 2px;
+    border-radius: 25px;
+    padding: 6px;
+    padding-left: 2.7vw;
+    margin-bottom: 5.5vh;
+    color: #000;
+    align-items: center;
+}
+
+.contactUs>div>label {
+    padding-top: 0.85%;
+}
+
+.main {
+    max-width: 100%;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    font-size: 1.15rem;
+    color: #333;
+    outline: none;
+    font-family: 'Poppins', serif;
+    background-color: transparent;
+}
+
+
+.IconsContato {
+    width: 750px;
+    height: 90;
+    position: relative;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: lighter;
+    margin-left: 9.2vw;
+    margin-top: 5.5vh;
+    position: absolute;
+    display: flex;
+    margin-bottom: 2vh;
+    gap: 5vw;
+}
+
+#Enviar {
+    background-color: #0077B6;
+    color: white;
+    width: 310px;
+    border-radius: 30px;
+    border: #0077B6 solid;
+    font-size: 1.9rem;
+    font-weight: lighter;
+    font-style: initial;
+    font-family: 'Poppins', serif;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#Enviar:hover {
+    background-color: #043253;
+    border: #043253 solid;
+    color: rgb(227, 226, 226);
+}
+
+.imgBoi {
+    margin-left: 60vw;
+    margin-top: -60vh;
+}
+
 @media (max-width: 1100px) {
     #Bvindo {
         margin-left: 9.2vw;
@@ -854,10 +983,10 @@ h1 {
 
     #planosAll {
         grid-template-columns: repeat(2, 1fr);
-        padding-left: 18vw;
-        padding-right: 15vw;
-        row-gap: 5vh;
-        column-gap: 5vw;
+        gap: 2.5rem;
+        max-width: 900px;
+        padding: 0 2.5rem;
+        margin: -2.5vh auto 35vh;
     }
 
     .btSelecAzul, .btSelecAzul1, #btBrancoSelec {
@@ -874,7 +1003,16 @@ h1 {
 
     #C {
         position: relative;
-        top: 30vh;
+        top: 10vh;
+    }
+
+    #entContat {
+        width: 73vw;
+        line-height: 80px;
+    }
+
+    .descriptioncontact {
+        width: 63.5vw;
     }
 }
 
@@ -1108,10 +1246,10 @@ h1 {
 
     #planosAll {
         grid-template-columns: 1fr;
-        padding-left: 7vw;
-        row-gap: 15vw;
-        margin-bottom: 50vw;
-        margin-top: 10vw;
+        gap: 5vw;
+        max-width: 720px;
+        padding: 0 7vw;
+        margin: 10vw auto 50vw;
     }
 
     .plano:nth-child(3) {
@@ -1136,130 +1274,61 @@ h1 {
 
     #C {
         position: relative;
-        top: 13000vw;
+        top: 245vh;
     }
-}
 
-#C {
-    margin-top: -100vh;
-}
+    .imgBoi {
+        opacity: 0;
+    }
 
-#entContat {
-    width: 800px;
-    font-size: 4.65rem;
-    color: #043253;
-    text-align: left;
-    display: inline-block;
-    font-weight: lighter;
-    margin-left: 9.2vw;
-    margin-top: 20vh;
-    margin-bottom: 0.1vh;
-}
+    #entContat {
+        width: 90vw;
+        font-size: 15vw;
+        line-height: 15vw;
+        margin-bottom: 6vw;
+    }
 
-.descriptioncontact {
-    padding-top: 2px;
-    width: 700px;
-    font-size: 1.12rem;
-    color: #000;
-    text-align: left;
-    font-weight: lighter;
-    margin-left: 9.2vw;
-    margin-top: 0.3vh;
-}
+    .descriptioncontact {
+        width: 87vw;
+        font-size: 5vw;
+    }
 
-.contactUs {
-    height: 90;
-    position: relative;
-    font-size: 1.5rem;
-    text-align: left;
-    font-weight: lighter;
-    margin-left: 9.2vw;
-    margin-top: 0.5vh;
-}
+    .contactUs>.nomeContato,
+    .contactUs>.emailContato {
+        font-size: 1.5rem;
+        gap: 4vw;
+        width: 75vw;
+        height: 4vh;
+        border-radius: 15px;
+    }
 
-.contactUs>.nomeContato {
-    display: flex;
-    gap: 10px;
-    width: 620px;
-    border: #0077B6 solid 2px;
-    border-radius: 25px;
-    padding: 6px;
-    padding-left: 2.7vw;
-    align-items: center;
-}
+    .nomeContato>label>img,
+    .emailContato>label>img {
+        width: 5vw;
+        height: 2.2vh;
+        vertical-align: middle;
+        margin-top: -0.7vh;
+    }
 
-.contactUs>.emailContato {
-    display: flex;
-    gap: 10px;
-    width: 620px;
-    margin-top: 25px;
-    border: #0077B6 solid 2px;
-    border-radius: 25px;
-    padding: 6px;
-    padding-left: 2.7vw;
-    margin-bottom: 5.5vh;
-    color: #000;
-    align-items: center;
-}
+    .emailContato>input,
+    .nomeContato>input {
+        font-size: 0.9rem;
+        margin-left: -3vw;
+    }
 
-.contactUs>div>label {
-    padding-top: 0.85%;
-}
+    #Enviar {
+        width: 75vw;
+        height: 8vh;
+        font-size: 1.72rem;
+        margin-left: 2.5vw;
+        margin-bottom: 30px;
+        vertical-align: middle;
+    }
 
-.main {
-    max-width: 100%;
-}
-
-
-input {
-    width: 100%;
-    border: 0;
-    padding: 10px;
-    font-size: 1.15rem;
-    color: #333;
-    outline: none;
-    font-family: 'Poppins', serif;
-}
-
-
-.IconsContato {
-    width: 750px;
-    height: 90;
-    position: relative;
-    font-size: 1.2rem;
-    text-align: left;
-    font-weight: lighter;
-    margin-left: 9.2vw;
-    margin-top: 5.5vh;
-    position: absolute;
-    display: flex;
-    margin-bottom: 2vh;
-    gap: 5vw;
-}
-
-#Enviar {
-    background-color: #0077B6;
-    color: white;
-    width: 310px;
-    padding: 8px;
-    border-radius: 30px;
-    border: #0077B6 solid;
-    font-size: 1.9rem;
-    font-weight: lighter;
-    font-style: initial;
-    font-family: 'Poppins', serif;
-    letter-spacing: 2px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-#Enviar:hover {
-    background-color: #043253;
-    border: #043253 solid;
-    color: rgb(227, 226, 226);
-}
-
-.imgBoi {
-    margin-left: 60vw;
-    margin-top: -60vh;
+    .IconsContato {
+        gap: 13vw;
+        height: 2rem;
+        margin-top: -5px;
+        margin-left: 22vw;
+    }
 }
