@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="removerAtividade.css">
+    <link rel="stylesheet" href="criarAula.css">
     <link rel="shortcut icon" href="./assets/LOGO ZETA - 5.png" type="image/x-icon">
-    <title>Remover Atividade</title>
+    <title>Criar Aula</title>
 </head>
 <body>
     <header class="header">
@@ -24,9 +24,9 @@
         </div>
     </header>
     <main>
-        <div class="removerAtividade">
-            <h1>Remover Atividade</h1>
-            <h2>Insira o ID do Atividade que deseja remover</h2>
+        <div class="inserirAula">
+            <h1>Criar Aula</h1>
+            <h2>Insira os seguintes campos</h2>
         </div>
         <div class="sidebar">
             <div class="icon active">
@@ -52,8 +52,16 @@
         </div>
         <div class="campos">
             <form>
-                <input type="number" placeholder="ID Atividade" name="id" id="id"/>
-                <button type="submit">Remover</button>
+                <div id="parte_decima">
+                    <input type="text" placeholder="Nome" name="pontuacao" id="pontuacao"/>
+                    <input type="text" placeholder="Frente do Flashcard" name="frente_flashcard" id="frente_flashcard"/>
+                    <input type="text" placeholder="Verso do Flashcard" name="verso_flashcard" id="verso_flashcard"/>
+                </div>
+                <div id="parte_debaixo">
+                    <input type="text" placeholder="Texto" name="texto" id="texto">
+                    <input type="text" placeholder="Leis" name="leis" id="InputLeis">
+                </div>
+                <button type="submit">Inserir</button>
             </form>
         </div>
     </main>

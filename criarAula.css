@@ -5,7 +5,6 @@ body {
     font-family: 'Poppins', serif;
     width: 100%;
     overflow-x: hidden;
-    
 }
 .container {
     display: flex;
@@ -120,15 +119,17 @@ nav > .menu > input:checked + label::after{
     transform: scale(1.3);
 }
 
-.removerAula > h1{
+
+.inserirAula > h1{
     width: 100%;
     font-size: 80px;
     color: #043253;
     text-align: center;
     font-weight: lighter;
-    margin-top: 70px;
+    margin-top: 50px;
+
 }
-.removerAula > h2{
+.inserirAula > h2{
     color: #18a4e1;
     width: 100%;
     text-align: center;
@@ -138,30 +139,47 @@ nav > .menu > input:checked + label::after{
 .campos{
     text-align: center;
     margin-top: 50px;
+    margin-left: -55px;
 }
 .campos > form{
     display: grid;
     width: 37%;
     height: 20%;
     margin: 0 auto;
+    margin-left: 100px;
     gap: 30px;
 }
-.campos > form > input{
+.campos > form > div > input{
     border: 2px solid #18a4e1;
     border-radius: 15px;
     box-shadow: 1px 1px 3px;
     padding: 16px;
+    width: 300px;
     font-family: 'Poppins', serif;
     font-size: 16px;
     font-weight: lighter;
     outline: none;
+
 }
-.campos > form > input:active{
+
+.campos > form{
+    margin-left: 300px;
+}
+
+#parte_decima,#parte_debaixo{
+    gap: 30px;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+/* .campos > form > input:active{
     border: 3px solid #18a4e1;
-}
+} */
 
 .campos > form > button{
     border-radius: 20px;
+    margin: 0 auto;
     width: 200px;
     height: 50px;
     border: solid;
@@ -173,7 +191,8 @@ nav > .menu > input:checked + label::after{
     cursor: pointer;
     transition: 0.3s ease;
 }
+
 .campos > form > button:hover{
     background-color: #0076B6;
     transform: scale(1.1);
-}   
+}
