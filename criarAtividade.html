@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="removerAtividade.css">
+    <link rel="stylesheet" href="criarAtividade.css">
     <link rel="shortcut icon" href="./assets/LOGO ZETA - 5.png" type="image/x-icon">
-    <title>Remover Atividade</title>
+    <title>Criar Atividade</title>
 </head>
 <body>
     <header class="header">
@@ -24,9 +24,9 @@
         </div>
     </header>
     <main>
-        <div class="removerAtividade">
-            <h1>Remover Atividade</h1>
-            <h2>Insira o ID do Atividade que deseja remover</h2>
+        <div class="inserirAtividade">
+            <h1>Criar Atividade</h1>
+            <h2>Insira os seguintes campos</h2>
         </div>
         <div class="sidebar">
             <div class="icon active">
@@ -52,8 +52,27 @@
         </div>
         <div class="campos">
             <form>
-                <input type="number" placeholder="ID Atividade" name="id" id="id"/>
-                <button type="submit">Remover</button>
+                <div>
+                    <input type="number" placeholder="Pontuação" name="pontuacao" id="pontuacao"/>
+                    <input type="text" placeholder="Pergunta" name="pergunta" id="pergunta">
+                </div>
+                <div id="atividade1">
+                    <input type="text" placeholder="Alternativa1" name="alternativa1" id="alternativa1">
+                    <input type="text" placeholder="Correta" name="correta1" id="correta1">
+                </div>
+                <div id="atividade2">
+                    <input type="text" placeholder="Alternativa2" name="alternativa2" id="alternativa2">
+                    <input type="text" placeholder="Correta" name="correta2" id="correta2">
+                </div>
+                <div id="atividade3">
+                    <input type="text" placeholder="Alternativa3" name="alternativa3" id="alternativa3">
+                    <input type="text" placeholder="Correta" name="correta3" id="correta3">
+                </div>
+                <div id="atividade4">
+                    <input type="text" placeholder="Alternativa4" name="alternativa4" id="alternativa4">
+                    <input type="text" placeholder="Correta" name="correta4" id="correta4">
+                </div>
+                <button type="submit">Inserir</button>
             </form>
         </div>
     </main>
