@@ -19,15 +19,17 @@ body {
     top: 0;
     padding: 0;
     font-family: 'Poppins', serif;
+    font-weight: 100;
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden;   
 }
+
 
 .header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 12vh;
+    height: 5.5rem;
     background-color: white;
     opacity: 0.9;
     z-index: 1000;
@@ -39,7 +41,7 @@ body {
 }
 
 main {
-    margin-top: -4vh;
+    margin-top: -5.5rem;
 }
 
 .logo {
@@ -82,7 +84,7 @@ nav>.menu>label {
     gap: 3.5vw;
     font-size: 1.1rem;
     color: #000;
-    margin-top: 1vh;
+    margin-top: 0.2rem;
 }
 
 nav>.menu>label::before {
@@ -167,55 +169,6 @@ nav>.menu>input:checked+label::after {
 
 #menu-toggle {
     display: none;
-}
-
-@media (max-width: 800px) {
-    .logo {
-        position: relative;
-        top: 0.1vh;
-    }
-
-    .logo>span {
-        position: relative;
-        top: -0.1vh;
-    }
-
-    .header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .nav {
-        display: flex;
-    }
-
-    .menu-btn {
-        display: block;
-        position: relative;
-        right: -6vw;
-        top: 0.2vh;
-        font-size: 1.5rem;
-    }
-
-    .nav {
-        position: absolute;
-        top: 8vh;
-        right: 3vw;
-        background: #fff;
-        border: 1px solid #ddd;
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px;
-        display: none;
-    }
-
-    #menu-toggle:checked~.nav {
-        display: flex;
-    }
 }
 
 .selecionado>a {
@@ -413,14 +366,134 @@ nav>.menu>input:checked+label::after {
     width: 11.5rem;
 }
 
-#nssEquip {
+#mission {
+    margin-top: -600px;
+    margin-bottom: 600px;
+    scroll-margin-top: 0;
+}
+
+.missionContent > h1 {
+    width: 800px;
+    font-size: 90px;
+    color: rgb(4, 50, 83);
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 200px;
+    margin-bottom: 2px;
+}
+
+.missionContent > p {
+    width: 760px;
+    font-size: 25px;
+    color: rgb(4, 50, 83);
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+.missionImg {
+    margin-left: 1000px;
+    margin-top: -500px;
+}
+
+.pataMission {
+    margin-left: 1200px;
+    margin-top: -180px;
+    height: 80px;
+}
+
+.pataMissao {
+    margin-left: 40px;
+    margin-top: -300px;
+}
+
+.clientesContent > h1 {
+    width: 800px;
+    font-size: 90px;
+    color: rgb(4, 50, 83);
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 100px;
+    margin-bottom: 2px;
+}
+
+.clientesContent > p {
+    width: 800px;
+    font-size: 25px;
+    color: rgb(4, 50, 83);
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 10px;
+}
+
+.clientesContent > p {
+    width: 800px;
+    font-size: 25px;
+    color: rgb(4, 50, 83);
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 10px;
+}
+
+.pataCliente {
+    margin-left: 40px;
+    margin-top: -470px;
+}
+
+.logoCliente {
+    margin-left: 1000px;
+    margin-top: -100px;
+}
+
+#Sobrenos {
+    transform: translateX(0%);
+    width: 100%;
+    font-size: 80px;
+    color: rgb(4, 50, 83);
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 150px;
+}
+
+.descriptionUs {
+    width: 650px;
+    font-size: 25px;
+    color: rgb(4, 50, 83);
+    text-align: left;
+    display: inline-block;
+    font-weight: lighter;
+    margin-left: 141.6px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.foto > img {
+    width: 500px;
+    height: 400px;
+    margin-left: 850px;
+    margin-top: -400px;
+    border-radius: 50px;
+}
+
+.nssEquip {
     transform: translateX(0%);
     width: 100%;
     font-size: 3.8rem;
     color: #043253;
     text-align: center;
     font-weight: lighter;
-    margin-top: -50vh;
+    margin-top: 40vh;
 }
 
 .subtitulo {
@@ -462,12 +535,11 @@ nav>.menu>input:checked+label::after {
 }
 
 .col1 {
-    vertical-align: middle;
     height: 24.9rem;
 }
 
 .col2 {
-    margin-left: 25vw;
+    margin-left: -10vw;
     margin-bottom: 13.5vh;
     height: 18.3rem;
 }
@@ -487,44 +559,46 @@ nav>.menu>input:checked+label::after {
 .text1,
 .text2 {
     position: relative;
-    top: -49vh;
-    margin-left: 7vw;
+    top: 5vh;
+    margin-left: 1vw;
 }
 
 .text2 {
-    top: -51vh;
-    margin-left: 32.5vw;
+    top: 51vh;
+    margin-left: 2.5vw;
 }
 
-#Rapha {
+.Rapha {
     margin-top: -6vh;
 }
 
-#Matheus {
+.Matheus {
     margin-top: 7vh;
 }
 
-#Lucas {
+.Lucas {
     margin-top: 7.5vh;
 }
 
-#Caio {
+.Caio {
     margin-top: 7.5vh;
 }
 
-#João {
+.João {
     margin-top: -3vh;
 }
 
-#Nicolas {
+.Nicolas {
     margin-top: 7vh;
 }
 
-#Davi {
+.Davi {
     margin-top: 7.5vh;
 }
 
 .nome {
+    background-color: aliceblue;
+    width: max-content;
     margin-left: 2vw;
     font-weight: 200;
     font-size: 1.1rem;
@@ -538,69 +612,72 @@ nav>.menu>input:checked+label::after {
 }
 
 .descInt {
+    background-color: aliceblue;
+    width: max-content;
     margin-left: 2vw;
     font-weight: lighter;
     font-size: 0.7rem;
 }
 
-#Rapha>.nome {
+.Rapha>.nome {
     margin-top: 2vh;
 }
 
-#Rapha>.descInt {
+.Rapha>.descInt {
     margin-top: -1vh;
 }
 
-#Matheus>.nome {
+.Matheus>.nome {
     margin-top: 3vh;
 }
 
-#Matheus>.descInt {
+.Matheus>.descInt {
     margin-top: -1vh;
 }
 
-#Lucas>.nome {
+.Lucas>.nome {
     margin-top: 3.5vh;
 }
 
-#Lucas>.descInt {
+.Lucas>.descInt {
     margin-top: -1vh;
 }
 
-#Caio>.nome {
+.Caio>.nome {
     margin-top: 3.5vh;
 }
 
-#Caio>.descInt {
+.Caio>.descInt {
     margin-top: -1vh;
 }
 
-#João>.nome {
+.João>.nome {
     margin-top: 1vh;
 }
 
-#João>.descInt {
+.João>.descInt {
     margin-top: -1vh;
 }
 
-#Nicolas>.nome {
+.Nicolas>.nome {
     margin-top: 3.5vh;
 }
 
-#Nicolas>.descInt {
+.Nicolas>.descInt {
     margin-top: -1vh;
 }
 
-#Davi>.nome {
+.Davi>.nome {
     margin-top: 4vh;
 }
 
-#Davi>.descInt {
+.Davi>.descInt {
     margin-top: -1vh;
 }
 
 #planos {
     width: 100%;
+    margin-top: 200px;
 }
 
 .check {
@@ -1024,6 +1101,53 @@ input {
         row-gap: 21vw;
     }
 
+    .logo {
+        position: relative;
+        top: 0.05vh;
+    }
+
+    .logo>span {
+        position: relative;
+        top: -0.05vh;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+        position: relative;
+        right: -6vw;
+        top: 0.2vh;
+        font-size: 1.5rem;
+    }
+
+    .nav {
+        position: absolute;
+        top: 8vh;
+        right: 3vw;
+        background: #fff;
+        border: 1px solid #ddd;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        display: none;
+    }
+
+    #menu-toggle:checked~.nav {
+        display: flex;
+    }
+
     #Bvindo {
         width: 100vw;
         font-size: 15vw;
@@ -1184,19 +1308,19 @@ input {
         margin-left: 33vw;
     }
 
-    #Rapha {
+    .Rapha {
         margin-top: -3vw;
     }
 
-    #Matheus {
+    .Matheus {
         margin-top: 9vw;
     }
 
-    #Lucas {
+    .Lucas {
         margin-top: 14vw;
     }
 
-    #Caio {
+    .Caio {
         margin-top: 16vw;
     }
 
