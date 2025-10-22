@@ -14,6 +14,10 @@ html {
     scroll-margin-top: 0;
 }
 
+#nssapp {
+    scroll-margin-top: -95px;
+}
+
 body {
     margin: 0;
     top: 0;
@@ -23,7 +27,6 @@ body {
     width: 100%;
     overflow-x: hidden;   
 }
-
 
 .header {
     position: fixed;
@@ -38,10 +41,6 @@ body {
     justify-content: space-between;
     padding: 0 10vw;
     box-sizing: border-box;
-}
-
-main {
-    margin-top: -5.5rem;
 }
 
 .logo {
@@ -379,7 +378,7 @@ nav>.menu>input:checked+label::after {
     text-align: left;
     display: inline-block;
     font-weight: lighter;
-    margin-left: 141.6px;
+    margin-left: 9.2vw;
     margin-top: 200px;
     margin-bottom: 2px;
 }
@@ -391,25 +390,76 @@ nav>.menu>input:checked+label::after {
     text-align: left;
     display: inline-block;
     font-weight: lighter;
-    margin-left: 141.6px;
+    margin-left: 9.2vw;
     margin-top: 20px;
     margin-bottom: 200px;
 }
 
 .missionImg {
-    margin-left: 1000px;
+    margin-left: 65vw;
     margin-top: -500px;
 }
 
 .pataMission {
-    margin-left: 1200px;
+    margin-left: 80vw;
     margin-top: -180px;
-    height: 80px;
+    height: 3.5rem;
 }
 
 .pataMissao {
-    margin-left: 40px;
+    margin-left: 2vw;
     margin-top: -300px;
+}
+
+@media (max-width: 1350px) {
+    .missionImg {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .missionContent > h1 {
+        justify-content: center;
+        width: 82vw;
+    }
+
+    .missionContent > p {
+        justify-content: center;
+        width: 80vw;
+    }
+
+    .pataMissao {
+        margin-left: -1vw;
+    }
+}
+
+@media (max-width: 768px) {
+    #mission {
+        position: relative;
+        bottom: -175vh;
+    }
+
+    .missionContent > h1 {
+        width: 100vw;
+        font-size: 16vw;
+        margin-left: 9.2vw;
+        line-height: 15vw;
+    }
+
+    .missionContent > p {
+        width: 80vw;
+        font-size: 6vw;
+        margin-top: 5vh;
+        padding: 0 1vw;
+    }
+
+    .pataMission {
+        opacity: 0;
+    }
+
+    .pataMissao {
+        opacity: 0;
+    }
 }
 
 .clientesContent > h1 {
@@ -419,71 +469,133 @@ nav>.menu>input:checked+label::after {
     text-align: left;
     display: inline-block;
     font-weight: lighter;
-    margin-left: 141.6px;
+    margin-left: 9.2vw;
     margin-top: 100px;
     margin-bottom: 2px;
 }
 
 .clientesContent > p {
-    width: 800px;
+    width: 52vw;
     font-size: 25px;
     color: rgb(4, 50, 83);
     text-align: left;
     display: inline-block;
     font-weight: lighter;
-    margin-left: 141.6px;
-    margin-top: 10px;
-}
-
-.clientesContent > p {
-    width: 800px;
-    font-size: 25px;
-    color: rgb(4, 50, 83);
-    text-align: left;
-    display: inline-block;
-    font-weight: lighter;
-    margin-left: 141.6px;
-    margin-top: 10px;
+    margin-left: 9.2vw;
 }
 
 .pataCliente {
-    margin-left: 40px;
+    margin-left: 2vw;
     margin-top: -470px;
 }
 
 .logoCliente {
-    margin-left: 1000px;
+    margin-left: 65vw;
     margin-top: -100px;
 }
 
+@media (max-width: 1350px) {
+    #clientes {
+        justify-content: center;
+    }
+
+    .pataCliente {
+        position: relative;
+        top: -5vh;
+    }
+}
+
+@media (max-width: 768px) {
+    #clientes {
+        position: relative;
+        bottom: -130vh;
+    }
+
+    .clientesContent > h1 {
+        width: 100vw;
+        font-size: 16vw;
+        margin-left: 9.2vw;
+        line-height: 15vw;
+    }
+
+    .clientesContent > p {
+        width: 80vw;
+        font-size: 6vw;
+        margin: 0 auto;
+        padding: 0 10vw;
+        margin-top: 5vh;
+    }
+
+    .logoCliente {
+        opacity: 0;
+    }
+
+    .pataCliente {
+        opacity: 0;
+    }
+}
+
 #Sobrenos {
-    transform: translateX(0%);
     width: 100%;
-    font-size: 80px;
+    font-size: 5rem;
     color: rgb(4, 50, 83);
     text-align: center;
     font-weight: lighter;
-    margin-top: 150px;
+    margin-top: 15vh;
+}
+
+.aboutUsContent {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
 }
 
 .descriptionUs {
     width: 650px;
-    font-size: 25px;
+    height: max-content;
+    font-size: 1.55rem;
     color: rgb(4, 50, 83);
     text-align: left;
     display: inline-block;
     font-weight: lighter;
-    margin-left: 141.6px;
-    margin-top: 40px;
-    margin-bottom: 80px;
+    margin-top: 10vh;
 }
 
-.foto > img {
+.foto{
     width: 500px;
     height: 400px;
-    margin-left: 850px;
-    margin-top: -400px;
     border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+    #aboutUs {
+        position: relative;
+        bottom: -120vh;
+    }
+
+    #Sobrenos {
+        width: 100vw;
+        font-size: 16vw;
+        line-height: 15vw;
+        margin-bottom: -50vh;
+    }
+
+    .aboutUsContent {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 55vh;
+    }
+
+    .descriptionUs {
+        width: 80vw;
+        font-size: 6vw;
+        margin-top: 5vh;
+    }
+
+    .foto {
+        width: 80vw;
+        height: auto;
+    }
 }
 
 .nssEquip {
@@ -945,12 +1057,15 @@ input {
 }
 
 footer {
-    margin-top: 20vh;
+    margin-top: 10vh;
+    position: relative;
+    bottom: 0;
     background-color: #043253;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     height: 400px;
+    padding: 0 10vw;
 }
 
 #logoF {
@@ -1126,11 +1241,14 @@ footer {
     .descriptioncontact {
         width: 63.5vw;
     }
+
+    footer {
+        bottom: -10px;
+    }
 }
 
 @media (max-width: 768px) {
     #home {
-        margin-top: 10vw;
         position: absolute;
         row-gap: 25vh;
         row-gap: 21vw;
@@ -1186,29 +1304,24 @@ footer {
     #Bvindo {
         width: 100vw;
         font-size: 15vw;
-        margin-top: 12vw;
+        margin-top: 10vh;
         margin-left: 9.2vw;
         line-height: 13vw;
     }
 
     .description {
-        font-size: 2.8vw;
-        font-size: 2.9vh;
+        font-size: 5.3vw;
         margin-top: 0;
-        margin-top: 0;
-        width: 90vw;
-    }
+        width: 80vw;
+    }   
 
     .himage {
-        width: 73vw;
-        height: 67vw;
-        position: relative;
         opacity: 0;
     }
 
     .buttons {
         flex-direction: column;
-        margin-top: 20vw;
+        margin-top: 10vh;
         margin-left: -12vw;
     }
 
@@ -1224,6 +1337,7 @@ footer {
     #nssapp {
         position: absolute;
         top: 80vw;
+        scroll-margin-top: -180px;
     }
 
     #Nssaplicat {
@@ -1233,9 +1347,8 @@ footer {
     }
 
     #nssappdescription {
-        width: 85vw;
-        font-size: 2.4vw;
-        font-size: 2.5vh;
+        width: 80vw;
+        font-size: 5.3vw;
         margin-top: -5vw;
     }
 
@@ -1294,25 +1407,19 @@ footer {
     }
 
     .imagem1 {
-        position: relative;
-        margin-left: -17vw;
-        top: -105vw;
-        width: 30vw;
+        opacity: 0;
     }
 
     .imagem2 {
-        position: relative;
-        margin-left: 85vw;
-        top: -125vw;
-        width: 30vw;
+        opacity: 0;
     }
 
     .e {
         position: relative;
-        top: 210vh;
+        top: 90vh;
     }
 
-    #nssEquip {
+    .nssEquip {
         width: 100vw;
         font-size: 15vw;
         line-height: 13vw;
@@ -1334,34 +1441,21 @@ footer {
     }
 
     .col2 {
-        margin-top: -97vw;
+        margin-top: -110vw;
         margin-left: 1%;
     }
 
     .text1 {
         position: relative;
-        margin-left: 33vw;
-    }
-
-    .Rapha {
-        margin-top: -3vw;
-    }
-
-    .Matheus {
-        margin-top: 9vw;
-    }
-
-    .Lucas {
-        margin-top: 14vw;
-    }
-
-    .Caio {
-        margin-top: 16vw;
+        margin-left: 30vw;
+        top: -51vh;
     }
 
     .text2 {
         position: relative;
-        margin-top: 10vw;
+        margin-top: 11vh;
+        margin-left: 30vw;
+        top: -60vh;
     }
 
     .descInt {
@@ -1388,9 +1482,21 @@ footer {
         left: -20vw;
     }
 
+        .e2 {
+        position: relative;
+        top: 65vh;
+    }
+
+    .Integrantessegundoano {
+        width: 90vw;
+        margin-left: 15%;
+        flex-direction: column;
+        gap: 1px;
+    }
+
     #planos {
         position: relative;
-        top: 225vh;
+        top: 45vh;
     }
 
     #tbpreco {
@@ -1433,7 +1539,7 @@ footer {
 
     #C {
         position: relative;
-        top: 245vh;
+        top: 215vh;
     }
 
     .imgBoi {
@@ -1485,9 +1591,56 @@ footer {
     }
 
     .IconsContato {
+        position: relative;
+        left: 48%;
+        transform: translateX(-50%);
+        top: 2vh;
+        width: auto;
         gap: 13vw;
-        height: 2rem;
-        margin-top: -5px;
-        margin-left: 22vw;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    footer {
+        margin-top: 220vh;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2.5rem 1.5rem;
+        height: auto;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 360px) {
+    #Bvindo {
+        margin-top: 10vh;
+    }
+
+    #nssapp {
+        margin-top: 5vh;
+    }
+
+    #funcionalidades {
+        top: 205vh;
+    }
+}
+
+@media (max-width: 360px) {
+    #Bvindo {
+        margin-top: 10vh;
+    }
+
+    #nssapp {
+        margin-top: 5vh;
+    }
+
+    #funcionalidades {
+        top: 205vh;
     }
 }
