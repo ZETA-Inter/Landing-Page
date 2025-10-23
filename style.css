@@ -227,6 +227,7 @@ nav>.menu>input:checked+label::after {
 }
 
 #btn1Cover {
+    color: #f6f7ff;
     background-color: #043253;
     margin-left: 9.2vw;
     border-radius: 1.5em;
@@ -256,6 +257,11 @@ nav>.menu>input:checked+label::after {
     border: 2px solid #18a4e1;
     width: 12rem;
     background-color: white;
+    color: #18a4e1;
+}
+
+#btn2Cover:hover {
+    cursor: pointer;
 }
 
 .btn2 {
@@ -1081,6 +1087,12 @@ footer {
     margin-right: 20px;
 }
 
+.iconesFooter>a>img {
+    width: 44px;
+    height: 40px;
+    margin-right: 20px;
+}
+
 .linksRapidos {
     margin-left: -10px;
 }
@@ -1142,6 +1154,7 @@ footer {
     border-radius: 50px;
     text-decoration: none;
     margin-right: 80px;
+    z-index: 100;
 }
 
 .btn > img {
@@ -1322,12 +1335,20 @@ footer {
     .buttons {
         flex-direction: column;
         margin-top: 10vh;
-        margin-left: -12vw;
+        justify-content: center;
     }
 
     .buttons>#btn1Cover,
     #btn2Cover {
-        margin: 0 auto;
+        width: 75%;
+        height: 10vh;
+        margin-left: -10%;
+    }
+
+    #btn1Cover {
+        width: 75%;
+        height: 10vh;
+        margin-left: -10%;
     }
 
     .buttons>button>a {
@@ -1432,30 +1453,32 @@ footer {
 
     .Integrantesprimeiroano {
         width: 90vw;
-        margin-left: 15%;
+        margin-left: 10%;
         flex-direction: column;
     }
 
     .col1 {
         margin-top: 3vw;
+        z-index: 10;
     }
 
     .col2 {
-        margin-top: -110vw;
+        margin-top: -400px;
         margin-left: 1%;
+        z-index: 10;
     }
 
     .text1 {
         position: relative;
         margin-left: 30vw;
-        top: -51vh;
+        top: -390px;
     }
 
     .text2 {
         position: relative;
-        margin-top: 11vh;
+        margin-bottom: 74px;
         margin-left: 30vw;
-        top: -60vh;
+        top: -398px;
     }
 
     .descInt {
@@ -1482,21 +1505,21 @@ footer {
         left: -20vw;
     }
 
-        .e2 {
+    .e2 {
         position: relative;
-        top: 65vh;
+        top: 75vh;
     }
 
     .Integrantessegundoano {
         width: 90vw;
-        margin-left: 15%;
+        margin-left: 10%;
         flex-direction: column;
         gap: 1px;
     }
 
     #planos {
         position: relative;
-        top: 45vh;
+        top: 75vh;
     }
 
     #tbpreco {
@@ -1539,7 +1562,8 @@ footer {
 
     #C {
         position: relative;
-        top: 215vh;
+        top: 245vh;
+        scroll-margin-top: -50px;
     }
 
     .imgBoi {
@@ -1603,8 +1627,13 @@ footer {
         justify-content: center;
     }
 
+    .btn {
+        bottom: 3vh;
+        right: -13vw;
+    }
+
     footer {
-        margin-top: 220vh;
+        margin-top: 245vh;
         grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
@@ -1631,16 +1660,8 @@ footer {
     }
 }
 
-@media (max-width: 360px) {
-    #Bvindo {
-        margin-top: 10vh;
-    }
-
-    #nssapp {
-        margin-top: 5vh;
-    }
-
-    #funcionalidades {
-        top: 205vh;
+@media (max-width: 320px) {
+    .e2 {
+        top: 5vh;
     }
 }
