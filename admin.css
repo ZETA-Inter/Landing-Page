@@ -161,30 +161,28 @@ main {
 }
 
 #Adm{
-    font-size: 80px;
+    font-size: 5rem;
     color: #0CC0DF;
-    font-family: 'Poppins', serif;
-    font-style: normal;
     font-weight: lighter;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
     transform: translateY(60%);
 }
 
 .admContent{
     position: relative;
-    font-size: 25px;
+    font-size: 1.4rem;
     text-align: left;
     font-weight: lighter;
-    margin-left: 141.6px;
-    margin-top: 85px;
+    margin-left: 9.2vw;
+    margin-top: 15vh;
 }
 
 .loginAdmin{
-    margin-top: 50px;
+    margin-top: 7vh;
 }
 
 #Login{
-    margin-top: 100px;
+    margin-top: 10vh;
 }
 
 
@@ -218,14 +216,19 @@ label > img{
     height: 20px;
     width: 25px;
     align-items: center;
+    margin-top: 10px;
 }
 
+label > #senha {
+    position: relative;
+    top: 2.7px;
+}
 
 input {
     align-items: center;
-    border: 0px;
+    border: 0;
     padding: 10px;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #333;
     outline: none;
     font-family: 'Poppins', serif;
@@ -239,7 +242,7 @@ input {
     padding: 10px;
     border-radius: 30px;
     border: white solid;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: lighter;
     font-style: initial;
     font-family: 'Poppins', serif;
@@ -248,7 +251,7 @@ input {
 }
 
 .entraesq{
-    margin-top: 20px;
+    margin-top: 2vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -261,11 +264,11 @@ input {
     padding: 10px;
     border-radius: 30px;
     border: #0077B6 solid;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: lighter;
     font-style: initial;
     font-family: 'Poppins', serif;
-    margin-right: 980px;
+    margin-right: 64.5vw;
     letter-spacing: 2px;
     transition: 0.5s;
     cursor: pointer;
@@ -273,8 +276,7 @@ input {
 
 #esqsenha{
     width: 250px;
-    font-size: 18px;
-    text-indent: 5px;
+    font-size: 1.1rem;
     padding-right: 5px;
 }
 
@@ -308,7 +310,7 @@ input {
 .boiAdmin{
     position: absolute;
     left: 80%;
-    top: 28%;
+    top: 35%;
     height: 260px;
 }
 
