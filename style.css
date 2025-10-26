@@ -1386,7 +1386,7 @@ footer {
 
     #funcionalidades {
         position: relative;
-        top: 425vw;
+        top: 210vh;
     }
 
     #Nssserv {
@@ -1412,7 +1412,7 @@ footer {
     .funcontent {
         grid-template-columns: repeat(2, 1fr);
         margin-left: 6%;
-        margin-top: 32vw;
+        margin-top: 10vh;
     }
 
     .fserv {
@@ -1646,6 +1646,16 @@ footer {
     }
 }
 
+@media (width: 428px) {
+    #funcionalidades {
+        top: 203vh;
+    }
+
+    .fserv {
+        padding-top: 1vh;
+    }
+}
+
 @media (max-width: 360px) {
     #Bvindo {
         margin-top: 10vh;
@@ -1661,7 +1671,36 @@ footer {
 }
 
 @media (max-width: 320px) {
+    #home {
+        margin-top: 3vh;
+    }
+    
+    #funcionalidades {
+        top: 245vh;
+    }
+
+    .fserv {
+        margin-top: 1vh;
+        padding-left: 0;
+    }
+
+    #mission {
+        bottom: -200vh;
+    }
+
     .e2 {
         top: 5vh;
+    }
+
+    #planos {
+        margin-top: -335vh;
+    }
+
+    #C {
+        top: 195vh;
+    }
+
+    footer {
+        margin-top: 165vh;
     }
 }
