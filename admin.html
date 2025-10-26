@@ -7,7 +7,8 @@
     <title>ZETA - Bem-estar Animal</title>
     <link rel="stylesheet" href="admin.css">
     <link rel="shortcut icon" href="./assets/LOGO ZETA - 5.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&family=Poppins:wght@300;400;500&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&family=Poppins:wght@300;400;500&display=swap"
         rel="stylesheet">
 </head>
 
@@ -15,16 +16,29 @@
     <header class="site-header">
         <div class="logo">
             <img src="./assets/Group 12229.svg" alt="Logo ZETA">
-            <div class="brand" aria-label="ZETA">ZETA</div>
+            <span class="brand">ZETA</span>
         </div>
         <nav class="nav" aria-label="Menu principal">
-            <ul class="nav-list">
-                <li><a href="index.html#home" class="is-active">Início</a></li>
-                <li><a href="index.html#funcionalidades" class="is-active">Funcionalidades</a></li>
-                <li><a href="index.html#planos" class="is-active">Planos</a></li>
-                <li><a href="index.html#contato" class="is-active">Contato</a></li>
-                <li><a href="admin.html" class="is-active">Admin</a></li>
-            </ul>
+            <div class="menu">
+                <input type="radio" name="link" id="Home">
+                <label for="Home"><a href="./index.html#home">Início</a></label>
+            </div>
+            <div class="menu">
+                <input type="radio" name="link" id="Func">
+                <label for="Func"><a href="./index.html#funcionalidades">Funcionalidades</a></label>
+            </div>
+            <div class="menu">
+                <input type="radio" name="link" id="Planos">
+                <label for="Planos"><a href="./index.html#planos">Planos</a></label>
+            </div>
+            <div class="menu">
+                <input type="radio" name="link" id="Contato">
+                <label for="Contato"><a href="./index.html#C">Contato</a></label>
+            </div>
+            <div class="menu active">
+                <input type="radio" name="link" id="Admin">
+                <label for="Admin"><a href="admin.html">Admin</a></label>
+            </div>
         </nav>
     </header>
 
@@ -33,15 +47,15 @@
             <div class="admContent">
                 <h1 id="Adm">ADMIN</h1>
                 <div class="buttons">
-                    <button id="Login">Login</button> 
+                    <button id="Login">Login</button>
                 </div>
                 <form class="loginAdmin">
                     <div id="emailLogin">
                         <label for="emailUser"><img id="email" src="./assets/emailAdmin.svg" alt="Email"></label>
-                        <input type="email" name="email" id="emailUser" placeholder= "Digite seu e-mail">
+                        <input type="email" name="email" id="emailUser" placeholder="Digite seu e-mail">
                     </div>
                     <div id="senhaAdmin">
-                        <label for="senhaUser"><img id="senha" src="./assets/senhaAdmin.svg" alt="senha"<label>
+                        <label for="senhaUser"><img id="senha" src="./assets/senhaAdmin.svg" alt="senha" <label>
                         <input type="password" name="userpassword" id="senhaUser" placeholder="Digite sua senha">
                     </div>
                 </form>
