@@ -9,7 +9,6 @@ body {
 
 .main{
     width: 100%;
-
 }
 .site-header {
     position: fixed;
@@ -41,6 +40,7 @@ nav>.menu-home>input {
 
 .nav {
     display: flex;
+    flex-direction: row-reverse;
     gap: 3.5vw;
     font-size: 1.1rem;
     color: #000;
@@ -55,7 +55,7 @@ nav>.menu>label {
     font-weight: lighter;
 }
 
-nav > .menu.active > label::before {
+nav>.menu>label::before {
     content: "";
     position: absolute;
     left: -10%;
@@ -64,10 +64,8 @@ nav > .menu.active > label::before {
     width: 120%;
     background: #0CC0DF;
     transform: scaleX(0);
-}
-
-nav > .menu.active > label::before {
-    transform: scaleX(0.86);
+    transform-origin: center;
+    transition: transform 0.5s ease;
 }
 
 nav>.menu>label:hover::after {
@@ -87,11 +85,11 @@ nav > .menu > label:hover::after {
 }
 
 body:has(#home:target) nav label[for="Home"]::before {
-    transform: scaleX(0.86);
+    opacity: 0;
 }
 
 body:has(#home:target) nav label[for="Home"]::after {
-    opacity: 0;
+    transform: scaleX(0.86);
 }
 
 body:has(#funcionalidades:target) nav label[for="Func"]::before {
@@ -118,11 +116,12 @@ body:has(#C:target) nav label[for="Contato"]::after {
     opacity: 0;
 }
 
-body:not(:has(:target)) nav label[for="Home"]::before {
+body.admin-page nav label[for="Admin"]::before {
     transform: scaleX(0.86);
+    transform-origin: center;
 }
 
-body:not(:has(:target)) nav label[for="Home"]::after {
+body.admin-page nav label[for="Admin"]::after {
     opacity: 0;
 }
 
@@ -287,14 +286,14 @@ input {
 }
 
 .elipseAz{
-    position: absolute;
+    position: relative;
     left: 72%;
-    top: 6%;
+    top: -68vh;
     height: 660px;
 }
 
 .elipseAzul{
-    position: absolute;
+    position: 0;
     left: 75%;
     top: 7%;
     height: 660px;
