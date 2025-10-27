@@ -4,7 +4,6 @@ body {
     padding: 0;
     font-family: 'Poppins', serif;
     width: 100%;
-    overflow: hidden;
 }
 
 .main{
@@ -40,6 +39,7 @@ nav>.menu-home>input {
 
 .nav {
     display: flex;
+    margin-right: 1vw;
     flex-direction: row-reverse;
     gap: 3.5vw;
     font-size: 1.1rem;
@@ -159,6 +159,10 @@ main {
     margin-top: -30px;
 }
 
+section {
+    display: flex;
+}
+
 #Adm{
     font-size: 5rem;
     color: #0CC0DF;
@@ -173,7 +177,8 @@ main {
     text-align: left;
     font-weight: lighter;
     margin-left: 9.2vw;
-    margin-top: 15vh;
+    margin-top: 10vh;
+    z-index: 10;
 }
 
 .loginAdmin{
@@ -189,6 +194,7 @@ main {
     box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.415);
     width: 350px;
     border: white solid 2px;
+    background-color: white;
     border-radius: 25px;
     padding: 8px;
     padding-left: 40px;
@@ -203,6 +209,7 @@ main {
     width: 350px;
     margin-top: 30px;
     border: white solid 2px;
+    background-color: white;
     border-radius: 25px;
     padding: 8px;
     padding-left: 40px;
@@ -229,8 +236,6 @@ input {
     padding: 10px;
     font-size: 1.2rem;
     color: #333;
-    outline: none;
-    font-family: 'Poppins', serif;
 }
 
 #Login{
@@ -252,29 +257,29 @@ input {
 .entraesq{
     margin-top: 2vh;
     display: flex;
-    justify-content: space-between;
+    width: max-content;
     align-items: center;
 }
 
 #Entrar{
     background-color: #0077B6;
+    margin-left: 68px;
     color: white;
     width: 140px;
     padding: 10px;
     border-radius: 30px;
     border: #0077B6 solid;
+    font-family: 'Poppins', serif;
     font-size: 1.1rem;
     font-weight: lighter;
     font-style: initial;
-    font-family: 'Poppins', serif;
-    margin-right: 64.5vw;
     letter-spacing: 2px;
     transition: 0.5s;
     cursor: pointer;
 }
 
 #esqsenha{
-    width: 250px;
+    width: max-content;
     font-size: 1.1rem;
     padding-right: 5px;
 }
@@ -287,29 +292,48 @@ input {
 
 .elipseAz{
     position: relative;
-    left: 72%;
-    top: -68vh;
+    left: 70%;
+    top: -74.6vh;
     height: 660px;
+    z-index: 1;
 }
 
 .elipseAzul{
-    position: 0;
-    left: 75%;
-    top: 7%;
+    position: relative;
+    left: 43%;
+    top: -74.6vh;
     height: 660px;
+    z-index: 2;
 }
 
 .elipseBranca{
-    position: absolute;
-    left: 78%;
-    top: 8%;
+    position: relative;
+    left: 20%;
+    top: -74.6vh;
     height: 660px;
+    z-index: 3;
 }
 
 .boiAdmin{
-    position: absolute;
-    left: 80%;
-    top: 35%;
+    position: relative;
+    right: 1.5vw;
+    margin-right: -1vw;
+    top: -105vh;
     height: 260px;
+    z-index: 4;
 }
 
+.Imagens {
+    position: fixed;
+    top: 86.35vh;
+    right: 35px;
+    margin-right: -2vw;
+}
+
+@media (max-width: 1342.5px) {
+    
+    .boiAdmin {
+        top: -141.5vh;
+        left: 79vw;
+    }
+}
