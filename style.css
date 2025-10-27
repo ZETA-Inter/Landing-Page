@@ -688,7 +688,7 @@ nav>.menu>input:checked+label::after {
 
 .text1 {
     position: relative;
-    top: -55.5vh;
+    top: -55.8vh;
     margin-left: 6vw;
     grid-template-columns: 1fr;
     margin-bottom: 1.8rem;
@@ -697,7 +697,7 @@ nav>.menu>input:checked+label::after {
 .text2 {
     grid-template-columns: 1fr;
     position: relative;
-    top: -63.5vh;
+    top: -63.8vh;
     margin-left: 26vw;
 }
 
