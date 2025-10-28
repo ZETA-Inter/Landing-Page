@@ -6,9 +6,10 @@ body {
     width: 100%;
 }
 
-.main{
+.main {
     width: 100%;
 }
+
 .site-header {
     position: fixed;
     top: 0;
@@ -21,7 +22,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 10vw;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 nav>.menu {
@@ -80,7 +81,7 @@ nav>.menu>label:hover::after {
     background: darkgray;
 }
 
-nav > .menu > label:hover::after {
+nav>.menu>label:hover::after {
     transform: scaleX(0.86);
 }
 
@@ -133,6 +134,17 @@ nav>.menu>input:checked+label::after {
     opacity: 0;
 }
 
+.menu-btn {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    user-select: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
 .logo {
     width: 4rem;
     height: 4rem;
@@ -163,7 +175,7 @@ section {
     display: flex;
 }
 
-#Adm{
+#Adm {
     font-size: 5rem;
     color: #0CC0DF;
     font-weight: lighter;
@@ -171,26 +183,26 @@ section {
     transform: translateY(60%);
 }
 
-.admContent{
+.admContent {
     position: relative;
     font-size: 1.4rem;
     text-align: left;
     font-weight: lighter;
     margin-left: 9.2vw;
     margin-top: 10vh;
-    z-index: 10;
+    z-index: 100;
 }
 
-.loginAdmin{
+.loginAdmin {
     margin-top: 7vh;
 }
 
-#Login{
+#Login {
     margin-top: 10vh;
 }
 
 
-.loginAdmin > #senhaAdmin{
+.loginAdmin>#senhaAdmin {
     box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.415);
     width: 350px;
     border: white solid 2px;
@@ -202,7 +214,7 @@ section {
     align-items: center;
 }
 
-.loginAdmin > #emailLogin{
+.loginAdmin>#emailLogin {
     display: flex;
     align-items: center;
     box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.415);
@@ -218,14 +230,14 @@ section {
     color: #000;
 }
 
-label > img{
+label>img {
     height: 20px;
     width: 25px;
     align-items: center;
     margin-top: 10px;
 }
 
-label > #senha {
+label>#senha {
     position: relative;
     top: 2.7px;
 }
@@ -238,7 +250,7 @@ input {
     color: #333;
 }
 
-#Login{
+#Login {
     box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.415);
     color: black;
     background-color: white;
@@ -254,14 +266,14 @@ input {
 
 }
 
-.entraesq{
+.entraesq {
     margin-top: 2vh;
     display: flex;
     width: max-content;
     align-items: center;
 }
 
-#Entrar{
+#Entrar {
     background-color: #0077B6;
     margin-left: 68px;
     color: white;
@@ -278,49 +290,45 @@ input {
     cursor: pointer;
 }
 
-#esqsenha{
+#esqsenha {
     width: max-content;
     font-size: 1.1rem;
     padding-right: 5px;
 }
 
-#Entrar:hover{
+#Entrar:hover {
     background-color: #043253;
     border: #043253 solid;
     color: rgb(227, 226, 226);
 }
 
-.elipseAz{
+.elipseAz {
     position: relative;
     left: 70%;
     top: -74.6vh;
     height: 660px;
-    z-index: 1;
 }
 
-.elipseAzul{
+.elipseAzul {
     position: relative;
     left: 43%;
     top: -74.6vh;
     height: 660px;
-    z-index: 2;
 }
 
-.elipseBranca{
+.elipseBranca {
     position: relative;
     left: 20%;
     top: -74.6vh;
     height: 660px;
-    z-index: 3;
 }
 
-.boiAdmin{
+.boiAdmin {
     position: relative;
     right: 1.5vw;
     margin-right: -1vw;
     top: -105vh;
     height: 260px;
-    z-index: 4;
 }
 
 .Imagens {
@@ -328,12 +336,14 @@ input {
     top: 86.35vh;
     right: 3%;
     margin-right: -2vw;
+    z-index: 50;
+    transition: ease 0.25s;
 }
 
 @media (max-width: 1353px) {
     .elipseAz {
         position: absolute;
-        left: 35%;
+        left: 34%;
     }
 
     .elipseAzul {
@@ -342,7 +352,7 @@ input {
 
     .elipseBranca {
         position: absolute;
-        left: 51%;
+        left: 53%;
     }
 
     .boiAdmin {
@@ -362,3 +372,70 @@ input {
     }
 }
 
+@media (max-width: 1200px) {
+    .boiAdmin {
+        left: 57%;
+    }
+
+    .Imagens {
+        margin-right: 1%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .boiAdmin {
+        left: 56%;
+    }
+
+    .Imagens {
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 879px) {
+    .admContent {
+        opacity: 1;
+    }
+
+    .Imagens {
+        opacity: 0.7;
+        transition: ease-in 0.25s;
+    }
+}
+
+@media (max-width: 780px) {
+    .boiAdmin {
+        left: 57%;
+    }
+
+    .Imagens {
+        margin-right: 8.6%;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+        position: relative;
+        right: -6vw;
+        top: 0.2vh;
+        font-size: 1.5rem;
+    }
+
+    .nav {
+        position: absolute;
+        top: 8vh;
+        right: 3vw;
+        background: #fff;
+        border: 1px solid #ddd;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        display: none;
+    }
+
+    #menu-toggle:checked~.nav {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
