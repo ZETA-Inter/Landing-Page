@@ -326,14 +326,39 @@ input {
 .Imagens {
     position: fixed;
     top: 86.35vh;
-    right: 35px;
+    right: 3%;
     margin-right: -2vw;
 }
 
-@media (max-width: 1342.5px) {
-    
+@media (max-width: 1353px) {
+    .elipseAz {
+        position: absolute;
+        left: 35%;
+    }
+
+    .elipseAzul {
+        position: absolute;
+    }
+
+    .elipseBranca {
+        position: absolute;
+        left: 51%;
+    }
+
     .boiAdmin {
-        top: -141.5vh;
-        left: 79vw;
+        top: -50.5vh;
+        left: 25.5vw;
+        margin-right: 26vw;
+    }
+
+    .Imagens {
+        margin-right: -2vw;
     }
 }
+
+@media (max-width: 1300px) {
+    .boiAdmin {
+        left: 55%;
+    }
+}
+
