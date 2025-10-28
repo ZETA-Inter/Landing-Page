@@ -269,8 +269,9 @@ input {
 .entraesq {
     margin-top: 2vh;
     display: flex;
-    width: max-content;
+    width: 350px;
     align-items: center;
+    box-sizing: border-box;
 }
 
 #Entrar {
@@ -291,7 +292,6 @@ input {
 }
 
 #esqsenha {
-    background-color: beige;
     width: 195px;
     font-size: 1.1rem;
     padding-right: 5px;
@@ -394,10 +394,6 @@ input {
 }
 
 @media (max-width: 879px) {
-    .admContent {
-        opacity: 1;
-    }
-
     .Imagens {
         opacity: 0.7;
         transition: ease-in 0.25s;
@@ -454,16 +450,32 @@ input {
 }
 
 @media (max-width: 540px) {
+    .admContent {
+        width: max-content;
+        margin: 0 auto;
+        margin-top: 10%;
+    }
+
     .loginAdmin>#senhaAdmin {
-        width: 80%;
+        width: 86.6%;
     }
 
     .loginAdmin>#emailLogin {
-        width: 80%;
+        width: 86.6%;
     }
 
-    #Entrar {
-        width: 30%;
+    #emailLogin>input {
+        width: 100%;
+    }
+
+    #senhaAdmin>input {
+        width: 100%;      
+    }
+
+    .entraesq {
+        width: 80%;
+        max-width: 420px;
+        margin: 0 auto;
     }
 
     .boiAdmin {
