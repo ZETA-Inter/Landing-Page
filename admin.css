@@ -270,15 +270,13 @@ input {
 .entraesq {
     margin-top: 2vh;
     display: flex;
-    width: 350px;
+    width: max-content;
     align-items: center;
-    box-sizing: border-box;
 }
 
 #Entrar {
     background-color: #0077B6;
     color: white;
-    margin-left: 8.5vw;
     width: 140px;
     padding: 10px;
     border-radius: 30px;
@@ -293,9 +291,9 @@ input {
 }
 
 #esqsenha {
-    width: 195px;
+    width: 190px;
+    margin-right: 70px;
     font-size: 1.1rem;
-    padding-right: 5px;
 }
 
 #Entrar:hover {
