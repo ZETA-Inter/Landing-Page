@@ -338,7 +338,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
 .imagem1 {
     position: relative;
     margin-left: -0.6vw;
-    top: -97vh;
+    top: -99vh;
     width: 11.5rem;
 }
 
@@ -930,18 +930,19 @@ h1 {
     font-weight: lighter;
     margin-left: 9.2vw;
     margin-top: 20vh;
-    margin-bottom: 0.1vh;
+    margin-bottom: 4vh;
 }
 
 .descriptioncontact {
     padding-top: 2px;
     width: 700px;
-    font-size: 1.12rem;
+    font-size: 1.6rem;
     color: #000;
     text-align: left;
     font-weight: lighter;
     margin-left: 9.2vw;
     margin-top: 0.3vh;
+    margin-bottom: 8vh;
 }
 
 .contactUs {
@@ -952,31 +953,6 @@ h1 {
     font-weight: lighter;
     margin-left: 9.2vw;
     margin-top: 0.5vh;
-}
-
-.contactUs>#nomeContato {
-    display: flex;
-    gap: 10px;
-    width: 620px;
-    border: #0077B6 solid 2px;
-    border-radius: 25px;
-    padding: 6px;
-    padding-left: 2.7vw;
-    align-items: center;
-}
-
-.contactUs>#emailContato {
-    display: flex;
-    gap: 10px;
-    width: 620px;
-    margin-top: 25px;
-    border: #0077B6 solid 2px;
-    border-radius: 25px;
-    padding: 6px;
-    padding-left: 2.7vw;
-    margin-bottom: 5.5vh;
-    color: #000;
-    align-items: center;
 }
 
 .contactUs>div>label {
@@ -1007,20 +983,21 @@ input {
     text-align: left;
     font-weight: lighter;
     margin-left: 9.2vw;
-    margin-top: 5.5vh;
+    margin-top: 7.5vh;
     position: absolute;
     display: flex;
-    margin-bottom: 2vh;
-    gap: 5vw;
+    align-items: baseline;
+    margin-bottom: 15vh;
+    gap: 4.2vw;
 }
 
 #Enviar {
     background-color: #0077B6;
     color: white;
-    width: 310px;
-    border-radius: 30px;
+    padding: 18px 60px 18px 60px;
+    border-radius: 40px;
     border: #0077B6 solid;
-    font-size: 1.9rem;
+    font-size: 1.4rem;
     font-weight: lighter;
     font-style: initial;
     font-family: 'Poppins', serif;
@@ -1041,7 +1018,7 @@ input {
 }
 
 footer {
-    margin-top: 10vh;
+    margin-top: 18vh;
     position: relative;
     bottom: 0;
     background-color: #043253;
