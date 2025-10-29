@@ -13,37 +13,26 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="site-header">
         <div class="logo">
             <img src="./assets/Group 12229.svg" alt="Logo ZETA">
-            <span class="logo-text">ZETA</span>
+            <span class="brand" aria-label="ZETA">ZETA</span>
         </div>
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-btn">&#9776;</label>
-        <nav class="nav">
-            <div class="menu">
-                <input type="radio" name="link" id="Home">
-                <label for="Home"><a href="#home">Início</a></label>
-            </div>
-            <div class="menu">
-                <input type="radio" name="link" id="Func">
-                <label for="Func"><a href="#funcionalidades">Funcionalidades</a></label>
-            </div>
-            <div class="menu">
-                <input type="radio" name="link" id="Planos">
-                <label for="Planos"><a href="#planos">Planos</a></label>
-            </div>
-            <div class="menu">
-                <input type="radio" name="link" id="Contato">
-                <label for="Contato"><a href="#C">Contato</a></label>
-            </div>
-            <div class="menu">
-                <input type="radio" name="link" id="Admin">
-                <label for="Admin"><a href="admin.html">Admin</a></label>
-            </div>
+        <nav class="nav" aria-label="Menu principal">
+            <ul class="nav-list">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#funcionalidades">Funcionalidades</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
         </nav>
     </header>
+
     <a href="#home" class="btn"><img src="./assets/seta.png" alt="voltar"></a>
+
     <main class="main">
         <div class="container">
             <section id="home">
@@ -386,7 +375,7 @@
                 <img src="./assets/pataPlano2.png" alt="Elemento">
             </div>
         </section>
-        <section id="C">
+        <section id="contato">
             <div class="ccontent">
                 <h1 id="entContat">Entre em contato</h1>
                 <p class="descriptioncontact">

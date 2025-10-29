@@ -4,13 +4,14 @@
 
 html {
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 [id] {
     scroll-margin-top: var(--header-offset);
 }
 
-#C {
+#contato {
     scroll-margin-top: 0;
 }
 
@@ -28,7 +29,7 @@ body {
     overflow-x: hidden;   
 }
 
-.header {
+.site-header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -64,29 +65,22 @@ a {
     text-decoration: none;
 }
 
-nav>.menu {
-    display: inline-block;
+nav>.nav-list {
+    display: flex;
+    gap: 3.5vw;
+    font-size: 1.1rem;
+    color: #000;
+    margin-top: 1.2rem;
+    list-style: none;
 }
 
-nav>.menu>input {
-    display: none;
-}
-
-nav>.menu>label {
+nav>.nav-list>li>a {
     cursor: pointer;
     width: max-content;
     position: relative;
 }
 
-.nav {
-    display: flex;
-    gap: 3.5vw;
-    font-size: 1.1rem;
-    color: #000;
-    margin-top: 0.2rem;
-}
-
-nav>.menu>label::before {
+nav>.nav-list>li>a::before {
     content: "";
     position: absolute;
     left: -10%;
@@ -99,7 +93,7 @@ nav>.menu>label::before {
     transition: transform 0.5s ease;
 }
 
-nav>.menu>label:hover::after {
+nav>.nav-list>li>a:hover::after {
     opacity: 0.4;
     transform: scaleX(0.86);
     content: "";
@@ -111,52 +105,36 @@ nav>.menu>label:hover::after {
     background: darkgray;
 }
 
-body:has(#home:target) nav label[for="Home"]::before {
-    transform: scaleX(0.86);
+body:has(#home:target) nav>.nav-list>li:has(>a[href="#home"]) > a::before { 
+    transform: scaleX(0.86); 
 }
 
-body:has(#home:target) nav label[for="Home"]::after {
-    opacity: 0;
+body:has(#home:target) nav>.nav-list>li:has(>a[href="#home"]) > a::after  { 
+    opacity: 0; 
 }
 
-body:has(#funcionalidades:target) nav label[for="Func"]::before {
-    transform: scaleX(0.86);
+body:has(#funcionalidades:target) nav>.nav-list>li:has(>a[href="#funcionalidades"]) > a::before { 
+    transform: scaleX(0.86); 
 }
 
-body:has(#funcionalidades:target) nav label[for="Func"]::after {
-    opacity: 0;
+body:has(#funcionalidades:target) nav>.nav-list>li:has(>a[href="#funcionalidades"]) > a::after  { 
+    opacity: 0; 
 }
 
-body:has(#planos:target) nav label[for="Planos"]::before {
-    transform: scaleX(0.86);
+body:has(#planos:target) nav>.nav-list>li:has(>a[href="#planos"]) > a::before { 
+    transform: scaleX(0.86); 
 }
 
-body:has(#planos:target) nav label[for="Planos"]::after {
-    opacity: 0;
+body:has(#planos:target) nav>.nav-list>li:has(>a[href="#planos"]) > a::after  { 
+    opacity: 0; 
 }
 
-body:has(#C:target) nav label[for="Contato"]::before {
-    transform: scaleX(0.86);
+body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::before { 
+    transform: scaleX(0.86); 
 }
 
-body:has(#C:target) nav label[for="Contato"]::after {
-    opacity: 0;
-}
-
-body:not(:has(:target)) nav label[for="Home"]::before {
-    transform: scaleX(0.86);
-}
-
-body:not(:has(:target)) nav label[for="Home"]::after {
-    opacity: 0;
-}
-
-nav>.menu>input:checked+label::before {
-    transform: scaleX(0.86);
-}
-
-nav>.menu>input:checked+label::after {
-    opacity: 0;
+body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  { 
+    opacity: 0; 
 }
 
 .menu-btn {
@@ -939,7 +917,7 @@ h1 {
     top: -127vh;
 }
 
-#C {
+#contato {
     margin-top: -120vh;
 }
 
@@ -1241,7 +1219,7 @@ footer {
         margin-top: -165vh;
     }
 
-    #C {
+    #contato {
         position: relative;
         top: 10vh;
     }
@@ -1277,17 +1255,13 @@ footer {
         top: -0.05vh;
     }
 
-    .header {
+    .site-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: nowrap;
         width: 100%;
         max-width: 100%;
-    }
-
-    .nav {
-        display: flex;
     }
 
     .menu-btn {
@@ -1304,10 +1278,15 @@ footer {
         right: 3vw;
         background: #fff;
         border: 1px solid #ddd;
-        flex-direction: column;
         gap: 15px;
-        padding: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
         display: none;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        padding-left: 0;
     }
 
     #menu-toggle:checked~.nav {
@@ -1560,7 +1539,7 @@ footer {
         opacity: 0;
     }
 
-    #C {
+    #contato {
         position: relative;
         top: 245vh;
         scroll-margin-top: -50px;
@@ -1696,7 +1675,7 @@ footer {
         margin-top: -335vh;
     }
 
-    #C {
+    #contato {
         top: 195vh;
     }
 
