@@ -155,18 +155,18 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
 
 #home {
     display: flex;
+    justify-content: center;
 }
 
 #Bvindo {
     margin-top: 33vh;
-    width: 628px;
-    line-height: 10.5vh;
+    width: 500px;
+    line-height: 85%;
     position: relative;
     font-size: 5.6rem;
     color: #000;
     text-align: left;
     font-weight: lighter;
-    margin-left: 9.2vw;
 }
 
 .zetaHighlight {
@@ -182,13 +182,11 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     text-align: left;
     display: inline-block;
     font-weight: lighter;
-    margin-left: 9.2vw;
     margin-top: -1vh;
 }
 
 .himage {
-    margin-top: 22vh;
-    margin-left: 5.3vw;
+    margin-top: 150px;
     height: 32rem;
 }
 
@@ -207,7 +205,6 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
 #btn1Cover {
     color: #f6f7ff;
     background-color: #043253;
-    margin-left: 9.2vw;
     border-radius: 1.5em;
     height: 4.3rem;
     width: 12rem;
@@ -248,9 +245,25 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     color: #18a4e1;
 }
 
+@media (max-width: 1220px) {
+    .description {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 1120px) {
+    #home {
+        gap: -15%;
+    }
+    
+    .buttons {
+        top: 1vh;
+    }
+}
+
 #nssapp {
     display: flex;
-    ;
+    justify-content: center;
 }
 
 #Nssaplicat {
@@ -259,7 +272,6 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     color: #043253;
     text-align: left;
     font-weight: lighter;
-    margin-left: 9.2vw;
     margin-top: 50vh;
 }
 
@@ -268,7 +280,6 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     font-size: 1.8rem;
     color: #000;
     font-weight: lighter;
-    margin-left: 9.2vw;
     margin-top: -5vh;
 }
 
@@ -279,8 +290,37 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
 }
 
 .patinhas {
+    margin-left: -15%;
     margin-top: -21vh;
     width: 19rem;
+}
+
+@media (max-width: 1490px) {
+    .patinhas {
+        margin-left: -20%;
+    }
+    
+    .celular {
+        margin-left: 1%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .patinhas {
+        margin-left: -15%;
+    }
+}
+
+@media (max-width: 1310px) {
+    .patinhas {
+        margin-left: -10%;
+    }
+}
+
+@media (max-width: 1100px) {
+    #nssapp {
+        margin-top: -20%;
+    }
 }
 
 #funcionalidades {
@@ -305,6 +345,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     padding: 0.7vw;
     padding-left: 1.8vw;
     margin-bottom: 6.5vh;
+    margin-left: -1vw;
 }
 
 .iconesF {
@@ -419,8 +460,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
 
 @media (max-width: 768px) {
     #mission {
-        position: relative;
-        bottom: -175vh;
+        margin-top: -100%;
     }
 
     .missionContent > h1 {
@@ -478,6 +518,12 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     margin-top: -100px;
 }
 
+@media (max-width: 1563px) {
+    .pataCliente {
+        margin-top: -520px;
+    }
+}
+
 @media (max-width: 1350px) {
     #clientes {
         justify-content: center;
@@ -489,9 +535,14 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     }
 }
 
+@media (max-width: 1100px) {
+    .clientesContent {
+        margin-top: -100px;
+    }
+}
+
 @media (max-width: 768px) {
     #clientes {
-        position: relative;
         bottom: -130vh;
     }
 
@@ -531,7 +582,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
 .aboutUsContent {
     display: flex;
     justify-content: center;
-    gap: 5%;
+    gap: 5vw;
 }
 
 .descriptionUs {
@@ -551,9 +602,27 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     border-radius: 50px;
 }
 
+@media (max-width: 1260px) {
+    .aboutUsContent {
+        margin-left: 9.2vw;
+        margin-right: 9.2vw;
+    }
+
+    .descriptionUs {
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .aboutUsContent {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
 @media (max-width: 768px) {
     #aboutUs {
-        position: relative;
         bottom: -120vh;
     }
 
@@ -599,7 +668,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     font-size: 1.3rem;
 }
 
-#C {
+#contato {
     width: 100%;
 }
 
@@ -611,6 +680,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     position: relative;
     height: 17.5rem;
     top: -120vh;
+    z-index: 1;
 }
 
 .patasboi2 {
@@ -618,6 +688,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     height: 15.5rem;
     margin-left: 26vw;
     top: -120vh;
+    z-index: 1;
 }
 
 .patasboi3 {
@@ -625,12 +696,14 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     margin-left: 91.5vw;
     top: -170vh;
     margin-bottom: 30vh;
+    z-index: 1;
 }
 
 .patasboi4 {
     position: relative;
     margin-left: 90.5vw;
     margin-top: -5vh;
+    z-index: 1;
 }
 
 .col1 {
@@ -653,6 +726,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     font-weight: lighter;
     margin: 0 auto;
     margin-top: -1vh;
+    z-index: 100;
 }
 
 .Integrantessegundoano {
@@ -818,7 +892,6 @@ h1 {
     margin-left: 1.4vw;
     font-size: 0.9rem;
     align-items: center;
-
 }
 
 .planoAzul>h4,
@@ -974,7 +1047,6 @@ input {
     background-color: transparent;
 }
 
-
 .IconsContato {
     width: 750px;
     height: 90;
@@ -1121,6 +1193,130 @@ footer {
     background-color: rgb(239, 239, 239);
 }
 
+@media (max-width: 1340px) {
+    #home {
+        gap: 5%;
+    }
+
+    #funcionalidades {
+        scroll-margin-top: 180px;
+    }
+
+    .imagem1 {
+        top: -93vh;
+        margin-left: -3vw;
+    }
+
+    .imagem2 {
+        top: -105vh;
+        margin-left: 105vw;
+    }
+
+    #mission {
+        scroll-margin-top: var(--header-offset);
+    }
+
+    .missionImg {
+        opacity: 1;
+        margin-left: 75vw;
+    }
+
+    .pataMission {
+        margin-left: 90vw;
+    }
+
+    #clientes {
+        margin-top: -5%;
+        scroll-margin-top: 170px;
+    }
+
+    .pataCliente {
+        top: 1%;
+    }
+
+    .clientesContent>p {
+        width: 50%;
+    }
+
+    .logoCliente {
+        margin-left: 73vw;
+        margin-top: -5%;
+    }
+
+    #aboutUs {
+        margin-top: 10%;
+        scroll-margin-top: 170px;
+    }
+
+    .aboutUsContent {
+        margin-left: -4vw;
+    }
+
+    .e {
+        margin-top: -5%;
+    }
+
+    .Integrantesprimeiroano {
+        gap: 8%;
+    }
+
+    .text1 {
+        top: -53.4vh;
+    }
+
+    .patasboi2 {
+        margin-left: 30vw;
+        margin-top: 10%;
+    }
+
+    .patasboi3 {
+        margin-left: 90%;
+        margin-top: 20%;
+    }
+
+    .e2 {
+        margin-top: -225vh;
+    }
+
+    .Integrantessegundoano {
+        gap: 16%;
+    }
+
+    .text2 {
+        top: -61.6vh;
+    }
+
+    #planos {
+        scroll-margin-top: 170px;
+        margin-top: -115%;
+    }
+
+    #planosAll {
+        gap: 10%;
+    }
+
+    .plano {
+        width: 150%;
+    }
+
+    .planoAzul {
+        width: 115%;
+    }
+
+    .btSelecAzul,
+    .btSelecAzul1 {
+        margin-left: 16%;
+    }
+
+    #btBrancoSelec {
+        margin-left: 17.2%;
+    }
+
+    .img1 {
+        margin-left: 86%;
+    }
+}
+
 @media (max-width: 1100px) {
     #Bvindo {
         margin-left: 9.2vw;
@@ -1197,7 +1393,6 @@ footer {
     }
 
     #contato {
-        position: relative;
         top: 10vh;
     }
 
@@ -1217,9 +1412,7 @@ footer {
 
 @media (max-width: 768px) {
     #home {
-        position: absolute;
-        row-gap: 25vh;
-        row-gap: 21vw;
+        justify-content: left;
     }
 
     .logo {
@@ -1271,16 +1464,15 @@ footer {
     }
 
     #Bvindo {
-        width: 100vw;
-        font-size: 15vw;
+        width: 90vw;
+        font-size: 13vw;
         margin-top: 10vh;
-        margin-left: 9.2vw;
         line-height: 13vw;
     }
 
     .description {
         font-size: 5.3vw;
-        margin-top: 0;
+        margin-left: 9.2vw;
         width: 80vw;
     }   
 
@@ -1307,13 +1499,13 @@ footer {
         margin-left: -10%;
     }
 
-    .buttons>button>a {
-        font-size: 0.9rem;
+    .buttons>a>button {
+        font-size: 1.5rem;
     }
 
     #nssapp {
-        position: absolute;
-        top: 80vw;
+        margin-left: 9.2vw;
+        margin-top: -40%;
         scroll-margin-top: -180px;
     }
 
@@ -1335,14 +1527,13 @@ footer {
     }
 
     .celular {
-        margin-right: 13vw;
+        margin-left: -4.1vw;
         width: 90vw;
         height: 110vw;
     }
 
     #funcionalidades {
-        position: relative;
-        top: 210vh;
+        margin-top: 20%;
     }
 
     #Nssserv {
@@ -1352,16 +1543,13 @@ footer {
     }
 
     .funcionalis {
-        border: #18a4e1 0.25rem solid;
-        border-radius: 1.5rem;
         width: 37vw;
         height: 20vw;
         margin-bottom: 8vw;
     }
 
     .iconesF {
-        position: relative;
-        top: -8.5vw;
+        margin-top: 2.2vw;
         width: 3.7rem;
     }
 
@@ -1379,10 +1567,6 @@ footer {
         padding-left: 2vw;
     }
 
-    .fdescrip {
-        opacity: 0;
-    }
-
     .imagem1 {
         opacity: 0;
     }
@@ -1392,7 +1576,6 @@ footer {
     }
 
     .e {
-        position: relative;
         top: 90vh;
     }
 
@@ -1462,7 +1645,6 @@ footer {
     }
 
     .e2 {
-        position: relative;
         top: 75vh;
     }
 
@@ -1474,7 +1656,6 @@ footer {
     }
 
     #planos {
-        position: relative;
         top: 75vh;
     }
 
@@ -1517,7 +1698,6 @@ footer {
     }
 
     #contato {
-        position: relative;
         top: 245vh;
         scroll-margin-top: -50px;
     }
@@ -1585,7 +1765,7 @@ footer {
 
     .btn {
         bottom: 3vh;
-        right: -13vw;
+        right: -10%;
     }
 
     footer {
@@ -1614,7 +1794,30 @@ footer {
 
 @media (max-width: 360px) {
     #Bvindo {
+        margin-top: 15vh;
+    }
+
+    .buttons {
+        flex-direction: column;
         margin-top: 10vh;
+        justify-content: center;
+    }
+
+    .buttons>#btn1Cover,
+    #btn2Cover {
+        width: 75%;
+        height: 10vh;
+        margin-left: -10%;
+    }
+
+    #btn1Cover {
+        width: 75%;
+        height: 10vh;
+        margin-left: -10%;
+    }
+
+    .buttons>button>a {
+        font-size: 0.9rem;
     }
 
     #nssapp {
