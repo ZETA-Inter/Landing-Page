@@ -26,7 +26,7 @@ body {
     font-family: 'Poppins', serif;
     font-weight: 100;
     width: 100%;
-    overflow-x: hidden;   
+    overflow-x: hidden;
 }
 
 .site-header {
@@ -40,8 +40,35 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10vw;
+    padding: 0 11vw;
     box-sizing: border-box;
+}
+
+nav>.nav-list {
+    display: flex;
+    gap: 3.5vw;
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: lighter;
+    margin-top: 1.2rem;
+    list-style: none;
+}
+
+nav>.nav-list>li>a {
+    cursor: pointer;
+    width: max-content;
+    position: relative;
+}
+
+.menu-btn {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    user-select: none;
+}
+
+#menu-toggle {
+    display: none;
 }
 
 .logo {
@@ -51,33 +78,19 @@ body {
     font-size: 1.46rem;
     font-weight: 500px;
     display: flex;
-    margin-left: -2vw;
+    margin-left: -3vw;
     margin-top: -0.5vh;
     gap: 1vw;
 }
 
 .logo>span {
     margin-top: 1.2rem;
+    font-weight: lighter;
 }
 
 a {
     color: #000;
     text-decoration: none;
-}
-
-nav>.nav-list {
-    display: flex;
-    gap: 3.5vw;
-    font-size: 1.1rem;
-    color: #000;
-    margin-top: 1.2rem;
-    list-style: none;
-}
-
-nav>.nav-list>li>a {
-    cursor: pointer;
-    width: max-content;
-    position: relative;
 }
 
 nav>.nav-list>li>a::before {
@@ -105,52 +118,36 @@ nav>.nav-list>li>a:hover::after {
     background: darkgray;
 }
 
-body:has(#home:target) nav>.nav-list>li:has(>a[href="#home"]) > a::before { 
-    transform: scaleX(0.86); 
+body:has(#home:target) nav>.nav-list>li:has(>a[href="#home"])>a::before {
+    transform: scaleX(0.86);
 }
 
-body:has(#home:target) nav>.nav-list>li:has(>a[href="#home"]) > a::after  { 
-    opacity: 0; 
+body:has(#home:target) nav>.nav-list>li:has(>a[href="#home"])>a::after {
+    opacity: 0;
 }
 
-body:has(#funcionalidades:target) nav>.nav-list>li:has(>a[href="#funcionalidades"]) > a::before { 
-    transform: scaleX(0.86); 
+body:has(#funcionalidades:target) nav>.nav-list>li:has(>a[href="#funcionalidades"])>a::before {
+    transform: scaleX(0.86);
 }
 
-body:has(#funcionalidades:target) nav>.nav-list>li:has(>a[href="#funcionalidades"]) > a::after  { 
-    opacity: 0; 
+body:has(#funcionalidades:target) nav>.nav-list>li:has(>a[href="#funcionalidades"])>a::after {
+    opacity: 0;
 }
 
-body:has(#planos:target) nav>.nav-list>li:has(>a[href="#planos"]) > a::before { 
-    transform: scaleX(0.86); 
+body:has(#planos:target) nav>.nav-list>li:has(>a[href="#planos"])>a::before {
+    transform: scaleX(0.86);
 }
 
-body:has(#planos:target) nav>.nav-list>li:has(>a[href="#planos"]) > a::after  { 
-    opacity: 0; 
+body:has(#planos:target) nav>.nav-list>li:has(>a[href="#planos"])>a::after {
+    opacity: 0;
 }
 
-body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::before { 
-    transform: scaleX(0.86); 
+body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"])>a::before {
+    transform: scaleX(0.86);
 }
 
-body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  { 
-    opacity: 0; 
-}
-
-.menu-btn {
-    font-size: 28px;
-    cursor: pointer;
-    display: none;
-    user-select: none;
-}
-
-#menu-toggle {
-    display: none;
-}
-
-.selecionado>a {
-    text-decoration: none;
-    color: #000;
+body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"])>a::after {
+    opacity: 0;
 }
 
 #home {
@@ -255,7 +252,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     #home {
         gap: -15%;
     }
-    
+
     .buttons {
         top: 1vh;
     }
@@ -299,7 +296,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     .patinhas {
         margin-left: -20%;
     }
-    
+
     .celular {
         margin-left: 1%;
     }
@@ -396,7 +393,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     scroll-margin-top: 0;
 }
 
-.missionContent > h1 {
+.missionContent>h1 {
     width: 800px;
     font-size: 90px;
     color: rgb(4, 50, 83);
@@ -408,7 +405,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     margin-bottom: 2px;
 }
 
-.missionContent > p {
+.missionContent>p {
     width: 760px;
     font-size: 25px;
     color: rgb(4, 50, 83);
@@ -443,12 +440,12 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
 }
 
 @media (max-width: 900px) {
-    .missionContent > h1 {
+    .missionContent>h1 {
         justify-content: center;
         width: 82vw;
     }
 
-    .missionContent > p {
+    .missionContent>p {
         justify-content: center;
         width: 80vw;
     }
@@ -463,14 +460,14 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
         margin-top: -100%;
     }
 
-    .missionContent > h1 {
+    .missionContent>h1 {
         width: 100vw;
         font-size: 16vw;
         margin-left: 9.2vw;
         line-height: 15vw;
     }
 
-    .missionContent > p {
+    .missionContent>p {
         width: 80vw;
         font-size: 6vw;
         margin-top: 5vh;
@@ -486,7 +483,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     }
 }
 
-.clientesContent > h1 {
+.clientesContent>h1 {
     width: 800px;
     font-size: 90px;
     color: rgb(4, 50, 83);
@@ -498,7 +495,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     margin-bottom: 2px;
 }
 
-.clientesContent > p {
+.clientesContent>p {
     width: 52vw;
     font-size: 25px;
     color: rgb(4, 50, 83);
@@ -546,14 +543,14 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
         bottom: -130vh;
     }
 
-    .clientesContent > h1 {
+    .clientesContent>h1 {
         width: 100vw;
         font-size: 16vw;
         margin-left: 9.2vw;
         line-height: 15vw;
     }
 
-    .clientesContent > p {
+    .clientesContent>p {
         width: 80vw;
         font-size: 6vw;
         margin: 0 auto;
@@ -596,7 +593,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     margin-top: 10vh;
 }
 
-.foto{
+.foto {
     width: 500px;
     height: 400px;
     border-radius: 50px;
@@ -948,7 +945,8 @@ h1 {
     cursor: pointer;
 }
 
-.btSelecAzul1:hover, .btSelecAzul:hover {
+.btSelecAzul1:hover,
+.btSelecAzul:hover {
     background-color: #043253;
     border-color: #043253;
 }
@@ -992,6 +990,8 @@ h1 {
 
 #contato {
     margin-top: -120vh;
+    display: flex;
+    gap: 1vw;
 }
 
 #entContat {
@@ -1108,7 +1108,7 @@ footer {
     width: 180px;
 }
 
-.iconesFooter> img {
+.iconesFooter>img {
     width: 44px;
     height: 40px;
     margin-right: 20px;
@@ -1124,28 +1124,30 @@ footer {
     margin-left: -10px;
 }
 
-#Rapidolink, #contatoFooter {
+#Rapidolink,
+#contatoFooter {
     color: white;
     font-weight: 500;
     font-size: 20px;
     margin-top: 70px;
 }
 
-.linksRapidos > ul {
+.linksRapidos>ul {
     margin-left: -40px;
     list-style-type: none;
 }
 
-.linksRapidos > ul > li {
+.linksRapidos>ul>li {
     margin-bottom: 8px;
 }
 
-.linksRapidos > ul > li > a {
+.linksRapidos>ul>li>a {
     color: #D3DDE6;
     text-decoration: underline;
 }
 
-#Rapidolink, #contatoFooter {
+#Rapidolink,
+#contatoFooter {
     color: white;
     font-weight: 500;
     font-size: 20px;
@@ -1184,7 +1186,7 @@ footer {
     z-index: 100;
 }
 
-.btn > img {
+.btn>img {
     width: 30px;
     height: 35px;
 }
@@ -1194,8 +1196,61 @@ footer {
 }
 
 @media (max-width: 1340px) {
+    .site-header {
+        padding: 0 12.8vw;
+    }
+
+    nav>.nav-list {
+        gap: 4vw;
+        font-size: 1.3rem;
+        margin-top: 2.3rem;
+        margin-right: 10%;
+    }
+
+    nav>.nav-list>li>a::before,
+    nav>.nav-list>li>a:hover::after {
+        height: 0.27rem;
+    }
+
+    .logo {
+        width: 4.7rem;
+        height: 4.7rem;
+        font-size: 1.7rem;
+        margin-top: 1vh;
+        margin-left: -3.5vw;
+    }
+
+    .logo>span {
+        margin-top: 1.5rem;
+    }
+
     #home {
         gap: 5%;
+        margin-top: -3%;
+    }
+
+    #Bvindo {
+        font-size: 7rem;
+        width: 680px;
+    }
+
+    .description {
+        font-size: 1.6rem;
+        margin-top: -5%;
+    }
+
+    #btn1Cover,
+    #btn2Cover {
+        height: 5rem;
+        width: 15rem;
+        font-size: 1.2rem;
+    }
+
+    .himage {
+        width: 40%;
+        height: 40%;
+        margin-left: -6%;
+        margin-top: 13%;
     }
 
     #funcionalidades {
@@ -1305,15 +1360,87 @@ footer {
 
     .btSelecAzul,
     .btSelecAzul1 {
-        margin-left: 16%;
+        margin-left: 16.9%;
     }
 
     #btBrancoSelec {
-        margin-left: 17.2%;
+        margin-left: 17.5%;
     }
 
     .img1 {
         margin-left: 86%;
+    }
+
+    #contato {
+        margin-top: -55%;
+        scroll-margin-top: 110px;
+        display: flex;
+    }
+
+    #entContat {
+        width: max-content;
+    }
+
+    .IconsContato {
+        gap: 9%;
+    }
+
+    .imgBoi {
+        margin-top: 12%;
+        margin-left: 5%;
+    }
+
+    footer {
+        margin-top: 5%;
+        height: max-content;
+    }
+
+    #logoF {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .imagFooter {
+        margin-top: 10%;
+    }
+
+    .iconesFooter {
+        margin-left: 4%;
+        margin-top: -6%;
+    }
+
+    .iconesFooter>img {
+        width: 44px;
+        height: 70px;
+        margin-right: 20px;
+    }
+
+    .iconesFooter>a>img {
+        width: 44px;
+        height: 70px;
+        margin-right: 20px;
+    }
+
+    .linksRapidos>ul>li,
+    #Rapidolink,
+    #contatoFooter,
+    .contatoFooter>div {
+        font-size: 1.5rem;
+    }
+
+    .email>img,
+    .localizacao>img {
+        height: 1.5rem;
+    }
+
+    .btn {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .btn>img {
+        width: 3rem;
+        height: 3rem;
     }
 }
 
@@ -1380,7 +1507,9 @@ footer {
         margin: -2.5vh auto 35vh;
     }
 
-    .btSelecAzul, .btSelecAzul1, #btBrancoSelec {
+    .btSelecAzul,
+    .btSelecAzul1,
+    #btBrancoSelec {
         margin-left: 4.4vw;
     }
 
@@ -1474,7 +1603,7 @@ footer {
         font-size: 5.3vw;
         margin-left: 9.2vw;
         width: 80vw;
-    }   
+    }
 
     .himage {
         opacity: 0;
@@ -1681,11 +1810,14 @@ footer {
         margin-left: 0;
     }
 
-    .checks, .checksF {
+    .checks,
+    .checksF {
         padding-left: 5%;
     }
 
-    .btSelecAzul, .btSelecAzul1, #btBrancoSelec {
+    .btSelecAzul,
+    .btSelecAzul1,
+    #btBrancoSelec {
         margin-left: 16.5%;
     }
 
@@ -1833,7 +1965,7 @@ footer {
     #home {
         margin-top: 3vh;
     }
-    
+
     #funcionalidades {
         top: 245vh;
     }
