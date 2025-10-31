@@ -1003,7 +1003,7 @@ h1 {
     font-weight: lighter;
     margin-left: 9.2vw;
     margin-top: 20vh;
-    margin-bottom: 4vh;
+    margin-bottom: 5vh;
 }
 
 .descriptioncontact {
@@ -1015,7 +1015,7 @@ h1 {
     font-weight: lighter;
     margin-left: 9.2vw;
     margin-top: 0.3vh;
-    margin-bottom: 8vh;
+    margin-bottom: 10vh;
 }
 
 .contactUs {
@@ -1059,7 +1059,7 @@ input {
     position: absolute;
     display: flex;
     align-items: baseline;
-    margin-bottom: 15vh;
+    margin-bottom: 25vh;
     gap: 4.2vw;
 }
 
@@ -1076,6 +1076,7 @@ input {
     letter-spacing: 2px;
     transition: 0.5s;
     cursor: pointer;
+    margin-bottom: 4vh;
 }
 
 #Enviar:hover {
@@ -1085,12 +1086,13 @@ input {
 }
 
 .imgBoi {
-    margin-left: 60vw;
-    margin-top: -60vh;
+    margin-top: 150px;
+    height: 32rem;
+    margin-left: -5vw;
 }
 
 footer {
-    margin-top: 18vh;
+    margin-top: 25vh;
     position: relative;
     bottom: 0;
     background-color: #043253;
