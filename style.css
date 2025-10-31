@@ -576,7 +576,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"]) > a::after  
     color: rgb(4, 50, 83);
     text-align: center;
     font-weight: lighter;
-    margin-top: 15vh;
+    margin-top: 25vh;
 }
 
 .aboutUsContent {
