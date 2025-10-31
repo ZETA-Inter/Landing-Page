@@ -573,7 +573,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"])>a::after {
     color: rgb(4, 50, 83);
     text-align: center;
     font-weight: lighter;
-    margin-top: 15vh;
+    margin-top: 25vh;
 }
 
 .aboutUsContent {
@@ -1312,16 +1312,50 @@ footer {
     }
 
     .Integrantesprimeiroano {
-        gap: 8%;
+        gap: 0;
+        margin-left: -21vw;
+    }
+
+    .Integrantesprimeiroano>div>div>.text1 {
+        margin-bottom: 7%;
+        top: -68.5vh;
+        margin-left: 9vw;
+    }
+
+    .col1 {
+        height: 32rem;
+    }
+
+    .coluna1 {
+        margin-top: 2%;
+    }
+
+    .coluna2 {
+        margin-top: 2%;
+    }
+
+    .col2 {
+        height: 23.3rem;
     }
 
     .text1 {
-        top: -53.4vh;
+        margin-left: 40%;
+        top: -68.5vh;
+        margin-bottom: 14%;
+    }
+
+    .text1>h3 {
+        font-size: 1.5rem;
+        margin-bottom: -1%;
+    }
+
+    .text1>p {
+        font-size: 1.05rem;
     }
 
     .patasboi2 {
-        margin-left: 30vw;
-        margin-top: 10%;
+        margin-left: 35vw;
+        margin-top: -40%;
     }
 
     .patasboi3 {
@@ -1330,15 +1364,27 @@ footer {
     }
 
     .e2 {
-        margin-top: -225vh;
+        margin-top: -1825px;
     }
 
     .Integrantessegundoano {
-        gap: 16%;
+        gap: 19%;
+        margin-left: -20vw;
     }
 
     .text2 {
-        top: -61.6vh;
+        margin-left: 100%;
+        top: -80.8vh;
+        margin-bottom: -19%;
+    }
+
+    .text2>h3 {
+        font-size: 1.5rem;
+        margin-bottom: -1%;
+    }
+
+    .text2>p {
+        font-size: 1.05rem;
     }
 
     #planos {
@@ -1352,6 +1398,11 @@ footer {
 
     .plano {
         width: 150%;
+    }
+
+    .plano:nth-last-child(1) {
+        padding-top: 1%;
+        padding-bottom: -0.1%;
     }
 
     .planoAzul {
