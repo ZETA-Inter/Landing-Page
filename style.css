@@ -264,6 +264,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"])>a::after {
 }
 
 #Nssaplicat {
+    margin-left: 7.7vw;
     width: 620px;
     font-size: 4.7rem;
     color: #043253;
@@ -273,6 +274,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"])>a::after {
 }
 
 #nssappdescription {
+    margin-left: 7.7vw;
     width: 640px;
     font-size: 1.8rem;
     color: #000;
@@ -281,7 +283,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"])>a::after {
 }
 
 .celular {
-    margin-left: 7.8vw;
+    margin-left: 2.8vw;
     height: 40rem;
     margin-top: 33vh;
 }
@@ -400,7 +402,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"])>a::after {
     text-align: left;
     display: inline-block;
     font-weight: lighter;
-    margin-left: 9.2vw;
+    margin-left: 10.2vw;
     margin-top: 200px;
     margin-bottom: 2px;
 }
@@ -412,25 +414,25 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"])>a::after {
     text-align: left;
     display: inline-block;
     font-weight: lighter;
-    margin-left: 9.2vw;
+    margin-left: 10.2vw;
     margin-top: 20px;
     margin-bottom: 200px;
 }
 
 .missionImg {
-    margin-left: 65vw;
+    margin-left: 60vw;
     margin-top: -500px;
 }
 
 .pataMission {
-    margin-left: 80vw;
+    margin-left: 72vw;
     margin-top: -180px;
     height: 3.5rem;
 }
 
 .pataMissao {
-    margin-left: 2vw;
-    margin-top: -300px;
+    margin-left: 4vw;
+    margin-top: -290px;
 }
 
 @media (max-width: 1350px) {
