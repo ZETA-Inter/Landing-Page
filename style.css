@@ -264,7 +264,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"])>a::after {
 }
 
 #Nssaplicat {
-    margin-left: 7.7vw;
+    margin-left: 1.7vw;
     width: 620px;
     font-size: 4.7rem;
     color: #043253;
@@ -274,8 +274,8 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"])>a::after {
 }
 
 #nssappdescription {
-    margin-left: 7.7vw;
-    width: 640px;
+    margin-left: 1.7vw;
+    width: 650px;
     font-size: 1.8rem;
     color: #000;
     font-weight: lighter;
