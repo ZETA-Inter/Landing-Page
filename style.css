@@ -264,6 +264,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"])>a::after {
 }
 
 #Nssaplicat {
+    margin-left: 1.7vw;
     width: 620px;
     font-size: 4.7rem;
     color: #043253;
@@ -273,7 +274,8 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"])>a::after {
 }
 
 #nssappdescription {
-    width: 640px;
+    margin-left: 1.7vw;
+    width: 650px;
     font-size: 1.8rem;
     color: #000;
     font-weight: lighter;
@@ -281,7 +283,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"])>a::after {
 }
 
 .celular {
-    margin-left: 7.8vw;
+    margin-left: 2.8vw;
     height: 40rem;
     margin-top: 33vh;
 }
@@ -400,7 +402,7 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"])>a::after {
     text-align: left;
     display: inline-block;
     font-weight: lighter;
-    margin-left: 9.2vw;
+    margin-left: 10.2vw;
     margin-top: 200px;
     margin-bottom: 2px;
 }
@@ -412,25 +414,25 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"])>a::after {
     text-align: left;
     display: inline-block;
     font-weight: lighter;
-    margin-left: 9.2vw;
+    margin-left: 10.2vw;
     margin-top: 20px;
     margin-bottom: 200px;
 }
 
 .missionImg {
-    margin-left: 65vw;
+    margin-left: 60vw;
     margin-top: -500px;
 }
 
 .pataMission {
-    margin-left: 80vw;
+    margin-left: 72vw;
     margin-top: -180px;
     height: 3.5rem;
 }
 
 .pataMissao {
-    margin-left: 2vw;
-    margin-top: -300px;
+    margin-left: 4vw;
+    margin-top: -290px;
 }
 
 @media (max-width: 1350px) {
@@ -955,7 +957,7 @@ h1 {
 }
 
 #btBrancoSelec {
-    margin-top: 3vh;
+    margin-top: 10vh;
     margin-left: 3.3vw;
     width: 12.5rem;
     background-color: white;
@@ -1002,7 +1004,7 @@ h1 {
     font-weight: lighter;
     margin-left: 9.2vw;
     margin-top: 20vh;
-    margin-bottom: 4vh;
+    margin-bottom: 5vh;
 }
 
 .descriptioncontact {
@@ -1014,7 +1016,7 @@ h1 {
     font-weight: lighter;
     margin-left: 9.2vw;
     margin-top: 0.3vh;
-    margin-bottom: 8vh;
+    margin-bottom: 10vh;
 }
 
 .contactUs {
@@ -1058,7 +1060,7 @@ input {
     position: absolute;
     display: flex;
     align-items: baseline;
-    margin-bottom: 15vh;
+    margin-bottom: 25vh;
     gap: 4.2vw;
 }
 
@@ -1075,6 +1077,7 @@ input {
     letter-spacing: 2px;
     transition: 0.5s;
     cursor: pointer;
+    margin-bottom: 4vh;
 }
 
 #Enviar:hover {
@@ -1084,12 +1087,13 @@ input {
 }
 
 .imgBoi {
-    margin-left: 60vw;
-    margin-top: -60vh;
+    margin-top: 150px;
+    height: 32rem;
+    margin-left: -5vw;
 }
 
 footer {
-    margin-top: 18vh;
+    margin-top: 25vh;
     position: relative;
     bottom: 0;
     background-color: #043253;
