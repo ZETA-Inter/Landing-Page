@@ -2449,12 +2449,336 @@ footer {
 }
 
 @media (width: 428px) {
+    #home {
+        justify-content: left;
+        margin-top: 10%;
+    }
+
+    #Bvindo {
+        width: 90vw;
+        font-size: 13vw;
+        margin-top: 10vh;
+        line-height: 13vw;
+    }
+
+    .description {
+        font-size: 5.3vw;
+        margin-left: 9.2vw;
+        width: 80vw;
+    }
+
+    .himage {
+        opacity: 0;
+    }
+
+    .buttons {
+        flex-direction: column;
+        margin-top: 5vh;
+        justify-content: center;
+    }
+
+    .buttons>#btn1Cover,
+    #btn2Cover {
+        width: 75%;
+        height: 10vh;
+        margin-left: -10%;
+    }
+
+    #btn1Cover {
+        width: 75%;
+        height: 10vh;
+        margin-left: -10%;
+    }
+
+    .buttons>a>button {
+        font-size: 1.5rem;
+    }
+
+    #nssapp {
+        margin-left: 4.1vw;
+        margin-top: -60%;
+        scroll-margin-top: -180px;
+    }
+
+    #Nssaplicat {
+        width: 100vw;
+        font-size: 15vw;
+        line-height: 13vw;
+    }
+
+    #nssappdescription {
+        width: 80vw;
+        font-size: 5.3vw;
+        margin-top: -5vw;
+    }
+
+    .patinhas {
+        width: 50vw;
+        margin-top: -30vw;
+    }
+
+    .celular {
+        margin-left: 0;
+        width: 90vw;
+        height: 110vw;
+    }
+
     #funcionalidades {
-        top: 203vh;
+        margin-top: 20%;
+    }
+
+    #Nssserv {
+        width: 100vw;
+        font-size: 15vw;
+        line-height: 13vw;
+    }
+
+    .funcionalis {
+        width: 68%;
+        height: 120%;
+    }
+
+    .iconesF {
+        margin-top: 2%;
+        width: 3.7rem;
+    }
+
+    .funcontent {
+        grid-template-columns: 1fr;
+        margin: 15% 0 0 0;
+        margin-left: 20%;
+        gap: 15%;
     }
 
     .fserv {
-        padding-top: 1vh;
+        color: #18a4e1;
+        font-weight: 300;
+        font-size: 1.2rem;
+        padding-left: 2vw;
+        padding-top: 3%;
+    }
+
+    .fdescrip {
+        font-size: 0.9rem;
+    }
+
+    .imagem1 {
+        opacity: 0;
+    }
+
+    .imagem2 {
+        opacity: 0;
+    }
+
+    /*AJUSTAR NOSSA MISSÃO*/
+
+    .e {
+        top: 90vh;
+    }
+
+    .nssEquip {
+        width: 100vw;
+        font-size: 15vw;
+        line-height: 13vw;
+    }
+
+    .subtitulo {
+        font-size: 7vw;
+        margin-top: -2vw;
+    }
+
+    .Integrantesprimeiroano {
+        width: 90vw;
+        margin-left: 10%;
+        flex-direction: column;
+    }
+
+    .col1 {
+        margin-top: 3vw;
+        z-index: 10;
+    }
+
+    .col2 {
+        margin-top: -400px;
+        margin-left: 1%;
+        z-index: 10;
+    }
+
+    .text1 {
+        position: relative;
+        margin-left: 30vw;
+        top: -390px;
+    }
+
+    .text2 {
+        position: relative;
+        margin-bottom: 74px;
+        margin-left: 30vw;
+        top: -398px;
+    }
+
+    .descInt {
+        opacity: 0;
+    }
+
+    .patasboi1 {
+        height: 40vw;
+        margin-top: -7vw;
+    }
+
+    .patasboi2 {
+        opacity: 0;
+    }
+
+    .patasboi3 {
+        opacity: 0;
+    }
+
+    .patasboi4 {
+        position: relative;
+        height: 35vw;
+        bottom: -80vw;
+        left: -20vw;
+    }
+
+    .e2 {
+        top: 75vh;
+    }
+
+    .Integrantessegundoano {
+        width: 90vw;
+        margin-left: 10%;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    #planos {
+        top: 75vh;
+    }
+
+    #tbpreco {
+        font-size: 6vw;
+    }
+
+    #escPlano {
+        font-size: 12vw;
+        line-height: 13vw;
+        margin-top: 1vw;
+    }
+
+    #planosAll {
+        grid-template-columns: 1fr;
+        gap: 5vw;
+        max-width: 720px;
+        padding: 0 7vw;
+        margin: 10vw auto 50vw;
+    }
+
+    .plano:nth-child(3) {
+        margin-left: 0;
+    }
+
+    .checks,
+    .checksF {
+        padding-left: 5%;
+    }
+
+    .btSelecAzul,
+    .btSelecAzul1,
+    #btBrancoSelec {
+        margin-left: 16.5%;
+    }
+
+    .img1 {
+        opacity: 0;
+    }
+
+    .img2 {
+        opacity: 0;
+    }
+
+    #contato {
+        top: 245vh;
+        scroll-margin-top: -50px;
+    }
+
+    .imgBoi {
+        opacity: 0;
+    }
+
+    #entContat {
+        width: 90vw;
+        font-size: 15vw;
+        line-height: 15vw;
+        margin-bottom: 6vw;
+    }
+
+    .descriptioncontact {
+        width: 87vw;
+        font-size: 5vw;
+    }
+
+    .contactUs>#nomeContato,
+    .contactUs>#emailContato {
+        font-size: 1.5rem;
+        gap: 4vw;
+        width: 75vw;
+        height: 4vh;
+        border-radius: 15px;
+    }
+
+    #nomeContato>label>img,
+    #emailContato>label>img {
+        width: 5vw;
+        height: 2.2vh;
+        vertical-align: middle;
+        margin-top: -0.7vh;
+    }
+
+    #emailContato>input,
+    #nomeContato>input {
+        font-size: 0.9rem;
+        margin-left: -3vw;
+    }
+
+    #Enviar {
+        width: 75vw;
+        height: 8vh;
+        font-size: 1.72rem;
+        margin-left: 2.5vw;
+        margin-bottom: 30px;
+        vertical-align: middle;
+    }
+
+    .IconsContato {
+        position: relative;
+        left: 48%;
+        transform: translateX(-50%);
+        top: 2vh;
+        width: auto;
+        gap: 13vw;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .btn {
+        bottom: 3vh;
+        right: -10%;
+    }
+
+    footer {
+        margin-top: 245vh;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2.5rem 1.5rem;
+        height: auto;
+        box-sizing: border-box;
     }
 }
 
