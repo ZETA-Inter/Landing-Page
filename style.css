@@ -1498,290 +1498,6 @@ footer {
     }
 }
 
-@media (max-width: 800px) {
-    .site-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .menu-btn {
-        display: block;
-        position: relative;
-        right: -6vw;
-        top: 0.6rem;
-        font-size: 1.5rem;
-    }
-
-    .nav {
-        position: absolute;
-        top: 8vh;
-        right: 3vw;
-        background: #fff;
-        border: 1px solid #ddd;
-        gap: 15px;
-        padding-left: 15px;
-        padding-right: 15px;
-        display: none;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        padding-left: 0;
-    }
-
-    #menu-toggle:checked~.nav {
-        display: flex;
-    }
-
-    #home {
-        justify-content: left;
-        margin-top: -30%;
-        margin-left: -4.1vw;
-    }
-
-    #Bvindo {
-        width: 95%;
-        font-size: 8rem;
-    }
-
-    .description {
-        margin-left: 9.2vw;
-        width: 95%;
-        font-size: 2rem;
-    }
-
-    .buttons {
-        margin-left: 13vw;
-    }
-
-    #btn1Cover,
-    #btn2Cover {
-        width: 40vw;
-        height: 10vh;
-        font-size: 1.5rem;
-    }
-
-    .himage {
-        opacity: 0;
-    }
-
-    #nssapp {
-        margin-top: -60%;
-    }
-
-    .nossoappcontent {
-        margin-left: 2.3vw;
-    }
-
-    #Nssaplicat {
-        font-size: 5.45rem;
-        width: 95%;
-    }
-
-    #nssappdescription {
-        font-size: 2rem;
-        width: 95%;
-    }
-
-    .patinhas {
-        margin-top: -15vh;
-    }
-
-    #funcionalidades {
-        margin-top: 10vh;
-    }
-
-    #Nssserv {
-        font-size: 6rem;
-        line-height: 6rem;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .funcontent {
-        width: 85%;
-        margin-top: 10%;
-    }
-
-    .funcionalis {
-        width: 30vw;
-    }
-
-    .iconesF {
-        height: 150%;
-        top: -80%
-    }
-
-    .fserv {
-        margin-top: -50%;
-        font-size: 1.5rem;
-    }
-
-    .fdescrip {
-        font-size: 1.2rem;
-    }
-
-    .imagem1 {
-        top: -62vh;
-        left: -7vw;
-    }
-
-    .imagem2 {
-        top: -68.5vh;
-    }
-
-    #mission {
-        margin-top: -55vh;
-    }
-
-    #missao {
-        font-size: 6.1rem;
-        margin-left: 7vw;
-        width: 85%;
-    }
-
-    .missionContent>p {
-        font-size: 1.9rem;
-        width: 80%;
-    }
-
-    .pataMission {
-        margin-top: -15vh;
-        margin-left: 55vw;
-    }
-
-    .pataMissao {
-        margin-top: -32vh;
-        margin-left: -3vw;
-    }
-
-    .missionImg {
-        opacity: 0;
-    }
-
-    #clientes {
-        margin-top: 60vh;
-    }
-
-    .clientesContent {
-        margin-left: -2vw;
-    }
-
-    .clientesContent>h1 {
-        width: 83%;
-        font-size: 5.5rem;
-        margin-bottom: 5vh;
-    }
-
-    .clientesContent>p {
-        width: 83%;
-        font-size: 1.9rem;
-        margin-top: 1vh;
-    }
-
-    .pataCliente {
-        margin-top: -53vh;
-        margin-left: -2vw;
-    }
-
-    .logoCliente {
-        opacity: 0;
-    }
-
-    #aboutUs {
-        margin-top: -7vh;
-    }
-
-    .aboutUsContent {
-        margin-left: 8vw;
-    }
-
-    .descriptionUs {
-        font-size: 1.9rem;
-    }
-
-    .e {
-        margin-top: -10vh;
-    }
-
-    .nssEquip {
-        width: 100vw;
-        font-size: 6rem;
-        line-height: 13vw;
-    }
-
-    .subtitulo {
-        font-size: 3.5rem;
-        margin-top: -2vw;
-    }
-
-    .Integrantesprimeiroano {
-        width: 90vw;
-        padding-left: 10%;
-        margin-left: 50%;
-        flex-direction: column;
-    }
-
-    .col1 {
-        margin-top: 3vw;
-        z-index: 10;
-        margin-bottom: 12.5vh;
-    }
-
-    .col2 {
-        margin-top: -680px;
-        margin-left: 1%;
-        z-index: 10;
-    }
-
-    .coluna1>div>div.text1 {
-        margin-left: 15vw;
-        top: -54.2vh;
-        margin-bottom: 5.6%;
-    }
-
-    .text2 {
-        margin-left: 15vw;
-        top: -55.4vh;
-        margin-bottom: 12%;
-    }
-
-    .patas {
-        margin-top: 13%;
-    }
-
-    .patasboi1 {
-        height: 40vw;
-        margin-top: 14vw;
-    }
-
-    .patasboi2 {
-        opacity: 0;
-    }
-
-    .patasboi4 {
-        position: relative;
-        height: 35vw;
-        bottom: -100vw;
-        left: -30vw;
-    }
-
-    .e2 {
-        margin-top: -210vh;
-    }
-
-    .Integrantessegundoano {
-        width: 90vw;
-        margin-left: 16%;
-        flex-direction: column;
-        gap: 1px;
-    }
-}
-
 @media (max-width: 1100px) {
     #Bvindo {
         margin-left: 9.2vw;
@@ -1878,6 +1594,291 @@ footer {
 }
 
 @media (max-width: 800px) {
+    .site-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .menu-btn {
+        display: block;
+        position: relative;
+        right: -6vw;
+        top: 0.6rem;
+        font-size: 1.5rem;
+    }
+
+    .nav {
+        position: absolute;
+        top: 8vh;
+        right: 3vw;
+        background: #fff;
+        border: 1px solid #ddd;
+        gap: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: none;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    #menu-toggle:checked~.nav {
+        display: flex;
+    }
+
+    #home {
+        justify-content: left;
+        margin-top: -30%;
+        margin-left: -4.1vw;
+    }
+
+    #Bvindo {
+        width: 95%;
+        font-size: 8rem;
+    }
+
+    .description {
+        margin-left: 9.2vw;
+        width: 95%;
+        font-size: 2rem;
+    }
+
+    .buttons {
+        margin-left: 13vw;
+    }
+
+    #btn1Cover,
+    #btn2Cover {
+        width: 40vw;
+        height: 10vh;
+        font-size: 1.5rem;
+    }
+
+    .himage {
+        opacity: 0;
+    }
+
+    #nssapp {
+        margin-top: -60%;
+        scroll-margin-top: -500px;
+    }
+
+    .nossoappcontent {
+        margin-left: 4vw;
+    }
+
+    #Nssaplicat {
+        font-size: 5.4rem;
+        width: 92%;
+        margin-bottom: 10%;
+    }
+
+    #nssappdescription {
+        font-size: 2rem;
+        width: 92%;
+    }
+
+    .patinhas {
+        margin-top: -15vh;
+    }
+
+    #funcionalidades {
+        margin-top: 10vh;
+    }
+
+    #Nssserv {
+        font-size: 6rem;
+        line-height: 6rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .funcontent {
+        width: 85%;
+        margin-top: 10%;
+    }
+
+    .funcionalis {
+        width: 30vw;
+    }
+
+    .iconesF {
+        height: 150%;
+        top: -80%
+    }
+
+    .fserv {
+        margin-top: -50%;
+        font-size: 1.5rem;
+    }
+
+    .fdescrip {
+        font-size: 1.2rem;
+    }
+
+    .imagem1 {
+        top: -62vh;
+        left: -7vw;
+    }
+
+    .imagem2 {
+        top: -68.5vh;
+    }
+
+    #mission {
+        margin-top: -55vh;
+        scroll-margin-top: -95px;
+    }
+
+    #missao {
+        font-size: 6.1rem;
+        margin-left: 7vw;
+        width: 85%;
+    }
+
+    .missionContent>p {
+        font-size: 1.9rem;
+        width: 80%;
+    }
+
+    .pataMission {
+        margin-top: -15vh;
+        margin-left: 55vw;
+    }
+
+    .pataMissao {
+        margin-top: -32vh;
+        margin-left: -3vw;
+    }
+
+    .missionImg {
+        opacity: 0;
+    }
+
+    #clientes {
+        margin-top: 60vh;
+        scroll-margin-top: 50px;
+    }
+
+    .clientesContent {
+        margin-left: -2vw;
+    }
+
+    .clientesContent>h1 {
+        width: 83%;
+        font-size: 5.5rem;
+        margin-bottom: 5vh;
+    }
+
+    .clientesContent>p {
+        width: 83%;
+        font-size: 1.9rem;
+        margin-top: 1vh;
+    }
+
+    .pataCliente {
+        margin-top: -53vh;
+        margin-left: -2vw;
+    }
+
+    .logoCliente {
+        opacity: 0;
+    }
+
+    #aboutUs {
+        margin-top: -7vh;
+    }
+
+    .aboutUsContent {
+        margin-left: 8vw;
+    }
+
+    .descriptionUs {
+        font-size: 1.9rem;
+    }
+
+    .e {
+        margin-top: -10vh;
+    }
+
+    .nssEquip {
+        width: 100vw;
+        font-size: 6rem;
+        line-height: 13vw;
+    }
+
+    .subtitulo {
+        font-size: 3.5rem;
+        margin-top: -2vw;
+    }
+
+    .Integrantesprimeiroano {
+        width: 90vw;
+        margin-left: 15%;
+        flex-direction: column;
+    }
+
+    .col1 {
+        margin-top: 3vw;
+        z-index: 10;
+        margin-bottom: 12.5vh;
+    }
+
+    .col2 {
+        margin-top: -680px;
+        margin-left: 1%;
+        z-index: 10;
+    }
+
+    .coluna1>div>div.text1 {
+        margin-left: 15vw;
+        top: -54.2vh;
+        margin-bottom: 5.6%;
+    }
+
+    .text2 {
+        margin-left: 15vw;
+        top: -55.4vh;
+        margin-bottom: 12%;
+    }
+
+    .patas {
+        margin-top: 13%;
+    }
+
+    .patasboi1 {
+        height: 40vw;
+        margin-top: 14vw;
+    }
+
+    .patasboi2 {
+        opacity: 0;
+    }
+
+    .patasboi4 {
+        position: relative;
+        height: 35vw;
+        bottom: -100vw;
+        left: -30vw;
+    }
+
+    .e2 {
+        margin-top: -210vh;
+    }
+
+    .Integrantessegundoano {
+        width: 90vw;
+        margin-left: 16%;
+        flex-direction: column;
+        gap: 1px;
+    }
+
     #planos {
         margin-top: -160vh;
     }
@@ -1983,14 +1984,27 @@ footer {
         font-size: 1.9rem;
     }
 
-    form {
-        background-color: #333;
+    .contactUs {
+        margin: 0 0 0 0;
+        margin-left: 49%;
         width: max-content;
-        height: max-content;
     }
 
-    form>a {
-        font-size: 1.9rem;
+    #Enviar {
+        font-size: 2rem;
+    }
+
+    .IconsContato {
+        margin-left: 3%;
+        justify-content: center;
+    }
+
+    .IconsContato>img {
+        height: 70px;
+    }
+
+    .IconsContato>a>img {
+        height: 65px;
     }
 
     .imgBoi {
@@ -1999,6 +2013,63 @@ footer {
 
     footer {
         margin-top: 20vh;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2.5rem 1.5rem;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    #logoF {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .imagFooter {
+        margin-top: 10%;
+    }
+
+    .iconesFooter {
+        margin-left: 4%;
+        margin-top: -6%;
+    }
+
+    .iconesFooter>img {
+        width: 44px;
+        height: 70px;
+        margin-right: 20px;
+    }
+
+    .iconesFooter>a>img {
+        width: 44px;
+        height: 70px;
+        margin-right: 20px;
+    }
+
+    .linksRapidos>ul>li,
+    #Rapidolink,
+    #contatoFooter,
+    .contatoFooter>div {
+        font-size: 1.5rem;
+    }
+
+    .email>img,
+    .localizacao>img {
+        height: 1.5rem;
+    }
+
+    .btn {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .btn>img {
+        width: 3rem;
+        height: 3rem;
     }
 }
 
