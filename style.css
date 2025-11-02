@@ -457,34 +457,6 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"])>a::after {
     }
 }
 
-@media (max-width: 768px) {
-    #mission {
-        margin-top: -100%;
-    }
-
-    .missionContent>h1 {
-        width: 100vw;
-        font-size: 16vw;
-        margin-left: 9.2vw;
-        line-height: 15vw;
-    }
-
-    .missionContent>p {
-        width: 80vw;
-        font-size: 6vw;
-        margin-top: 5vh;
-        padding: 0 1vw;
-    }
-
-    .pataMission {
-        opacity: 0;
-    }
-
-    .pataMissao {
-        opacity: 0;
-    }
-}
-
 .clientesContent>h1 {
     width: 800px;
     font-size: 90px;
@@ -540,35 +512,6 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"])>a::after {
     }
 }
 
-@media (max-width: 768px) {
-    #clientes {
-        bottom: -130vh;
-    }
-
-    .clientesContent>h1 {
-        width: 100vw;
-        font-size: 16vw;
-        margin-left: 9.2vw;
-        line-height: 15vw;
-    }
-
-    .clientesContent>p {
-        width: 80vw;
-        font-size: 6vw;
-        margin: 0 auto;
-        padding: 0 10vw;
-        margin-top: 5vh;
-    }
-
-    .logoCliente {
-        opacity: 0;
-    }
-
-    .pataCliente {
-        opacity: 0;
-    }
-}
-
 #Sobrenos {
     width: 100%;
     font-size: 5rem;
@@ -617,36 +560,6 @@ body:has(#contato:target) nav>.nav-list>li:has(>a[href="#contato"])>a::after {
     .aboutUsContent {
         flex-direction: column-reverse;
         align-items: center;
-    }
-}
-
-@media (max-width: 768px) {
-    #aboutUs {
-        bottom: -120vh;
-    }
-
-    #Sobrenos {
-        width: 100vw;
-        font-size: 16vw;
-        line-height: 15vw;
-        margin-bottom: -50vh;
-    }
-
-    .aboutUsContent {
-        flex-direction: column-reverse;
-        align-items: center;
-        margin-top: 55vh;
-    }
-
-    .descriptionUs {
-        width: 80vw;
-        font-size: 6vw;
-        margin-top: 5vh;
-    }
-
-    .foto {
-        width: 80vw;
-        height: auto;
     }
 }
 
@@ -2076,54 +1989,7 @@ footer {
 @media (max-width: 768px) {
     #home {
         justify-content: left;
-    }
-
-    .logo {
-        position: relative;
-        top: -0.5vh;
-    }
-
-    .logo>span {
-        position: relative;
-        top: -0.5vh;
-    }
-
-    .site-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .menu-btn {
-        display: block;
-        position: relative;
-        right: -6vw;
-        top: 0.2vh;
-        font-size: 1.5rem;
-    }
-
-    .nav {
-        position: absolute;
-        top: 8vh;
-        right: 3vw;
-        background: #fff;
-        border: 1px solid #ddd;
-        gap: 15px;
-        padding-left: 15px;
-        padding-right: 15px;
-        display: none;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        padding-left: 0;
-    }
-
-    #menu-toggle:checked~.nav {
-        display: flex;
+        margin-top: 5%;
     }
 
     #Bvindo {
@@ -2131,339 +1997,12 @@ footer {
         font-size: 13vw;
         margin-top: 10vh;
         line-height: 13vw;
+        margin-left: 13vw;
     }
 
     .description {
         font-size: 5.3vw;
-        margin-left: 9.2vw;
-        width: 80vw;
-    }
-
-    .himage {
-        opacity: 0;
-    }
-
-    .buttons {
-        flex-direction: column;
-        margin-top: 10vh;
-        justify-content: center;
-    }
-
-    .buttons>#btn1Cover,
-    #btn2Cover {
-        width: 75%;
-        height: 10vh;
-        margin-left: -10%;
-    }
-
-    #btn1Cover {
-        width: 75%;
-        height: 10vh;
-        margin-left: -10%;
-    }
-
-    .buttons>a>button {
-        font-size: 1.5rem;
-    }
-
-    #nssapp {
-        margin-left: 9.2vw;
-        margin-top: -40%;
-        scroll-margin-top: -180px;
-    }
-
-    #Nssaplicat {
-        width: 100vw;
-        font-size: 15vw;
-        line-height: 13vw;
-    }
-
-    #nssappdescription {
-        width: 80vw;
-        font-size: 5.3vw;
-        margin-top: -5vw;
-    }
-
-    .patinhas {
-        width: 50vw;
-        margin-top: -30vw;
-    }
-
-    .celular {
-        margin-left: -4.1vw;
-        width: 90vw;
-        height: 110vw;
-    }
-
-    #funcionalidades {
-        margin-top: 20%;
-    }
-
-    #Nssserv {
-        width: 100vw;
-        font-size: 15vw;
-        line-height: 13vw;
-    }
-
-    .funcionalis {
-        width: 37vw;
-        height: 20vw;
-        margin-bottom: 8vw;
-    }
-
-    .iconesF {
-        margin-top: 2.2vw;
-        width: 3.7rem;
-    }
-
-    .funcontent {
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 6%;
-        margin-top: 10vh;
-    }
-
-    .fserv {
-        position: relative;
-        color: #18a4e1;
-        font-weight: 300;
-        font-size: 1.2rem;
-        padding-left: 2vw;
-    }
-
-    .imagem1 {
-        opacity: 0;
-    }
-
-    .imagem2 {
-        opacity: 0;
-    }
-
-    .e {
-        top: 90vh;
-    }
-
-    .nssEquip {
-        width: 100vw;
-        font-size: 15vw;
-        line-height: 13vw;
-    }
-
-    .subtitulo {
-        font-size: 7vw;
-        margin-top: -2vw;
-    }
-
-    .Integrantesprimeiroano {
-        width: 90vw;
-        margin-left: 10%;
-        flex-direction: column;
-    }
-
-    .col1 {
-        margin-top: 3vw;
-        z-index: 10;
-    }
-
-    .col2 {
-        margin-top: -400px;
-        margin-left: 1%;
-        z-index: 10;
-    }
-
-    .text1 {
-        position: relative;
-        margin-left: 30vw;
-        top: -390px;
-    }
-
-    .text2 {
-        position: relative;
-        margin-bottom: 74px;
-        margin-left: 30vw;
-        top: -398px;
-    }
-
-    .descInt {
-        opacity: 0;
-    }
-
-    .patasboi1 {
-        height: 40vw;
-        margin-top: -7vw;
-    }
-
-    .patasboi2 {
-        opacity: 0;
-    }
-
-    .patasboi3 {
-        opacity: 0;
-    }
-
-    .patasboi4 {
-        position: relative;
-        height: 35vw;
-        bottom: -80vw;
-        left: -20vw;
-    }
-
-    .e2 {
-        top: 75vh;
-    }
-
-    .Integrantessegundoano {
-        width: 90vw;
-        margin-left: 10%;
-        flex-direction: column;
-        gap: 1px;
-    }
-
-    #planos {
-        top: 75vh;
-    }
-
-    #tbpreco {
-        font-size: 6vw;
-    }
-
-    #escPlano {
-        font-size: 12vw;
-        line-height: 13vw;
-        margin-top: 1vw;
-    }
-
-    #planosAll {
-        grid-template-columns: 1fr;
-        gap: 5vw;
-        max-width: 720px;
-        padding: 0 7vw;
-        margin: 10vw auto 50vw;
-    }
-
-    .plano:nth-child(3) {
-        margin-left: 0;
-    }
-
-    .checks,
-    .checksF {
-        padding-left: 5%;
-    }
-
-    .btSelecAzul,
-    .btSelecAzul1,
-    #btBrancoSelec {
-        margin-left: 16.5%;
-    }
-
-    .img1 {
-        opacity: 0;
-    }
-
-    .img2 {
-        opacity: 0;
-    }
-
-    #contato {
-        top: 245vh;
-        scroll-margin-top: -50px;
-    }
-
-    .imgBoi {
-        opacity: 0;
-    }
-
-    #entContat {
-        width: 90vw;
-        font-size: 15vw;
-        line-height: 15vw;
-        margin-bottom: 6vw;
-    }
-
-    .descriptioncontact {
-        width: 87vw;
-        font-size: 5vw;
-    }
-
-    .contactUs>#nomeContato,
-    .contactUs>#emailContato {
-        font-size: 1.5rem;
-        gap: 4vw;
-        width: 75vw;
-        height: 4vh;
-        border-radius: 15px;
-    }
-
-    #nomeContato>label>img,
-    #emailContato>label>img {
-        width: 5vw;
-        height: 2.2vh;
-        vertical-align: middle;
-        margin-top: -0.7vh;
-    }
-
-    #emailContato>input,
-    #nomeContato>input {
-        font-size: 0.9rem;
-        margin-left: -3vw;
-    }
-
-    #Enviar {
-        width: 75vw;
-        height: 8vh;
-        font-size: 1.72rem;
-        margin-left: 2.5vw;
-        margin-bottom: 30px;
-        vertical-align: middle;
-    }
-
-    .IconsContato {
-        position: relative;
-        left: 48%;
-        transform: translateX(-50%);
-        top: 2vh;
-        width: auto;
-        gap: 13vw;
-        display: flex;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-    }
-
-    .btn {
-        bottom: 3vh;
-        right: -10%;
-    }
-
-    footer {
-        margin-top: 245vh;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        gap: 1.5rem;
-        padding: 2.5rem 1.5rem;
-        height: auto;
-        box-sizing: border-box;
-    }
-}
-
-@media (width: 428px) {
-    #home {
-        justify-content: left;
-        margin-top: 10%;
-    }
-
-    #Bvindo {
-        width: 90vw;
-        font-size: 13vw;
-        margin-top: 10vh;
-        line-height: 13vw;
-    }
-
-    .description {
-        font-size: 5.3vw;
-        margin-left: 9.2vw;
+        margin-left: 13vw;
         width: 80vw;
     }
 
@@ -2475,6 +2014,7 @@ footer {
         flex-direction: column;
         margin-top: 5vh;
         justify-content: center;
+        margin-left: 11%;
     }
 
     .buttons>#btn1Cover,
@@ -2497,12 +2037,12 @@ footer {
     #nssapp {
         margin-left: 4.1vw;
         margin-top: -60%;
-        scroll-margin-top: -180px;
+        scroll-margin-top: -290px;
     }
 
     #Nssaplicat {
         width: 100vw;
-        font-size: 15vw;
+        font-size: 13vw;
         line-height: 13vw;
     }
 
@@ -2524,18 +2064,19 @@ footer {
     }
 
     #funcionalidades {
-        margin-top: 20%;
+        margin-top: 40%;
+        scroll-margin-top: 125px;
     }
 
     #Nssserv {
         width: 100vw;
-        font-size: 15vw;
+        font-size: 13vw;
         line-height: 13vw;
     }
 
     .funcionalis {
         width: 68%;
-        height: 120%;
+        height: 100%;
     }
 
     .iconesF {
@@ -2547,7 +2088,7 @@ footer {
         grid-template-columns: 1fr;
         margin: 15% 0 0 0;
         margin-left: 20%;
-        gap: 15%;
+        gap: 10%;
     }
 
     .fserv {
@@ -2570,16 +2111,103 @@ footer {
         opacity: 0;
     }
 
-    /*AJUSTAR NOSSA MISSÃO*/
+    #mission {
+        margin-top: -70%;
+    }
+
+    #missao {
+        width: 85%;
+        font-size: 13vw;
+        margin-left: 10.2vw;
+        line-height: 13vw;
+    }
+
+    .missionContent>p {
+        font-size: 5.3vw;
+        margin-top: 2vh;
+        padding: 0 1vw;
+    }
+
+    .missiondescription {
+        width: 85%;
+    }
+
+    .pataMission {
+        opacity: 0;
+    }
+
+    .pataMissao {
+        opacity: 0;
+    }
+
+    #clientes {
+        margin-top: -80%;
+        scroll-margin-top: 25px;
+    }
+
+    .clientesContent>h1 {
+        width: 85%;
+        font-size: 13vw;
+        margin-left: 12.2vw;
+        line-height: 13vw;
+        margin-bottom: -2vh;
+    }
+
+    .clientesContent>p {
+        width: 85%;
+        font-size: 5.3vw;
+        margin: 0 auto;
+        padding: 0 12.2vw;
+        margin-top: 5vh;
+    }
+
+    .logoCliente {
+        opacity: 0;
+    }
+
+    .pataCliente {
+        opacity: 0;
+    }
+
+    #aboutUs {
+        margin-top: -35%;
+        scroll-margin-top: 125px;
+    }
+
+    #Sobrenos {
+        width: 85%;
+        font-size: 13vw;
+        line-height: 13vw;
+        margin-bottom: -50vh;
+        margin-left: 7%;
+    }
+
+    .aboutUsContent {
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 55vh;
+    }
+
+    .descriptionUs {
+        width: 85%;
+        font-size: 5.3vw;
+        margin-top: 5vh;
+    }
+
+    .foto {
+        width: 85%;
+        height: auto;
+    }
 
     .e {
-        top: 90vh;
+        margin-top: 5%;
     }
 
     .nssEquip {
-        width: 100vw;
-        font-size: 15vw;
+        width: 85%;
+        font-size: 13vw;
         line-height: 13vw;
+        margin-left: 7%;
     }
 
     .subtitulo {
@@ -2588,7 +2216,7 @@ footer {
     }
 
     .Integrantesprimeiroano {
-        width: 90vw;
+        width: 85%;
         margin-left: 10%;
         flex-direction: column;
     }
@@ -2599,22 +2227,31 @@ footer {
     }
 
     .col2 {
-        margin-top: -400px;
+        margin-top: -575px;
         margin-left: 1%;
         z-index: 10;
     }
 
-    .text1 {
+    .text1>.nome {
         position: relative;
-        margin-left: 30vw;
-        top: -390px;
+        left: 15vw;
+        top: -140px;
+        margin-bottom: 30px;
+    }
+
+    .Integrantesprimeiroano>.coluna1>div>.text1>.nome {
+        margin-bottom: 22px;
+    }
+
+    .Integ4 {
+        margin-bottom: -50px;
     }
 
     .text2 {
         position: relative;
-        margin-bottom: 74px;
+        margin-bottom: 85px;
         margin-left: 30vw;
-        top: -398px;
+        top: -570px;
     }
 
     .descInt {
@@ -2642,7 +2279,7 @@ footer {
     }
 
     .e2 {
-        top: 75vh;
+        margin-top: -430%;
     }
 
     .Integrantessegundoano {
@@ -2653,15 +2290,15 @@ footer {
     }
 
     #planos {
-        top: 75vh;
+        scroll-margin-top: 145px;
     }
 
     #tbpreco {
-        font-size: 6vw;
+        font-size: 5.3vw;
     }
 
     #escPlano {
-        font-size: 12vw;
+        font-size: 13vw;
         line-height: 13vw;
         margin-top: 1vw;
     }
@@ -2674,19 +2311,53 @@ footer {
         margin: 10vw auto 50vw;
     }
 
-    .plano:nth-child(3) {
-        margin-left: 0;
+    #especific {
+        margin-top: -15%;
     }
 
     .checks,
     .checksF {
         padding-left: 5%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .plano,
+    .planoAzul {
+        width: 19rem;
+        height: 30rem;
+    }
+
+    .btSelecAzul,
+    .btSelecAzul1 {
+        margin-top: 2.5vh;
+        margin-left: 3.3vw;
+        width: 12.5rem;
+        height: 3rem;
+        font-size: 1.1rem;
+    }
+
+    .btSelecAzul1 {
+        margin-top: 10vh;
+    }
+
+    .btSelecAzul {
+        margin-top: 6vh;
+    }
+
+    #btBrancoSelec {
+        margin-top: 10vh;
+        margin-left: 3.3vw;
+        width: 12.5rem;
+        height: 3rem;
+        font-size: 1.1rem;
     }
 
     .btSelecAzul,
     .btSelecAzul1,
     #btBrancoSelec {
-        margin-left: 16.5%;
+        margin-left: 16%;
+        margin-bottom: -60%;
     }
 
     .img1 {
@@ -2698,8 +2369,8 @@ footer {
     }
 
     #contato {
-        top: 245vh;
-        scroll-margin-top: -50px;
+        margin-top: 75%;
+        scroll-margin-top: -40px;
     }
 
     .imgBoi {
@@ -2707,54 +2378,32 @@ footer {
     }
 
     #entContat {
-        width: 90vw;
-        font-size: 15vw;
-        line-height: 15vw;
+        width: 125%;
+        font-size: 13vw;
+        line-height: 13vw;
         margin-bottom: 6vw;
     }
 
     .descriptioncontact {
-        width: 87vw;
-        font-size: 5vw;
-    }
-
-    .contactUs>#nomeContato,
-    .contactUs>#emailContato {
-        font-size: 1.5rem;
-        gap: 4vw;
-        width: 75vw;
-        height: 4vh;
-        border-radius: 15px;
-    }
-
-    #nomeContato>label>img,
-    #emailContato>label>img {
-        width: 5vw;
-        height: 2.2vh;
-        vertical-align: middle;
-        margin-top: -0.7vh;
-    }
-
-    #emailContato>input,
-    #nomeContato>input {
-        font-size: 0.9rem;
-        margin-left: -3vw;
+        width: 125%;
+        font-size: 5.3vw;
+        margin-bottom: 62%;
     }
 
     #Enviar {
-        width: 75vw;
-        height: 8vh;
-        font-size: 1.72rem;
-        margin-left: 2.5vw;
+        width: 40%;
+        height: 2%;
+        font-size: 1.2rem;
+        margin-left: -23%;
         margin-bottom: 30px;
         vertical-align: middle;
     }
 
     .IconsContato {
         position: relative;
-        left: 48%;
+        left: 76%;
         transform: translateX(-50%);
-        top: 2vh;
+        top: 8vh;
         width: auto;
         gap: 13vw;
         display: flex;
@@ -2763,13 +2412,25 @@ footer {
         justify-content: center;
     }
 
+    .IconsContato>a>img,
+    .IconsContato>img {
+        height: 20%;
+    }
+
     .btn {
         bottom: 3vh;
         right: -10%;
+        width: 60px;
+        height: 60px;
+    }
+
+    .btn>img {
+        width: 30px;
+        height: 35px;
     }
 
     footer {
-        margin-top: 245vh;
+        margin-top: 25%;
         grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
@@ -2779,6 +2440,12 @@ footer {
         padding: 2.5rem 1.5rem;
         height: auto;
         box-sizing: border-box;
+    }
+}
+
+@media (max-width: 428px) {
+    #home {
+        margin-top: 15%;
     }
 }
 
